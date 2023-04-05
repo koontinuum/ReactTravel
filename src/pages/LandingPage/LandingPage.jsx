@@ -1,11 +1,12 @@
 import React from "react";
-import Header from "../../components/Header/Header";
+import LandDestinations from "../../components/landDestinations/LandDestinations";
 import TourContent from "../../components/TourContent/TourContent";
 
 function LandingPage() {
   return (
     <div>
       <TourContent />
+      <LandDestinations/>
     </div>
   );
 }

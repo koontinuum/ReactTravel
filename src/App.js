@@ -1,11 +1,14 @@
+import { Suspense } from 'react';
 import './App.css';
 import RoutesComponent from './routes/RoutesComponent';
 
 
 function App() {
   return (
-    <div className="App">
+    <div >
+      <Suspense fallback={<div>Loading...</div>}>
       <RoutesComponent />
+      </Suspense>
     </div>
   );
 }
