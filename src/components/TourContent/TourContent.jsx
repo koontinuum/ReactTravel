@@ -9,6 +9,7 @@ import LondonImg from "../../assets/TourContentImages/LondonImage.svg";
 import IndiaImg from "../../assets/TourContentImages/IndiaImage.svg";
 import locationLogo from "../../assets/TourContentImages/locationIcon.svg";
 import searchIcon from "../../assets/searchIcon.svg";
+import Footer from "../Footer/Footer";
 
 function TourContent() {
   return (
