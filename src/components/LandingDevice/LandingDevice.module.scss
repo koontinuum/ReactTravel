@@ -54,6 +54,7 @@
       box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
       border-radius: 16px;
       margin: 40px 0 0 140px;
+      cursor: pointer;
       b {
         font-family: "Poppins";
         font-style: normal;
@@ -126,4 +127,8 @@
       }
     }
   }
+}
+.deviceWrapper:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
