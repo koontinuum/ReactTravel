@@ -15,5 +15,10 @@
   "vietnam": "Vietnam",
   "madagascar": "Madagascar",
   "ireland": "Ireland"
-  
+    "headHome": "Home",
+    "headComp": "Components",
+    "headPage": "Pages",
+    "headDocum": "Documentation",
+    "headLogBtn": "Login",
+    "headJoinBtn": "Join Us"
 }

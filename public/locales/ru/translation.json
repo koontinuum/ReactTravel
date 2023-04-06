@@ -14,4 +14,10 @@
   "vietnam": "Вьетнам",
   "madagascar": "Мадагаскар",
   "ireland": "Ирландия"
+    "headHome": "Главная",
+    "headComp": "Компоненты",
+    "headPage": "Страницы",
+    "headDocum": "Документация",
+    "headLogBtn": "Регистрация",
+    "headJoinBtn": "Войти"
 }
