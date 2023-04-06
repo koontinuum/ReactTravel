@@ -4,56 +4,56 @@ import viet from "../../assets/landDestinations/viet.png";
 import ireland from "../../assets/landDestinations/ireland.png";
 import hung from "../../assets/landDestinations/hung.png";
 import loc from "../../assets/landDestinations/loc.svg";
+import { useTranslation } from "react-i18next";
+
 
 const LandDestinations = () => {
+  const {t} = useTranslation();
   return (
     <section className={css.wrapper}>
       <main className={css.wrap_info}>
-        <h2>Our Favorite Destinations </h2>
-        <p>
-          Since wire-frame renderings are relatively simple and fast to
-          calculate, they are often used in cases
-        </p>
+        <h2>{t("landDestTitle")} </h2>
+        <p>{t("landDestInfo")}</p>
         <ul>
-          <li>First Class Flights</li>
-          <li>5 Star Accommodations</li>
-          <li>Inclusive Packages</li>
-          <li>Latest Model Vechicles </li>
-          <li>Handpicked Hotels</li>
-          <li>Accesibility managment</li>
+          <li>{t("landDestUl1")}</li>
+          <li>{t("landDestUl2")}</li>
+          <li>{t("landDestUl3")}</li>
+          <li>{t("landDestUl4")}</li>
+          <li>{t("landDestUl5")}</li>
+          <li>{t("landDestUl6")}</li>
         </ul>
       </main>
       <main className={css.wrap_card}>
         <div className={css.card}>
           <img src={hung} alt="" />
-          <h4>Hongkong</h4>
+          <h4>{t("hongkong")}</h4>
           <div>
             <img src={loc} alt="" />
-            <span>Asia</span>
+            <span>{t("landDestAsia")}</span>
           </div>
         </div>
         <div className={css.card3}>
           <img src={ireland} alt="" />
-          <h4>Ireland</h4>
+          <h4>{t("ireland")}</h4>
           <div>
             <img src={loc} alt="" />
-            <span>Asia</span>
+            <span>{t("landDestAsia")}</span>
           </div>
         </div>
         <div className={css.card1}>
           <img src={mad} alt="" />
-          <h4>Madagascar</h4>
+          <h4>{t("madagascar")}</h4>
           <div>
             <img src={loc} alt="" />
-            <span>Asia</span>
+            <span>{t("landDestAsia")}</span>
           </div>
         </div>
         <div className={css.card}>
           <img src={viet} alt="" />
-          <h4>Vietnam</h4>
+          <h4>{t("vietnam")}</h4>
           <div>
             <img src={loc} alt="" />
-            <span>Asia</span>
+            <span>{t("landDestAsia")}</span>
           </div>
         </div>
       </main>

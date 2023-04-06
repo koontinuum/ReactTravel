@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import './i18n'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

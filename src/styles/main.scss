@@ -1,0 +1,25 @@
+$light-clr: #fff;
+$light-bg: #fff;
+$dark-bg: #161C24;
+$dark-text:  #919EAB;
+
+.light{
+	.text{
+
+	}
+
+	.background{
+
+	}
+}
+
+
+.dark {
+	.text {
+color: $light-clr;
+	}
+
+	.background {
+		background-color: $dark-bg;
+	}
+}

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import searchIcon from "../../assets/searchIcon.svg";

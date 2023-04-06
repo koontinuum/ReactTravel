@@ -1,5 +1,19 @@
 
 {
-    "headHome": "Home",
-    "headComp": "Components"
+  "headHome": "Home",
+  "headComp": "Components",
+  "landDestTitle": "Our Favorite Destinations",
+  "landDestInfo": "Since wire-frame renderings are relatively simple and fast to calculate, they are often used in cases",
+  "landDestUl1": "First Class Flights",
+  "landDestUl2": "5 Star Accommodations",
+  "landDestUl3": "Inclusive Packages",
+  "landDestUl4": "Latest Model Vechicles",
+  "landDestUl5": "Handpicked Hotels",
+  "landDestUl6": "Accesibility managment",
+  "landDestAsia": "Asia",
+  "hungkong": "Hong Kong",
+  "vietnam": "Vietnam",
+  "madagascar": "Madagascar",
+  "ireland": "Ireland"
+  
 }
