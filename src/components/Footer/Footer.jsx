@@ -17,15 +17,17 @@ function Footer() {
             <h1>Newsettler</h1>
             <p>Sign up now to receive hot special offers <br />
             and information about the best tours! </p>
+            <div className={css.inputAlign}>
             <span className={css.newInp}>
             <input type="text" placeholder='Enter your email'/>
-            <button>
+            <button className={css.newBtn}>
                 <img src={right} alt="" />
             </button>
             </span>
             </div>
+            </div>
         </div>
-    {/* <div className={css.zone}>
+    <div className={css.zone}>
         <img className={css.logo} src={logo} alt="" />
         <div className={css.contacts}>
             <p className={css.contactText}>The starting point for your next project 
@@ -41,9 +43,11 @@ function Footer() {
                 <p>655 Schaefer Dale</p>
                 </div>
             </div>
+            <div className={css.inp}>
             <div className={css.inputContact}>
                 <input type="text" placeholder='Email adress'/>
                 <button className={css.inputBtn}><img src={right} alt="" /></button>
+            </div>
             </div>
         </div>
         <div className={css.socials} >
@@ -59,7 +63,7 @@ function Footer() {
                 <p className={css.copyright}>Terms of Service</p>
             </div>
         </div>
-    </div> */}
+    </div>
     </div>
   )
 }

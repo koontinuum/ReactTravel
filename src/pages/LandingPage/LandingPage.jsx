@@ -8,10 +8,10 @@ import LandingFrames from "../../components/LandingFrames/LandingFrames";
 function LandingPage() {
   return (
     <div>
-      <Footer />
       <TourContent />
       <LandingDevice />
       <LandingFrames />
+      <Footer />
     </div>
   );
 }

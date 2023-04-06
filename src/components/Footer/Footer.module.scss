@@ -1,6 +1,4 @@
-.wrapper{
-   
-}
+
 .zone{
     display: flex;
     flex-direction: column;
@@ -137,21 +135,40 @@ span{
     flex-direction: column;
     align-items: flex-start;
     padding: 80px 144px 32px;
-    @media only screen and (min-width: 300px) and (max-width: 590px){
+    @media only screen and (min-width: 300px) and (max-width: 900px){
         padding: 30px;
+        
+    }
+    @media only screen and (min-width: 300px) and (max-width: 1300px){
+        padding: 40px 40px 30px;
+
     }
     .logo{
-        @media only screen and (min-width: 300px) and (max-width: 590px){
+        @media only screen  and (max-width: 900px){
             width: 100%;
         }
     }
     .contactText{
-        @media only screen and (min-width: 300px) and (max-width: 590px){
+        @media only screen  and (max-width: 740px){
+            width: 100%;
+        }
+    }
+    .contactText{
+        @media only screen and (min-width: 740px) and (max-width: 850px){
+            width: 50%;
+            margin-left: 25%;
+        }
+    }
+    .inp{
+        @media only screen and (min-width: 400px) and (max-width: 900px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
         }
     }
     button{
-        @media only screen and (min-width: 300px) and (max-width: 590px){
+        @media only screen and (min-width: 300px) and (max-width: 900px){
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -163,30 +180,82 @@ span{
         }
     }
     .contacts{
-        @media only screen and (min-width: 300px) and (max-width: 590px){
+        @media only screen and (min-width: 300px) and (max-width: 900px){
             display: flex;
             flex-direction: column;
             gap: 20px;
             text-align: center;
+            width: 100%;
+        }
+        @media only screen and (min-width: 900px) and (max-width: 1300px){
+            justify-content: space-between;
+            width: 100%;
         }
     }
+    
     .inputContact{
         width: 310px;
         height: 48px;
         background: rgba(145, 158, 171, 0.08);
         border-radius: 8px;
         padding: 10px;
-        @media only screen and (min-width: 300px) and (max-width: 590px){
+        @media only screen and (min-width: 300px) and (max-width: 740px){
             width: 325px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
         }
     }
+    .Email , .place{
+        @media only screen and (min-width: 300px) and (max-width: 900px){
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+    }
+    .how2Find{
+        @media only screen and (min-width: 300px) and (max-width: 900px){
+            width: 100%;            
+        }
+    }
+    .socials{
+        @media only screen and (min-width: 300px) and (max-width: 900px){
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    .service{
+        @media only screen and (min-width: 300px) and (max-width: 900px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+    // @media only screen and  (max-width: 280px){
+    //     padding: 10px;
+    // }
+    // .contactText{
+    //     @media only screen and  (max-width: 280px){
+    //         font-size: 10px;
+
+    //     }
+    // }
+    // .how2Find{
+    //     p{
+    //         @media only screen and  (max-width: 280px){
+    //             font-size: 6px;
+    //         }
+    //     }
+    // }
 }
 .contacts{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px 0px;
-    gap: 322px;    
+    width: 100%;
+    justify-content: space-between;
 }
 .how2Find{
     display: flex;
@@ -224,7 +293,7 @@ span{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 40px;
     p{
         font-family: 'Poppins';
         font-style: normal;
@@ -233,6 +302,7 @@ span{
         line-height: 24px;
     }
 }
+.zone
 .inputContact{
     font-family: 'Poppins';
     font-style: normal;
@@ -272,8 +342,8 @@ span{
 }
 .inputBtn{
 
-    width: 50px;
-    height: 56px;
+    width: 60px;
+    height: 48px;
     background: #FA541C;
     border-radius: 8px;
     border: none;
@@ -281,6 +351,21 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (min-width: 300px) and (max-width: 1100px){
+
+    }
+}
+.newBtn{
+    background: #FA541C;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+
 }
 .newSettler{
     background-image: url('../../assets/newSettlerBG.svg');
@@ -290,13 +375,85 @@ span{
     height: 504px;
     display: flex;
     justify-content: flex-end;
-    @media only screen and (min-width: 300px) and (max-width: 1300px){
+    @media only screen and (max-width: 280px){
+        padding: 0;
+        height: auto;
+        text-align: center;
+        display: block;
+        background-image: url('../../assets/adaptiveBG.svg');
+    }
+        p{
+            @media only screen  and (max-width: 280px){
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 28px;
+        }
+        }
+        .newInp{
+            @media only screen  and (max-width: 280px){
+                text-align: right;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+                gap: 0;
+                .newBtn{
+                    @media only screen and (min-width:280px) and (max-width: 600px){
+                        height: 40px;
+                        width: 45px;
+                        background: #FA541C;
+                        border-radius: 8px;
+                        border: none;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    @media only screen and (min-width:601px) and (max-width:2000px){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px 22px;
+                        gap: 8px;
+                        width: 48px;
+                        height: 48px;
+                        background: #FA541C;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+        input{
+            @media only screen  and (max-width: 280px){
+                height: 40px;
+                width: 60%;
+            }
+            
+        }
+        
+    
+    @media only screen and (min-width: 300px) and (max-width: 950px){
         background-image: url('../../assets/adaptiveBG.svg');
         padding: 10px;
+        height: 404px;
+    }
+    @media only screen and (min-width: 1000px) and (max-width: 1300px){
+        background-image: url('../../assets/newSettlerBG.svg');
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0;
         
     }
+    .newSettlerInfo{
+        @media only screen and (min-width: 1000px) and (max-width: 1300px){
+            
+        }
+    }
     h1{
-        @media only screen and (min-width: 300px) and (max-width: 1100px){
+        @media only screen and (min-width: 300px) and (max-width: 1000px){
             font-family: 'Barlow';
             font-style: normal;
             font-weight: 700;
@@ -314,12 +471,19 @@ span{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
-    @media only screen and (min-width: 300px) and (max-width: 1100px){
+    gap: 15px;
+    @media only screen  and (max-width: 280px){
+        text-align: center;
+        width: 100%;
+    }
+    @media only screen and (min-width: 300px) and (max-width: 1000px){
         display: flex;
         justify-content: center;
         width: 100%;
         gap: 20px;
+    }
+    @media only screen and (min-width: 1000px) and (max-width: 1300px){
+        margin-right: 20px;
     }
     p{
         @media only screen and (min-width: 300px) and (max-width: 1100px){
@@ -332,18 +496,23 @@ span{
             display: flex;
             gap: 0px;
             align-items: center;
-            background: rgba(145, 158, 171, 0.08);
+            // background: rgba(145, 158, 171, 0.08);
             backdrop-filter: blur(4px);            
         }
+    }
+    .inputAlign{
+        width: 100%;
+        justify-content: center;
     }
     h1{
         font-family: 'Barlow';
         font-style: normal;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 30px;
+        width: 100%;
         line-height: 64px;
         color: #FFFFFF;
-        @media only screen and (min-width: 300px) and (max-width: 1100px){
+        @media only screen and (min-width: 300px) and (max-width: 1000px){
             font-family: 'Barlow';
             text-align: center;
             width: 100%;
@@ -352,17 +521,41 @@ span{
             font-size: 32px;
             line-height: 42px;
         }
+        @media only screen and (min-width: 1000px) and (max-width: 2000px){
+            font-family: 'Barlow';
+            text-align: start;
+            width: 100%;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+        }
     }
     p{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 10px;
         line-height: 28px;
         color: #FFFFFF;   
-        @media only screen and (max-width: 1100px){
+        @media only screen and (max-width: 1000px){
             width: 100%;
             text-align: center;
+        }
+        @media only screen and (min-width: 1000px) and (max-width: 1300px){
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #FFFFFF;  
+            width: 100%;
+            text-align: start;
+        }
+    }
+    .inputAlign{
+        @media only screen and (min-width: 300px) and (max-width: 1100px){
+            width: 100%;
         }
     }
     .newInp{
@@ -373,23 +566,22 @@ span{
         line-height: 26px;
         color: #919EAB;
         @media only screen and (min-width: 300px) and (max-width: 1100px){
-            
             text-align: center;
             display: flex;
             justify-content: center;
         }
         button{
-            width: 50px;
-            height: 56px;
-            background: #FA541C;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        input{
+            @media only screen and (min-width:300) and (max-width: 1400px){
+                width: 50px;
+                height: 56px;
+                background: #FA541C;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             
         }
     }
