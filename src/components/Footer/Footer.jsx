@@ -8,15 +8,22 @@ import insta from '../../assets/insta.svg'
 import IN from '../../assets/in.svg'
 import twitter from '../../assets/twitter.svg'
 import logo from '../../assets/logo.svg'
+import { useTranslation } from "react-i18next";
+
+
+const lngs = {
+    en: { nativeName: "" },
+    ru: { nativeName: "" },
+  };
 
 function Footer() {
+    const { t, i18n } = useTranslation();
   return (
     <div className={css.wrapper}>
         <div className={css.newSettler}>
             <div className={css.newSettlerInfo}>
-            <h1>Newsettler</h1>
-            <p>Sign up now to receive hot special offers <br />
-            and information about the best tours! </p>
+            <h1>{t("newSettler")}</h1>
+            <p>{t("signUpText")}</p>
             <div className={css.inputAlign}>
             <span className={css.newInp}>
             <input type="text" placeholder='Enter your email'/>

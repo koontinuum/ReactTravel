@@ -542,7 +542,7 @@ span{
             width: 100%;
             text-align: center;
         }
-        @media only screen and (min-width: 1000px) and (max-width: 1300px){
+        @media only screen and (min-width: 1000px) and (max-width: 2000px){
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
@@ -551,6 +551,7 @@ span{
             color: #FFFFFF;  
             width: 100%;
             text-align: start;
+            width: 350px;
         }
     }
     .inputAlign{
