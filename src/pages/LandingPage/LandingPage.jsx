@@ -8,9 +8,9 @@ import LandingFrames from "../../components/LandingFrames/LandingFrames";
 function LandingPage() {
   return (
     <div>
-       {/*<TourContent />*/}
-      {/*<LandingDevice/>
-      <LandingFrames/>*/}
+       <TourContent />
+      <LandingDevice/>
+      <LandingFrames/>
       <LandDestinations/>
     </div>
   );
