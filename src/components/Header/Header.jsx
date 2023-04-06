@@ -19,8 +19,8 @@ function Header() {
           <img src={logo} alt="" />
           <a href="">{t("headHome")}</a>
           <a href="">{t("headComp")}</a>
-          <a href="">{t("head")}</a>
-          <a href="">{t("learn")}</a>
+          <a href="">{t("headPage")}</a>
+          <a href="">{t("headDocum")}</a>
         </div>
         <div className={css.right}>
           <div className={css.leftContent}>
@@ -39,8 +39,8 @@ function Header() {
               ))}
             </div>
           </div>
-          <button className={css.login}>Login</button>
-          <button className={css.joinUs}>Join Us</button>
+          <button className={css.login}>{t("headLogBtn")}</button>
+          <button className={css.joinUs}>{t("headJoinBtn")}</button>
         </div>
       </div>
     </div>

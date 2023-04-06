@@ -1,4 +1,8 @@
 {
-    "headHome": "Домой",
-    "headComp": "Компоненты"
+    "headHome": "Главная",
+    "headComp": "Компоненты",
+    "headPage": "Страницы",
+    "headDocum": "Документация",
+    "headLogBtn": "Регистрация",
+    "headJoinBtn": "Войти"
 }

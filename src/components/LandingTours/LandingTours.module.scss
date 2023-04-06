@@ -1,0 +1,165 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  h1 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #212b36;
+  }
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #637381;
+  }
+  .wrapperContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 1152px;
+    height: 435px;
+    margin-top: 80px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      width: 270px;
+      height: 435px;
+      background: #ffffff;
+      box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+      border-radius: 16px;
+      cursor: pointer;
+      .top,
+      .top2,
+      .top3,
+      .top4 {
+        height: 242px;
+        width: 269.9999084472656px;
+        border-radius: 16px 16px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 17px 12px 0 16px;
+        .price {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 0px 8px;
+          width: 56px;
+          height: 26px;
+          background: #212b36;
+          border-radius: 6px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 26px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+      .center {
+        margin-top: 20px;
+        border-bottom: 1px dashed rgba(145, 158, 171, 0.24);
+        width: 100%;
+        padding-left: 20px;
+        h1 {
+          width: 230px;
+          height: 56px;
+          font-family: "Barlow";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+          color: #212b36;
+          margin-bottom: 40px;
+        }
+        h2 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 24px;
+          color: #637381;
+        }
+      }
+      .bottom {
+        width: 100%;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 59.7px;
+        p {
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 24px;
+          text-align: center;
+          color: #919eab;
+        }
+        b {
+          display: flex;
+          align-items: center;
+          gap: 5.67px;
+          font-family: "Barlow";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          color: #212b36;
+        }
+      }
+    }
+  }
+}
+.toursBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 22px;
+  width: 150px;
+  height: 48px;
+  background: #fa541c;
+  border-radius: 8px;
+  margin-top: 80px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.card:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.top {
+  background: url(../../assets/TourContentImages/card1.svg);
+}
+.top2 {
+  background: url(../../assets/TourContentImages/card2.svg);
+}
+.top3 {
+  background: url(../../assets/TourContentImages/card3.svg);
+}
+.top4 {
+  background: url(../../assets/TourContentImages/card4.svg);
+}
