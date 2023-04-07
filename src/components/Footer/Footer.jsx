@@ -26,7 +26,7 @@ function Footer() {
             <p>{t("signUpText")}</p>
             <div className={css.inputAlign}>
             <span className={css.newInp}>
-            <input type="text" placeholder='Enter your email'/>
+            <input type="text" placeholder={t("newInput")}/>
             <button className={css.newBtn}>
                 <img src={right} alt="" />
             </button>
@@ -37,9 +37,7 @@ function Footer() {
     <div className={css.zone}>
         <img className={css.logo} src={logo} alt="" />
         <div className={css.contacts}>
-            <p className={css.contactText}>The starting point for your next project 
-                 based on easy-to-customize Material-UI 
-                 © helps you build apps faster and better.</p>
+            <p className={css.contactText}>{t("zoneText")}</p>
             <div className={css.how2Find}>
                 <div className={css.Email}>
                 <img src={mail} alt="" />
@@ -52,7 +50,7 @@ function Footer() {
             </div>
             <div className={css.inp}>
             <div className={css.inputContact}>
-                <input type="text" placeholder='Email adress'/>
+                <input type="text" placeholder={t("inputInfo")}/>
                 <button className={css.inputBtn}><img src={right} alt="" /></button>
             </div>
             </div>
@@ -64,10 +62,10 @@ function Footer() {
             <img src={twitter} alt="" />
         </div>
         <div className={css.service}>
-            <p className={css.copyright}>© 2021. All rights reserved</p>
+            <p className={css.copyright}>{t("copyRight")}</p>
             <div className={css.feedBack}>
-                <p className={css.copyright}>Help Center</p>
-                <p className={css.copyright}>Terms of Service</p>
+                <p className={css.copyright}>{t("help")}</p>
+                <p className={css.copyright}>{t("service")}</p>
             </div>
         </div>
     </div>

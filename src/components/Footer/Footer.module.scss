@@ -139,6 +139,9 @@ span{
         padding: 30px;
         
     }
+    @media only screen and (max-width: 300px){
+        padding: 5px;
+    }
     @media only screen and (min-width: 300px) and (max-width: 1300px){
         padding: 40px 40px 30px;
 
@@ -256,6 +259,9 @@ span{
     padding: 24px 0px;
     width: 100%;
     justify-content: space-between;
+    @media only screen and (max-width: 300px){
+        flex-direction: column;
+    }
 }
 .how2Find{
     display: flex;
@@ -263,6 +269,10 @@ span{
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
+    @media only screen and (max-width: 300px){
+        width: 100%;
+        padding: 20px 0px;
+    }
     
 }
 .Email , .place{
@@ -271,6 +281,10 @@ span{
     align-items: center;
     padding: 0px;
     gap: 8px;  
+    @media only screen and (max-width: 300px){
+        width: 100%;
+        justify-content: center;
+    }
     p{
         font-family: 'Poppins';
         font-style: normal;
@@ -286,7 +300,11 @@ span{
     align-items: center;
     padding: 0px;
     gap: 20px;
-    background-color: #FFFFFF;    
+    background-color: #FFFFFF;   
+    @media only screen and (max-width: 300px){
+        width: 100%;
+        justify-content: center;
+    } 
 }
 .service{
     display: flex;
@@ -294,12 +312,19 @@ span{
     justify-content: space-between;
     width: 100%;
     margin-top: 40px;
+    @media only screen and (max-width: 300px){
+        display: block;
+        text-align: center;
+    }
     p{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
         line-height: 24px;
+        @media only screen and (max-width: 300px){
+            font-size: 11px;
+        }
     }
 }
 .zone
@@ -313,6 +338,13 @@ span{
     display: flex;
     align-items: center;
     gap: 10px;
+    @media only screen and (max-width: 300px){
+        width: 275px;
+    }
+    button{
+        @media only screen and (max-width: 300px){
+        }
+    }
     input{
         display: flex;
         align-items: center;
@@ -324,6 +356,12 @@ span{
     gap: 30px;
     display: flex;
     flex-direction: row;
+    @media only screen and (max-width: 300px){
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 10px;
+    }
 }
 .copyright{
     font-weight: 400;
@@ -339,6 +377,9 @@ span{
     line-height: 24px;
     color: #637381;
     width: 290px;
+    @media only screen and (max-width: 300px){
+        font-size: 12px;
+    }
 }
 .inputBtn{
 
@@ -538,9 +579,22 @@ span{
         font-size: 10px;
         line-height: 28px;
         color: #FFFFFF;   
-        @media only screen and (max-width: 1000px){
-            width: 100%;
+        @media only screen and (min-width:300px) and (max-width: 750px){
+            width: 210px;
+            margin-left: 20%;
             text-align: center;
+        }
+        @media only screen and (min-width:760px) and (max-width: 1000px){
+            width: 280px;
+            margin-left: 32%;
+        }
+        @media only screen and (min-width:540px) and (max-width: 540px){
+            width: 280px;
+            margin-left: 23%;
+        }
+        @media only screen and (min-width:820px) and (max-width: 1000px){
+            width: 280px;
+            margin-left: 32%;
         }
         @media only screen and (min-width: 1000px) and (max-width: 2000px){
             font-family: 'Poppins';

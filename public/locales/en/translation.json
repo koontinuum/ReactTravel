@@ -3,5 +3,11 @@
     "headHome": "Home",
     "headComp": "Components",
     "newSettler":"Newsettler",
-    "signUpText":"Sign up now to receive hot special offers and information about the best tours! "
+    "signUpText":"Sign up now to receive hot special offers and information about the best tours! ",
+    "zoneText":"The starting point for your next project based on easy-to-customize Material-UI © helps you build apps faster and better.",
+    "inputInfo":"Email adress",
+    "copyRight":"© 2021. All rights reserved",
+    "help":"Help center",
+    "service":"Term of Service",
+    "newInput":"Enter your email"
 }
