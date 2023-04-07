@@ -37,7 +37,7 @@ function Header() {
             </div>
 
             <img src={searchIcon} alt="" />
-            <div>
+            <div className={css.langButton}>
               {Object.keys(lngs).map((lng) => (
                 <button
                   type="submit"

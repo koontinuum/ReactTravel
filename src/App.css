@@ -110,19 +110,12 @@ legend {
   width: 85%;
   margin: 0 auto;
 }
-/*.Layout{
-  background-color: var(--bg-light);
-  color: var(--accent-dark);
-}*/
+
+
 .Layout.dark{
-  background-color: var(--bg-dark);
-  color: var(--bg-light);
-  /*z-index: -100;
-  position: relative;*/
+  background-color: var(--accent-dark);
+  color: var(--accent-light);
 }
-
-
-.Layout.dark h1, h2, h3, h4{
-  color: var(--bg-light);
+.Layout.Dark h1, h2, h3, h4{
+  color: var(--accent-light)
 }
-
