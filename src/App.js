@@ -1,14 +1,23 @@
-import { Suspense } from 'react';
+
 import './App.css';
 import RoutesComponent from './routes/RoutesComponent';
-
+import Layout from './styles/Layout';
+import { ThemeProider } from './styles/ThemeProvider';
 
 function App() {
+
+
   return (
     <div >
-      <Suspense fallback={<div>Loading...</div>}>
-      <RoutesComponent />
-      </Suspense>
+      <ThemeProider>
+        <Layout>
+   <RoutesComponent />         
+        </Layout>
+      </ThemeProider>
+      
+    
+    
+     
     </div>
   );
 }

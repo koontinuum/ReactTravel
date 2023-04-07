@@ -24,10 +24,10 @@ function Footer() {
             <button>
               <img src={right} alt="" />
             </button>
-          </span>
+            </span>
+            </div>
         </div>
-      </div>
-      <div className={css.zone}>
+    <div className={css.zone}>
         <img className={css.logo} src={logo} alt="" />
         <div className={css.contacts}>
           <p className={css.contactText}>
@@ -64,7 +64,7 @@ function Footer() {
             <p className={css.copyright}>Terms of Service</p>
           </div>
         </div>
-      </div>
+    </div>
     </div>
   );
 }

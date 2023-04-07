@@ -3,23 +3,17 @@ $light-bg: #fff;
 $dark-bg: #161C24;
 $dark-text:  #919EAB;
 
-.light{
-	.text{
+.dark-theme {
+	background-color: $dark-bg;
+	color: $light-clr;
 
-	}
-
-	.background{
-
+	// Apply the dark theme to specific components
+	.button {
+		background-color: $dark-text;
+		color: $light-clr;
 	}
 }
-
-
-.dark {
-	.text {
-color: $light-clr;
-	}
-
-	.background {
-		background-color: $dark-bg;
-	}
+.light-theme{
+	background-color: $light-bg;
+	color: $dark-bg;
 }

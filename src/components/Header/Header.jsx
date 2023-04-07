@@ -1,8 +1,10 @@
 import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import searchIcon from "../../assets/searchIcon.svg";
-import languageIcon from "../../assets/languageIcon.svg";
 import { useTranslation } from "react-i18next";
+import sun from '../../assets/icon/sun.png'
+import moon from '../../assets/icon/moon.png'
+import useTheme from "../../hooks/useTheme";
 
 const lngs = {
   en: { nativeName: "Eng" },
@@ -11,6 +13,7 @@ const lngs = {
 
 function Header() {
   const { t, i18n } = useTranslation();
+  const { isDark, setIsDark } = useTheme();
   return (
     <div className="container">
       <div className={css.wrapper}>
@@ -23,6 +26,16 @@ function Header() {
         </div>
         <div className={css.right}>
           <div className={css.leftContent}>
+            <div className={css.toogleTheme}>
+              <button onClick={() => setIsDark(!isDark)} >
+                {isDark ? (
+                  <img src={moon} alt="" />
+                ) : (
+                  <img src={sun} alt="" />
+                )}
+              </button>
+            </div>
+
             <img src={searchIcon} alt="" />
             <div className={css.langButton}>
               {Object.keys(lngs).map((lng) => (
