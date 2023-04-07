@@ -9,9 +9,23 @@ import LondonImg from "../../assets/TourContentImages/LondonImage.svg";
 import IndiaImg from "../../assets/TourContentImages/IndiaImage.svg";
 import locationLogo from "../../assets/TourContentImages/locationIcon.svg";
 import searchIcon from "../../assets/searchIcon.svg";
-import Footer from "../Footer/Footer";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 function TourContent() {
+  const [tour, setTour] = useState("Thailand");
+
+  const tourClick = () => {
+    setTour("Europe");
+  };
+  const tourClick1 = () => {
+    setTour("Thailand");
+  };
+  const tourClick2 = () => {
+    setTour("India");
+  };
+
+  const { t } = useTranslation();
   return (
     <div className={css.tourContent}>
       <Header />
@@ -19,8 +33,12 @@ function TourContent() {
         <div className={css.wrapper}>
           <div className={css.centerWrapper}>
             <div className={css.centralContent}>
-              <b>New Tour</b>
-              <h1>Thailand Tour</h1>
+              <b>{t("headTourb")}</b>
+
+              <div className={css.mainTourText}>
+                <h1>{tour}</h1>
+              </div>
+
               <div className={css.info}>
                 <p>
                   <img src={timeLogo} alt="" />3 days 2 nights
@@ -34,42 +52,42 @@ function TourContent() {
                   Starting at $69
                 </p>
               </div>
-              <button>Book Now</button>
+              <button>{t("headTourBtn")}</button>
             </div>
             <div className={css.options}>
-              <div className={css.option1}>
+              <div className={css.option1} onClick={tourClick1}>
                 <div className={css.left}>
                   <img src={ThailandImg} alt="" />
                 </div>
                 <div className={css.right}>
-                  <h1>Thailand</h1>
+                  <h1> {t("TCrh11")}</h1>
                   <p>
                     <img src={locationLogo} alt="" />
-                    Asia
+                    {t("TCrp3")}
                   </p>
                 </div>
               </div>
-              <div className={css.option2}>
+              <div className={css.option2} onClick={tourClick}>
                 <div className={css.left}>
                   <img src={LondonImg} alt="" />
                 </div>
                 <div className={css.right}>
-                  <h1>London</h1>
+                  <h1>{t("TCrh12")}</h1>
                   <p>
                     <img src={locationLogo} alt="" />
-                    Europe
+                    {t("TCrp2")}
                   </p>
                 </div>
               </div>
-              <div className={css.option2}>
+              <div className={css.option2} onClick={tourClick2}>
                 <div className={css.left}>
                   <img src={IndiaImg} alt="" />
                 </div>
                 <div className={css.right}>
-                  <h1>India</h1>
+                  <h1>{t("TCrh13")}</h1>
                   <p>
                     <img src={locationLogo} alt="" />
-                    Asia
+                    {t("TCrp3")}
                   </p>
                 </div>
               </div>
@@ -77,13 +95,13 @@ function TourContent() {
           </div>
         </div>
         <div className={css.tourInputs}>
-          <input type="text" placeholder="Where we go?" />
+          <input type="text" placeholder={t("tourInp1")} />
           <input
             className={css.inpBorders}
             type="text"
-            placeholder="Departure day"
+            placeholder={t("tourInp2")}
           />
-          <input type="text" placeholder="Guests" />
+          <input type="text" placeholder={t("tourInp3")} />
           <button>
             <img src={searchIcon} alt="" />
           </button>

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import searchIcon from "../../assets/searchIcon.svg";
@@ -6,8 +5,8 @@ import languageIcon from "../../assets/languageIcon.svg";
 import { useTranslation } from "react-i18next";
 
 const lngs = {
-  en: { nativeName: "" },
-  ru: { nativeName: "" },
+  en: { nativeName: "Eng" },
+  ru: { nativeName: "Rus" },
 };
 
 function Header() {
@@ -25,7 +24,7 @@ function Header() {
         <div className={css.right}>
           <div className={css.leftContent}>
             <img src={searchIcon} alt="" />
-            <div>
+            <div className={css.langButton}>
               {Object.keys(lngs).map((lng) => (
                 <button
                   type="submit"
@@ -33,7 +32,6 @@ function Header() {
                   onClick={() => i18n.changeLanguage(lng)}
                   disabled={i18n.resolvedLanguage === lng}
                 >
-                  <img src={languageIcon} alt="" />
                   {lngs[lng].nativeName}
                 </button>
               ))}
