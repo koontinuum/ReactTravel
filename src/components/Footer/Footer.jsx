@@ -25,7 +25,7 @@ function Footer() {
             </span>
             </div>
         </div>
-    {/* <div className={css.zone}>
+    <div className={css.zone}>
         <img className={css.logo} src={logo} alt="" />
         <div className={css.contacts}>
             <p className={css.contactText}>The starting point for your next project 
@@ -59,7 +59,7 @@ function Footer() {
                 <p className={css.copyright}>Terms of Service</p>
             </div>
         </div>
-    </div> */}
+    </div>
     </div>
   )
 }

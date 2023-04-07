@@ -1,3 +1,11 @@
+:root{
+  --accent-dark: black;
+  --accent-light: white;
+  --bg-dark:  #161C24;
+  --bg-light: white;
+}
+
+
 * {
   padding: 0px;
   margin: 0px;
@@ -102,3 +110,19 @@ legend {
   width: 85%;
   margin: 0 auto;
 }
+/*.Layout{
+  background-color: var(--bg-light);
+  color: var(--accent-dark);
+}*/
+.Layout.dark{
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  /*z-index: -100;
+  position: relative;*/
+}
+
+
+.Layout.dark h1, h2, h3, h4{
+  color: var(--bg-light);
+}
+
