@@ -2,8 +2,8 @@ import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import searchIcon from "../../assets/searchIcon.svg";
 import { useTranslation } from "react-i18next";
-import sun from '../../assets/icon/sun.png'
-import moon from '../../assets/icon/moon.png'
+import sun from "../../assets/icon/sun.png";
+import moon from "../../assets/icon/moon.png";
 import useTheme from "../../hooks/useTheme";
 
 const lngs = {
@@ -27,12 +27,8 @@ function Header() {
         <div className={css.right}>
           <div className={css.leftContent}>
             <div className={css.toogleTheme}>
-              <button onClick={() => setIsDark(!isDark)} >
-                {isDark ? (
-                  <img src={moon} alt="" />
-                ) : (
-                  <img src={sun} alt="" />
-                )}
+              <button onClick={() => setIsDark(!isDark)}>
+                {isDark ? <img src={moon} alt="" /> : <img src={sun} alt="" />}
               </button>
             </div>
 
