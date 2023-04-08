@@ -1,0 +1,39 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  h1 {
+    display: flex;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    a {
+      color: #919eab;
+    }
+  }
+  .imagesContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    .mainCon {
+      .mainConImg {
+        width: 1340px;
+        cursor: pointer;
+      }
+    }
+    .contents {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      img {
+        width: 330px;
+        cursor: pointer;
+      }
+    }
+  }
+}
