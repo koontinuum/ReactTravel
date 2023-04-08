@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import sun from "../../assets/icon/sun.png";
 import moon from "../../assets/icon/moon.png";
 import useTheme from "../../hooks/useTheme";
+import { Link } from "react-router-dom";
 
 const lngs = {
   en: { nativeName: "Eng" },
@@ -19,7 +20,7 @@ function Header() {
       <div className={css.wrapper}>
         <div className={css.left}>
           <img src={logo} alt="" />
-          <a href="">{t("headHome")}</a>
+          <Link to="/">{t("headHome")}</Link>
           <a href="">{t("headComp")}</a>
           <a href="">{t("headPage")}</a>
           <a href="">{t("headDocum")}</a>
@@ -31,7 +32,6 @@ function Header() {
                 {isDark ? <img src={moon} alt="" /> : <img src={sun} alt="" />}
               </button>
             </div>
-
             <img src={searchIcon} alt="" />
             <div className={css.langButton}>
               {Object.keys(lngs).map((lng) => (
