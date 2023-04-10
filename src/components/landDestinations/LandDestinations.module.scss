@@ -222,7 +222,8 @@
     flex-direction: column;
 
     .wrap_info {
-      margin-top: 0;
+      margin-top: 100px;
+      margin-bottom: 100px;
       width: 100%;
       padding-left: 13%;
       height: 80vh;
@@ -245,6 +246,12 @@
   .wrap_info {
     width: 100%;
     justify-content: space-between;
+
+    p{
+      width: 90%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
   }
 
   .wrap_card {

@@ -202,12 +202,14 @@ span{
     align-items: center;
     padding: 0px;
     gap: 8px;  
+  
     p{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 28px;
+        color: rgb(40, 42, 43);
     }  
 }
 .socials{
@@ -391,5 +393,18 @@ span{
         input{
             
         }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .zone{
+align-items: center;
+    }
+    .contacts{
+        align-items: center;
+    }
+    .service{
+        flex-direction: column;
     }
 }
