@@ -16,12 +16,11 @@ function LandingPage() {
       <LandingDevice />
       <LandingFrames />
       <LandDestinations />
-      <LandingCities />
-<LandingPost/>
+      <tourCard />
       <LandingTours />
       <LandingCities />
       <LandingPost />
-      <LandingCustomer />
+      <LandingCustomer/>
       <Footer />
     </div>
   );
