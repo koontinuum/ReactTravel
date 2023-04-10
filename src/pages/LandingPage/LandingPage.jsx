@@ -16,6 +16,8 @@ function LandingPage() {
       <LandingDevice />
       <LandingFrames />
       <LandDestinations />
+      <LandingCities />
+<LandingPost/>
       <LandingTours />
       <LandingCities />
       <LandingPost />
