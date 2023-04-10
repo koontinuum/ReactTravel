@@ -5,22 +5,40 @@ import ireland from "../../assets/landDestinations/ireland.png";
 import hung from "../../assets/landDestinations/hung.png";
 import loc from "../../assets/landDestinations/loc.svg";
 import { useTranslation } from "react-i18next";
-
+import cn from 'classnames'
+import useTheme from "../../hooks/useTheme";
 
 const LandDestinations = () => {
   const {t} = useTranslation();
+  const { isDark } = useTheme();
   return (
     <section className={css.wrapper}>
       <main className={css.wrap_info}>
-        <h2>{t("landDestTitle")} </h2>
+        <h1>{t("landDestTitle")} </h1>
         <p>{t("landDestInfo")}</p>
-        <ul>
-          <li>{t("landDestUl1")}</li>
-          <li>{t("landDestUl2")}</li>
-          <li>{t("landDestUl3")}</li>
-          <li>{t("landDestUl4")}</li>
-          <li>{t("landDestUl5")}</li>
-          <li>{t("landDestUl6")}</li>
+        <ul
+          className={cn("Layout", {
+            dark_text_ul: isDark,
+          })}
+        >
+          <li>
+            <span>{t("landDestUl1")}</span>
+          </li>
+          <li>
+            <span>{t("landDestUl2")}</span>
+          </li>
+          <li>
+            <span>{t("landDestUl3")}</span>
+          </li>
+          <li>
+            <span>{t("landDestUl4")}</span>
+          </li>
+          <li>
+            <span>{t("landDestUl5")}</span>
+          </li>
+          <li>
+            <span>{t("landDestUl6")}</span>
+          </li>
         </ul>
       </main>
       <main className={css.wrap_card}>
@@ -53,7 +71,7 @@ const LandDestinations = () => {
           <h4>{t("vietnam")}</h4>
           <div>
             <img src={loc} alt="" />
-            <span>{t("landDestAsia")}</span>
+            <span  >{t("landDestAsia")}</span>
           </div>
         </div>
       </main>

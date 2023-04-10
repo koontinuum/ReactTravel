@@ -3,6 +3,8 @@
   --accent-light: white;
   --bg-dark:  #161C24;
   --bg-light: white;
+  --text-grey: #637381;
+  --bg-card:#212B36;
 }
 
 
@@ -112,10 +114,30 @@ legend {
 }
 
 
-.Layout.dark{
-  background-color: var(--accent-dark);
+
+.Layout p, span{
+color: var(--text-grey);
+
+}
+.Layout.dark h1, h2, h3, h4, b{
   color: var(--accent-light);
 }
-.Layout.Dark h1, h2, h3, h4{
-  color: var(--accent-light)
+/*.Layout h1, h2, h3, h4{
+  color: var(--bg-dark);
+}*/
+.Layout.dark{
+  background-color: var(--bg-dark);
+  /*color: var(--accent-light);*/
+}
+
+
+.card_tour{
+  background-color: var(--bg-card)!important;
+}
+.dark_text {
+  color: var(--accent-light)!important;
+}
+
+.dark_text_ul li span {
+  color: var(--accent-light)!important;
 }

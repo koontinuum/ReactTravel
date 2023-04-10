@@ -1,5 +1,6 @@
 import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
+import darkLogo from '../../assets/icon/Logodark.png'
 import searchIcon from "../../assets/searchIcon.svg";
 import { useTranslation } from "react-i18next";
 import sun from "../../assets/icon/sun.png";
@@ -18,7 +19,7 @@ function Header() {
     <div className="container">
       <div className={css.wrapper}>
         <div className={css.left}>
-          <img src={logo} alt="" />
+          {isDark ? <img src={darkLogo} alt="" /> : <img src={logo} alt="" />}
           <a href="">{t("headHome")}</a>
           <a href="">{t("headComp")}</a>
           <a href="">{t("headPage")}</a>

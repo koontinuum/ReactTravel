@@ -12,6 +12,7 @@
     font-size: 48px;
     line-height: 64px;
     color: #212b36;
+    margin-bottom: 20px;
   }
   p {
     font-family: "Poppins";
@@ -20,114 +21,7 @@
     font-size: 16px;
     line-height: 28px;
   }
-  .wrapperContent {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    width: 1152px;
-    height: 435px;
-    margin-top: 80px;
-    .card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0px;
-      width: 270px;
-      height: 435px;
-      background: #ffffff;
-      box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
-      border-radius: 16px;
-      cursor: pointer;
-      .top,
-      .top2,
-      .top3,
-      .top4 {
-        height: 242px;
-        width: 269.9999084472656px;
-        border-radius: 16px 16px 0 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        padding: 17px 12px 0 16px;
-        .price {
-          display: flex;
-          flex-direction: row;
-          align-items: flex-start;
-          padding: 0px 8px;
-          width: 56px;
-          height: 26px;
-          background: #212b36;
-          border-radius: 6px;
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 26px;
-          text-align: center;
-          color: #ffffff;
-        }
-      }
-      .center {
-        margin-top: 20px;
-        border-bottom: 1px dashed rgba(145, 158, 171, 0.24);
-        width: 100%;
-        padding-left: 20px;
-        h1 {
-          width: 230px;
-          height: 56px;
-          font-family: "Barlow";
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 28px;
-          color: #212b36;
-          margin-bottom: 40px;
-        }
-        h2 {
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 13px;
-          line-height: 24px;
-          color: #637381;
-        }
-      }
-      .bottom {
-        width: 100%;
-        height: 68px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 59.7px;
-        p {
-          display: flex;
-          align-items: center;
-          gap: 9px;
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 13px;
-          line-height: 24px;
-          text-align: center;
-          color: #919eab;
-        }
-        b {
-          display: flex;
-          align-items: center;
-          gap: 5.67px;
-          font-family: "Barlow";
-          font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 28px;
-          text-align: center;
-          color: #212b36;
-        }
-      }
-    }
-  }
+  
 }
 .toursBtn {
   display: flex;
@@ -139,7 +33,6 @@
   height: 48px;
   background: #fa541c;
   border-radius: 8px;
-  margin-top: 80px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -147,19 +40,111 @@
   line-height: 26px;
   color: #ffffff;
 }
-.card:hover {
-  transition: 1s;
-  transform: scale(1.1);
+
+
+.cardContent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 80px auto;
 }
-.top {
-  background: url(../../assets/TourContentImages/card1.svg);
+.card {
+  display: flex;
+  width: 300px;
+  height: 460px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+  border-radius: 16px;
+  position: relative;
+  flex-direction: column;
+
+  img {
+    width: 300px;
+    height: 260px;
+    border-radius: 10px;
+
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 10px;
+
+    h1 {
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+  p {
+   
+    line-height: 19px;
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
+
+  .card_like {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+  }
+
+  .card_price {
+    width: 56px;
+    height: 26px;
+    position: absolute;
+    background-color: #212B36;
+    border-radius: 8px;
+    top: 13px;
+    left: 13px;
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+  }
 }
-.top2 {
-  background: url(../../assets/TourContentImages/card2.svg);
-}
-.top3 {
-  background: url(../../assets/TourContentImages/card3.svg);
-}
-.top4 {
-  background: url(../../assets/TourContentImages/card4.svg);
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    align-items: center;
+    h1{
+      font-size: 32px;
+    }
+    p{
+      width: 80%;
+      text-align: center;
+      font-size: 13px;
+    }
+  }
+
+  .cardContent{
+    width: 80%;
+    justify-content: center;
+  }
 }

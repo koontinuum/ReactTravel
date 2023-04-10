@@ -10,13 +10,12 @@
     align-items: flex-start;
     padding-left: 10%;
 
-		h2 {
+		h1 {
 			font-family: "Barlow";
 			font-style: normal;
 			font-weight: 700;
 			font-size: 48px;
 			line-height: 64px;
-			color: #212b36;
 			width: 55%;
 		}
 
@@ -27,7 +26,7 @@
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 28px;
-			color: #637381;
+			
 		}
 
 		ul {
@@ -74,7 +73,6 @@
 
   > img {
     position: absolute;
-    z-index: -1;
     left: -24px;
     top: 24px;
   }
@@ -86,6 +84,7 @@
     font-size: 24px;
     line-height: 36px;
     color: #ffffff;
+    z-index: 10;
   }
 
   div {
@@ -101,6 +100,7 @@
     color: #ffffff;
     opacity: 0.48;
     column-gap: 15px;
+        z-index: 10;
   }
 }
 
@@ -118,7 +118,7 @@
 
   > img {
     position: absolute;
-    z-index: -1;
+
     left: -24px;
     top: 24px;
   }
@@ -130,6 +130,7 @@
     font-size: 24px;
     line-height: 36px;
     color: #ffffff;
+        z-index: 10;
   }
 
   div {
@@ -145,6 +146,7 @@
     color: #ffffff;
     opacity: 0.48;
     column-gap: 15px;
+        z-index: 10;
   }
 }
 
@@ -162,7 +164,6 @@
 
   > img {
     position: absolute;
-    z-index: -1;
     left: -24px;
     top: 24px;
   }
@@ -173,7 +174,8 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    color: #ffffff;
+    //color: #ffffff;
+        z-index: 10;
   }
 
   div {
@@ -189,6 +191,7 @@
     color: #ffffff;
     opacity: 0.48;
     column-gap: 15px;
+        z-index: 10;
   }
 }
 
