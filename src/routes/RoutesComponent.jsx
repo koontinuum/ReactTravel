@@ -5,12 +5,12 @@ import DetailsPage from "../pages/DetailsPage/DetailsPage";
 
 function RoutesComponent() {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/detailspage" element={<DetailsPage />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

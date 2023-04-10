@@ -20,6 +20,9 @@
     line-height: 24px;
     color: #919eab;
   }
+  .left a:hover {
+    color: #fa541c;
+  }
   .right {
     width: 25%;
     display: flex;
@@ -29,12 +32,12 @@
     gap: 20px;
     .leftContent {
       border-right: 1px solid rgba(171, 145, 150, 0.24);
-      width: 100px;
+      width: 100%;
       display: flex;
       align-items: center;
     }
     .login {
-      width: 83px;
+      width: 100%;
       height: 36px;
       background: none;
       color: #ffffff;
@@ -44,7 +47,7 @@
       cursor: pointer;
     }
     .joinUs {
-      width: 83px;
+      width: 100%;
       height: 36px;
       border-radius: 8px;
       color: #212b36;
@@ -57,9 +60,29 @@
   }
 }
 
-.toogleTheme{
-  img{
-    width: 45px;
-    height: 45px;
+.toogleTheme {
+  img {
+    margin-right: 32px;
+    width: 24px;
+    height: 24px;
+  }
+}
+.langButton {
+  width: 50px;
+}
+.langButton button:hover {
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+.btnlink {
+  color: #ffffff;
+}
+@media (max-width: 576px) {
+  .left a {
+    display: none;
+  }
+  .login,
+  .joinUs {
+    display: none;
   }
 }

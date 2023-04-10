@@ -47,3 +47,25 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .wrapper {
+    h1 {
+      width: 335px;
+      height: 84px;
+      font-size: 32px;
+      line-height: 42px;
+    }
+    p {
+      width: 335px;
+      height: 84px;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .framesContents {
+      flex-direction: column;
+      width: auto;
+      height: 820px;
+      gap: 64px;
+    }
+  }
+}
