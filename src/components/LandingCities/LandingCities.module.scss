@@ -81,3 +81,17 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .wrapper {
+    .text {
+      button {
+        display: none;
+      }
+    }
+  }
+  .wrapper .cards {
+    div {
+      flex-direction: column;
+    }
+  }
+}

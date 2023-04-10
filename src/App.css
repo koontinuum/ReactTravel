@@ -1,12 +1,11 @@
-:root{
+:root {
   --accent-dark: black;
   --accent-light: white;
-  --bg-dark:  #161C24;
+  --bg-dark: #161c24;
   --bg-light: white;
   --text-grey: #637381;
   --bg-card:#212B36;
 }
-
 
 * {
   padding: 0px;
@@ -23,9 +22,9 @@
 a,
 a:link,
 a:visited {
-  /* color: inherit; */
+  color: inherit;
   text-decoration: none;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 a:hover {
@@ -112,7 +111,6 @@ legend {
   width: 85%;
   margin: 0 auto;
 }
-
 
 
 .Layout p, span{

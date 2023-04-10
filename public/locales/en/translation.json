@@ -1,4 +1,3 @@
-
 {
   "headHome": "Home",
   "headComp": "Components",
@@ -58,18 +57,23 @@
   "postMay": "May",
   "cityTourBtn": "View All",
   "postTitle": "To avoid conflicts it is recommended that business",
-"postInfo": "Business stakeholders review wireframes to ensure that requirements and objectives",
- "posth1": "Latest Posts",
- "postSubt": "Understanding color theory: the color wheel and finding complementary colors",
- "postText": "Digital product design news, articles, and resources delivered straight to your inbox.",
- "aug": "Aug",
- "postSubt1": "Any mechanical keyboard enthusiasts in design?",
- "postText1": " Sidebar has been collecting the best design links of the day since October 2012. It's maintained by Sacha Greif and built with ...",
- "jul": "Jul",
- "postSubt2": "The More Important the Work, the More Important the Rest",
- "postText2": "Interested in digital strategy? Subscribe and get the 5 most piping hot links of the week, emailed straight to your inbox.",
+  "postInfo": "Business stakeholders review wireframes to ensure that requirements and objectives",
+  "posth1": "Latest Posts",
+  "postSubt": "Understanding color theory: the color wheel and finding complementary colors",
+  "postText": "Digital product design news, articles, and resources delivered straight to your inbox.",
+  "aug": "Aug",
+  "postSubt1": "Any mechanical keyboard enthusiasts in design?",
+  "postText1": " Sidebar has been collecting the best design links of the day since October 2012. It's maintained by Sacha Greif and built with ...",
+  "jul": "Jul",
+  "postSubt2": "The More Important the Work, the More Important the Rest",
+  "postText2": "Interested in digital strategy? Subscribe and get the 5 most piping hot links of the week, emailed straight to your inbox.",
   "custTitle": "What Our Customer Say",
   "custText": " Amazing experience i love it a lot. Thanks to the team that dreams come true, great! I appreciate there attitude and approach.",
-  "custName":"Robert Fox"
-
+  "custName": "Robert Fox",
+  "headTourC1": "3 days 2 nights",
+  "headTourC2": "4.8 reviews",
+  "headTourC3": "Starting at $69",
+  "TCnameTour1": "Thailand",
+  "TCnameTour2": "Europe",
+  "TCnameTour3": "India"
 }

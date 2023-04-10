@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import css from "./TourContent.module.scss";
 import Header from "../Header/Header";
 import timeLogo from "../../assets/TourContentImages/timeIcon.svg";
@@ -9,23 +12,24 @@ import LondonImg from "../../assets/TourContentImages/LondonImage.svg";
 import IndiaImg from "../../assets/TourContentImages/IndiaImage.svg";
 import locationLogo from "../../assets/TourContentImages/locationIcon.svg";
 import searchIcon from "../../assets/searchIcon.svg";
-import { useTranslation } from "react-i18next";
-import { useState } from "react";
 
 function TourContent() {
-  const [tour, setTour] = useState("Thailand");
-
+  const { t } = useTranslation();
+  // const [tour, setTour] = useState(t("TCnameTour1"));
+  const [tourT, setTourT] = useState(1);
   const tourClick = () => {
-    setTour("Europe");
+    // setTour(t("TCnameTour2"));
+    setTourT(2);
   };
   const tourClick1 = () => {
-    setTour("Thailand");
+    // setTour(t("TCnameTour1"));
+    setTourT(1);
   };
   const tourClick2 = () => {
-    setTour("India");
+    // setTour(t("TCnameTour3"));
+    setTourT(3);
   };
 
-  const { t } = useTranslation();
   return (
     <div className={css.tourContent}>
       <Header />
@@ -34,25 +38,32 @@ function TourContent() {
           <div className={css.centerWrapper}>
             <div className={css.centralContent}>
               <b>{t("headTourb")}</b>
-
               <div className={css.mainTourText}>
-                <h1>{tour}</h1>
+                <h1>
+                  {tourT > 1
+                    ? tourT == 2
+                      ? t("TCrh12")
+                      : t("TCrh13")
+                    : t("TCrh11")}
+                </h1>
               </div>
-
               <div className={css.info}>
                 <p>
-                  <img src={timeLogo} alt="" />3 days 2 nights
+                  <img src={timeLogo} alt="" />
+                  {t("headTourC1")}
                 </p>
                 <p>
                   <img src={starLogo} alt="" />
-                  4.8 reviews
+                  {t("headTourC2")}
                 </p>
                 <p>
                   <img src={moneyLogo} alt="" />
-                  Starting at $69
+                  {t("headTourC3")}
                 </p>
               </div>
-              <button>{t("headTourBtn")}</button>
+              <button className={css.btnlink}>
+                <Link to="/detailspage">{t("headTourBtn")}</Link>
+              </button>
             </div>
             <div className={css.options}>
               <div className={css.option1} onClick={tourClick1}>
@@ -106,6 +117,18 @@ function TourContent() {
             <img src={searchIcon} alt="" />
           </button>
         </div>
+      </div>
+      <div className={css.tourInputsPhone}>
+        <input type="text" placeholder={t("tourInp1")} />
+        <input
+          className={css.inpBorders}
+          type="text"
+          placeholder={t("tourInp2")}
+        />
+        <input type="text" placeholder={t("tourInp3")} />
+        <button>
+          <img src={searchIcon} alt="" />
+        </button>
       </div>
     </div>
   );
