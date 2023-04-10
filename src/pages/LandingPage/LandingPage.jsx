@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import LandingDevice from "../../components/LandingDevice/LandingDevice";
 import LandingFrames from "../../components/LandingFrames/LandingFrames";
 import LandingTours from "../../components/LandingTours/LandingTours";
+import LandingCities from "../../components/LandingCities/LandingCities";
 
 function LandingPage() {
   return (
@@ -13,8 +14,10 @@ function LandingPage() {
       <LandingDevice />
       <LandingFrames />
       <LandDestinations />
+      <LandingCities />
+
       <LandingTours />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
