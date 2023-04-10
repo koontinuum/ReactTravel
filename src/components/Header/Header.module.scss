@@ -47,20 +47,40 @@
       cursor: pointer;
     }
     .joinUs {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 6px 16px;
       width: 100%;
       height: 36px;
-      border-radius: 8px;
-      color: #212b36;
       background: #ffffff;
-      font-size: 15px;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
+      border-radius: 8px;
     }
   }
 }
-
-
+.login1 {
+  width: 100%;
+  height: 36px;
+  background: none;
+  color: #212b36;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.joinUs1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  width: 100%;
+  height: 36px;
+  color: #ffffff;
+  background: #212b36;
+  border-radius: 8px;
+}
 .toogleTheme {
   img {
     margin-right: 32px;
@@ -78,6 +98,10 @@
 .btnlink {
   color: #ffffff;
 }
+.logo {
+  width: 75px;
+  height: 20px;
+}
 @media (max-width: 576px) {
   .left a {
     display: none;
@@ -87,5 +111,3 @@
     display: none;
   }
 }
-
-
