@@ -1,11 +1,13 @@
 import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
+import searchIcon from "../../assets/searchIcon.svg";
 import { useTranslation } from "react-i18next";
 import sun from "../../assets/icon/sun.png";
 import moon from "../../assets/icon/moon.png";
 import useTheme from "../../hooks/useTheme";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
 
 const lngs = {
   en: { nativeName: "Eng" },
@@ -24,7 +26,7 @@ function Header() {
       <div className={css.wrapper}>
         <div className={css.left}>
           <img src={logo} alt="" />
-          <Link to="/">{t("headHome")}</Link>
+          <a href="">{t("headHome")}</a>
           <a href="">{t("headComp")}</a>
           <a href="">{t("headPage")}</a>
           <a href="">{t("headDocum")}</a>

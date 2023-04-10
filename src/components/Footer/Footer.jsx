@@ -8,8 +8,19 @@ import insta from "../../assets/insta.svg";
 import IN from "../../assets/in.svg";
 import twitter from "../../assets/twitter.svg";
 import logo from "../../assets/logo.svg";
+import useTheme from "../../hooks/useTheme";
+import cn from "classnames"
+import logodark from '../../assets/icon/Logodark.png'
+import fb from '../../assets/icon/fbDark.png'
+import ins from '../../assets/icon/insDark.png'
+import inDark from '../../assets/icon/inDark.png'
+import twitDark from '../../assets/icon/twitDark.png'
+import messDark from '../../assets/icon/messDark.png'
+import locDark from '../../assets/icon/locDark.png'
+
 
 function Footer() {
+  const { isDark } = useTheme();
   return (
     <div className={css.wrapper}>
       <div className={css.newSettler}>
@@ -24,11 +35,15 @@ function Footer() {
             <button>
               <img src={right} alt="" />
             </button>
-            </span>
-            </div>
+          </span>
         </div>
-    <div className={css.zone}>
-        <img className={css.logo} src={logo} alt="" />
+      </div>
+      <div className={css.zone}>
+        {isDark ? (
+          <img className={css.logo} src={logodark} alt="" />
+        ) : (
+          <img className={css.logo} src={logo} alt="" />
+        )}
         <div className={css.contacts}>
           <p className={css.contactText}>
             The starting point for your next project based on easy-to-customize
@@ -36,12 +51,32 @@ function Footer() {
           </p>
           <div className={css.how2Find}>
             <div className={css.Email}>
-              <img src={mail} alt="" />
-              <p>info@example.com</p>
+              {isDark ? (
+                <img src={messDark} alt="" />
+              ) : (
+                <img src={mail} alt="" />
+              )}
+              <p
+                className={cn("Layout", {
+                  dark_text: isDark,
+                })}
+              >
+                info@example.com
+              </p>
             </div>
             <div className={css.place}>
-              <img src={location} alt="" />
-              <p>655 Schaefer Dale</p>
+              {isDark ? (
+                <img src={locDark} alt="" />
+              ) : (
+                <img src={location} alt="" />
+              )}
+              <p
+                className={cn("Layout", {
+                  dark_text: isDark,
+                })}
+              >
+                655 Schaefer Dale
+              </p>
             </div>
           </div>
           <div className={css.inputContact}>
@@ -51,12 +86,23 @@ function Footer() {
             </button>
           </div>
         </div>
-        <div className={css.socials}>
-          <img src={face} alt="" />
-          <img src={insta} alt="" />
-          <img src={IN} alt="" />
-          <img src={twitter} alt="" />
-        </div>
+
+        {isDark ? (
+          <div className={css.socials}>
+            <img src={fb} alt="" />
+            <img src={ins} alt="" />
+            <img src={inDark} alt="" />
+            <img src={twitDark} alt="" />
+          </div>
+        ) : (
+          <div className={css.socials}>
+            <img src={face} alt="" />
+            <img src={insta} alt="" />
+            <img src={IN} alt="" />
+            <img src={twitter} alt="" />
+          </div>
+        )}
+
         <div className={css.service}>
           <p className={css.copyright}>© 2021. All rights reserved</p>
           <div className={css.feedBack}>
@@ -64,7 +110,7 @@ function Footer() {
             <p className={css.copyright}>Terms of Service</p>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   );
 }

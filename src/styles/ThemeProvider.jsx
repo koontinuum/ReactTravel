@@ -6,7 +6,6 @@ export const ThemeProider = ({children}) =>{
 const [isDark, setIsDark] = useState(false)
 const value = useMemo(() => ({ isDark,  setIsDark}),[isDark])
 
-
 return<ThemeContext.Provider value={value}>
 	{children}
 </ThemeContext.Provider>
