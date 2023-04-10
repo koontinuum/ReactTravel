@@ -1,12 +1,10 @@
 import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
-import searchIcon from "../../assets/searchIcon.svg";
 import { useTranslation } from "react-i18next";
 import sun from "../../assets/icon/sun.png";
 import moon from "../../assets/icon/moon.png";
 import useTheme from "../../hooks/useTheme";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+
 
 
 const lngs = {
@@ -17,10 +15,6 @@ const lngs = {
 function Header() {
   const { t, i18n } = useTranslation();
   const { isDark, setIsDark } = useTheme();
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
   return (
     <div className="container">
       <div className={css.wrapper}>

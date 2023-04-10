@@ -6,6 +6,7 @@ import LandingDevice from "../../components/LandingDevice/LandingDevice";
 import LandingFrames from "../../components/LandingFrames/LandingFrames";
 import LandingTours from "../../components/LandingTours/LandingTours";
 import LandingCities from "../../components/LandingCities/LandingCities";
+import LandingPost from "../../components/LandingPost/LandingPost";
 
 function LandingPage() {
   return (
@@ -15,7 +16,7 @@ function LandingPage() {
       <LandingFrames />
       <LandDestinations />
       <LandingCities />
-
+<LandingPost/>
       <LandingTours />
       <Footer />
     </div>
