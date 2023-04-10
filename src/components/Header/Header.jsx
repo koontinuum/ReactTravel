@@ -1,9 +1,11 @@
 import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
+import logodark from "../../assets/icon/Logodark.png";
 import { useTranslation } from "react-i18next";
 import sun from "../../assets/icon/sun.png";
 import moon from "../../assets/icon/moon.png";
 import useTheme from "../../hooks/useTheme";
+import { Link } from "react-router-dom";
 
 
 
@@ -19,8 +21,12 @@ function Header() {
     <div className="container">
       <div className={css.wrapper}>
         <div className={css.left}>
-          <img src={logo} alt="" />
-          <a href="">{t("headHome")}</a>
+          {isDark ? (
+            <img className={css.logo} src={logodark} alt="" />
+          ) : (
+            <img className={css.logo} src={logo} alt="" />
+          )}
+          <Link to="/">{t("headHome")}</Link>
           <a href="">{t("headComp")}</a>
           <a href="">{t("headPage")}</a>
           <a href="">{t("headDocum")}</a>
@@ -45,8 +51,16 @@ function Header() {
               ))}
             </div>
           </div>
-          <button className={css.login}>{t("headLogBtn")}</button>
-          <button className={css.joinUs}>{t("headJoinBtn")}</button>
+          {isDark ? (
+            <button className={css.login}>{t("headLogBtn")}</button>
+          ) : (
+            <button className={css.login1}>{t("headLogBtn")}</button>
+          )}
+          {isDark ? (
+            <button className={css.joinUs}>{t("headJoinBtn")}</button>
+          ) : (
+            <button className={css.joinUs1}>{t("headJoinBtn")}</button>
+          )}
         </div>
       </div>
     </div>
