@@ -163,3 +163,25 @@
 .top4 {
   background: url(../../assets/TourContentImages/card4.svg);
 }
+@media (max-width: 576px) {
+  .wrapper {
+    h1 {
+      width: 213px;
+      height: 42px;
+      font-size: 32px;
+      line-height: 42px;
+    }
+    p {
+      width: 335px;
+      height: 56px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .wrapperContent {
+      flex-direction: column;
+      width: auto;
+      height: 1780px;
+    }
+  }
+}

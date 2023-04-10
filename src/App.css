@@ -1,10 +1,9 @@
-:root{
+:root {
   --accent-dark: black;
   --accent-light: white;
-  --bg-dark:  #161C24;
+  --bg-dark: #161c24;
   --bg-light: white;
 }
-
 
 * {
   padding: 0px;
@@ -21,9 +20,9 @@
 a,
 a:link,
 a:visited {
-  /* color: inherit; */
+  color: inherit;
   text-decoration: none;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 a:hover {
@@ -111,11 +110,13 @@ legend {
   margin: 0 auto;
 }
 
-
-.Layout.dark{
+.Layout.dark {
   background-color: var(--accent-dark);
   color: var(--accent-light);
 }
-.Layout.Dark h1, h2, h3, h4{
-  color: var(--accent-light)
+.Layout.Dark h1,
+h2,
+h3,
+h4 {
+  color: var(--accent-light);
 }
