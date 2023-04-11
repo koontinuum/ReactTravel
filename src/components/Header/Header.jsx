@@ -7,8 +7,6 @@ import moon from "../../assets/icon/moon.png";
 import useTheme from "../../hooks/useTheme";
 import { Link } from "react-router-dom";
 
-
-
 const lngs = {
   en: { nativeName: "Eng" },
   ru: { nativeName: "Rus" },
