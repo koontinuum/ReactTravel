@@ -1,410 +1,396 @@
-.wrapper{
-   
+.wrapper {
 }
-.zone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.request{
-    display: flex;
-    align-items: center;
-    
-    padding: 290px 0px;
-    gap: 318px;
-    height: 372px;
-    
-    
+.request {
+  display: flex;
+  align-items: center;
+
+  padding: 290px 0px;
+  gap: 318px;
+  height: 372px;
 }
-.logo{
-    width: 73.89px;
-    height: 20px;
+.logo {
+  width: 73.89px;
+  height: 20px;
 }
-.Information{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 62px;
+.Information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 62px;
 }
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
 }
-span{
-    display:flex  ;
-    align-items: center;
-    gap: 10px;
+span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+.sendReq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+
+.btn {
+  width: 172px;
+  height: 48px;
+  background: #fa541c;
+  border-radius: 8px;
+  border: none;
+}
+.newSettler {
+  display: flex;
+  align-items: center;
+  padding: 64px 144px;
+  justify-content: space-around;
+  height: 208px;
+  background: #f9fafb;
+  input {
+    width: 466px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 15px;
+    border: none;
+    background: rgba(145, 158, 171, 0.08);
+    border-radius: 8px;
+  }
+}
+.infos {
+  display: flex;
+  gap: 20px;
+}
+.offerDis {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 558px;
+  height: 70px;
+}
+.signUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  width: 466px;
+  height: 56px;
+}
+.offer {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #212b36;
+}
+.discount {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+.signUpBtn {
+  width: 102px;
+  height: 56px;
+  background: #fa541c;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  color: #ffffff;
+}
+.zone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 144px 32px;
+  @media only screen and (min-width: 300px) and (max-width: 590px) {
+    padding: 30px;
+  }
+  .logo {
+    @media only screen and (min-width: 300px) and (max-width: 590px) {
+      width: auto;
+    }
+  }
+  .contactText {
+    @media only screen and (min-width: 300px) and (max-width: 590px) {
+      width: 100%;
+    }
+  }
+  button {
+    @media only screen and (min-width: 300px) and (max-width: 590px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 10px;
+      gap: 8px;
+      width: 39.07px;
+      height: 40px;
+    }
+  }
+  .contacts {
+    @media only screen and (min-width: 300px) and (max-width: 590px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  }
+  .inputContact {
+    width: 310px;
+    height: 48px;
+    background: rgba(145, 158, 171, 0.08);
+    border-radius: 8px;
+    padding: 10px;
+    @media only screen and (min-width: 300px) and (max-width: 590px) {
+      width: 325px;
+    }
+  }
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px 0px;
+  gap: 322px;
+}
+.how2Find {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+.Email,
+.place {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgb(40, 42, 43);
+  }
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+.inputContact {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #919eab;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+  }
+}
+.feedBack {
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.copyright {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #637381;
+}
+.contactText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #637381;
+  width: 290px;
+}
+.inputBtn {
+  width: 50px;
+  height: 56px;
+  background: #fa541c;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newSettler {
+  background-image: url("../../assets/newSettlerBG.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 504px;
+  display: flex;
+  justify-content: flex-end;
+  @media only screen and (min-width: 300px) and (max-width: 1300px) {
+    background-image: url("../../assets/adaptiveBG.svg");
+    padding: 10px;
+  }
+  h1 {
+    @media only screen and (min-width: 300px) and (max-width: 1100px) {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+  input {
+    @media only screen and (min-width: 300px) and (max-width: 1100px) {
+      width: 305px;
+    }
+  }
+}
+.newSettlerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  @media only screen and (min-width: 300px) and (max-width: 1100px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+  p {
+    @media only screen and (min-width: 300px) and (max-width: 1100px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .newInp {
+    @media only screen and (min-width: 300px) and (max-width: 1100px) {
+      display: flex;
+      gap: 0px;
+      align-items: center;
+      background: rgba(145, 158, 171, 0.08);
+      backdrop-filter: blur(4px);
+    }
+  }
+  h1 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #ffffff;
+    @media only screen and (min-width: 300px) and (max-width: 1100px) {
+      font-family: "Barlow";
+      text-align: center;
+      width: 100%;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+  p {
+    font-family: "Poppins";
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-
-    
-}
-.sendReq{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-}
-.inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-    
-}
-
-.btn{
-    width: 172px;
-    height: 48px; 
-    background: #FA541C;
-    border-radius: 8px;
-    border: none;
-}
-.newSettler{
-    display: flex;
-    align-items: center;
-    padding: 64px 144px;
-    justify-content: space-around;
-    height: 208px;  
-    background: #F9FAFB;
-    input{
-        width: 466px;
-        height: 56px;  
-        border-radius: 8px;
-        padding: 15px;
-        border: none;
-        background: rgba(145, 158, 171, 0.08);
-        border-radius: 8px;
+    color: #ffffff;
+    @media only screen and (max-width: 1100px) {
+      width: 100%;
+      text-align: center;
     }
-}
-.infos{
-    display: flex;
-    gap: 20px;
-
-}
-.offerDis{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 558px;
-    height: 70px;
-}
-.signUp{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    
-    width: 466px;
-    height: 56px;
-}
-.offer{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;  
-    color: #212B36;
-    
-}
-.discount{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 26px;  
-   
-}
-.signUpBtn{
-    width: 102px;
-    height: 56px; 
-    background: #FA541C;
-    border-radius: 0px 8px 8px 0px;
-    border: none;
-    color: #FFFFFF;
-}
-.zone{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 80px 144px 32px;
-    @media only screen and (min-width: 300px) and (max-width: 590px){
-        padding: 30px;
-    }
-    .logo{
-        @media only screen and (min-width: 300px) and (max-width: 590px){
-            width: 100%;
-        }
-    }
-    .contactText{
-        @media only screen and (min-width: 300px) and (max-width: 590px){
-            width: 100%;
-        }
-    }
-    button{
-        @media only screen and (min-width: 300px) and (max-width: 590px){
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 4px 10px;
-            gap: 8px;
-            width: 39.07px;
-            height: 40px;
-        }
-    }
-    .contacts{
-        @media only screen and (min-width: 300px) and (max-width: 590px){
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            text-align: center;
-        }
-    }
-    .inputContact{
-        width: 310px;
-        height: 48px;
-        background: rgba(145, 158, 171, 0.08);
-        border-radius: 8px;
-        padding: 10px;
-        @media only screen and (min-width: 300px) and (max-width: 590px){
-            width: 325px;
-        }
-    }
-}
-.contacts{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px 0px;
-    gap: 322px;    
-}
-.how2Find{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    
-}
-.Email , .place{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;  
-  
-    p{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 28px;
-        color: rgb(40, 42, 43);
-    }  
-}
-.socials{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 20px;  
-}
-.service{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 100px;
-    p{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 24px;
-    }
-}
-.inputContact{
-    font-family: 'Poppins';
+  }
+  .newInp {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
-    color: #919EAB;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    input{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 310px;
+    color: #919eab;
+    @media only screen and (min-width: 300px) and (max-width: 1100px) {
+      text-align: center;
+      display: flex;
+      justify-content: center;
     }
+    button {
+      width: 50px;
+      height: 56px;
+      background: #fa541c;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    input {
+    }
+  }
 }
-.feedBack{
-    gap: 30px;
-    display: flex;
-    flex-direction: row;
-}
-.copyright{
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 24px;
-    color: #637381;
-}
-.contactText{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 24px;
-    color: #637381;
-    width: 290px;
-}
-.inputBtn{
-
-    width: 50px;
-    height: 56px;
-    background: #FA541C;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.newSettler{
-    background-image: url('../../assets/newSettlerBG.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 504px;
-    display: flex;
-    justify-content: flex-end;
-    @media only screen and (min-width: 300px) and (max-width: 1300px){
-        background-image: url('../../assets/adaptiveBG.svg');
-        padding: 10px;
-        
-    }
-    h1{
-        @media only screen and (min-width: 300px) and (max-width: 1100px){
-            font-family: 'Barlow';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 42px;
-        }
-    }
-    input{
-        @media only screen and (min-width: 300px) and (max-width: 1100px){
-            width: 305px;
-        }
-    }
-}
-.newSettlerInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 25px;
-    @media only screen and (min-width: 300px) and (max-width: 1100px){
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        gap: 20px;
-    }
-    p{
-        @media only screen and (min-width: 300px) and (max-width: 1100px){
-            width: 100%;
-            text-align: center;
-        }
-    }
-    .newInp{
-        @media only screen and (min-width: 300px) and (max-width: 1100px){
-            display: flex;
-            gap: 0px;
-            align-items: center;
-            background: rgba(145, 158, 171, 0.08);
-            backdrop-filter: blur(4px);            
-        }
-    }
-    h1{
-        font-family: 'Barlow';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 64px;
-        color: #FFFFFF;
-        @media only screen and (min-width: 300px) and (max-width: 1100px){
-            font-family: 'Barlow';
-            text-align: center;
-            width: 100%;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 42px;
-        }
-    }
-    p{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        color: #FFFFFF;   
-        @media only screen and (max-width: 1100px){
-            width: 100%;
-            text-align: center;
-        }
-    }
-    .newInp{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 26px;
-        color: #919EAB;
-        @media only screen and (min-width: 300px) and (max-width: 1100px){
-            
-            text-align: center;
-            display: flex;
-            justify-content: center;
-        }
-        button{
-            width: 50px;
-            height: 56px;
-            background: #FA541C;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        input{
-            
-        }
-    }
-}
-
 
 @media screen and (max-width: 400px) {
-    .zone{
-align-items: center;
-    }
-    .contacts{
-        align-items: center;
-    }
-    .service{
-        flex-direction: column;
-    }
+  .zone {
+    align-items: center;
+  }
+  .contacts {
+    align-items: center;
+  }
+  .service {
+    flex-direction: column;
+  }
 }
