@@ -35,10 +35,14 @@ function DetailsTourContent() {
             <img className={css.mainConImg} src={mainImgSrc} alt="" />
           </div>
           <div className={css.contents}>
-            <img src={con2} alt="" onClick={handleClickForSecondImage} />
-            <img src={con3} alt="" onClick={handleClickForThirdImage} />
-            <img src={con4} alt="" onClick={handleClickForFourthImage} />
-            <img src={con5} alt="" onClick={handleClickForFifthImage} />
+            <div>
+              <img src={con2} alt="" onClick={handleClickForSecondImage} />
+              <img src={con3} alt="" onClick={handleClickForThirdImage} />
+            </div>
+            <div>
+              <img src={con4} alt="" onClick={handleClickForFourthImage} />
+              <img src={con5} alt="" onClick={handleClickForFifthImage} />
+            </div>
           </div>
         </div>
       </div>

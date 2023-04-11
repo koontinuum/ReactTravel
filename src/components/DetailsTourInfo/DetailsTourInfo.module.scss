@@ -315,3 +315,38 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    .left {
+      width: auto;
+      .tourName {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+      }
+      .tourInfo {
+        flex-direction: column;
+        height: 180px;
+      }
+      .TourOverview {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 335px;
+        height: 545px;
+        .contentOverview {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0px;
+          gap: 20px;
+          width: 335px;
+          height: 448px;
+        }
+      }
+    }
+  }
+}
