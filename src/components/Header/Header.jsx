@@ -25,7 +25,7 @@ function Header() {
             <img className={css.logo} src={logo} alt="" />
           )}
           <Link to="/">{t("headHome")}</Link>
-          <a href="">{t("headComp")}</a>
+          <Link to="/Travelpage">{t("headComp")}</Link>
           <a href="">{t("headPage")}</a>
           <a href="">{t("headDocum")}</a>
         </div>
