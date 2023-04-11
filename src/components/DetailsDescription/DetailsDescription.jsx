@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import css from "./DetailsDescription.module.scss";
 import orangeMark from "../../assets/DetailspageImages/orangeMark.svg";
 import grayMark from "../../assets/DetailspageImages/grayMark.svg";
@@ -8,110 +9,91 @@ import linkedinIcon from "../../assets/DetailspageImages/linkedinIcon.svg";
 import twitterIcon from "../../assets/DetailspageImages/twitterIcon.svg";
 
 function DetailsDescription() {
+  const { t } = useTranslation();
+
   return (
     <div className="container">
       <div className={css.descriptionContent}>
         <div>
-          <h1>Tour Description</h1>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+          <h1>{t("DDddh1")}</h1>
+          <p>{t("DDddp")}</p>
         </div>
         <div>
-          <h1>Tour Highlights</h1>
+          <h1>{t("DDddh11")}</h1>
           <ul>
-            <li>
-              A fermentum in morbi pretium aliquam adipiscing donec tempus.
-            </li>
-            <li> Vulputate placerat amet pulvinar lorem nisl.</li>
-            <li>
-              Consequat feugiat habitant gravida quisque elit bibendum id
-              adipiscing sed.
-            </li>
-            <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+            <li>{t("DDddli1")}</li>
+            <li>{t("DDddli2")}</li>
+            <li>{t("DDddli3")}</li>
+            <li>{t("DDddli4")}</li>
           </ul>
         </div>
       </div>
       <div className={css.includesContent}>
-        <h1>Tour Includes</h1>
+        <h1>{t("DDiCh1")}</h1>
         <div>
           <div className={css.lefti}>
             <p>
               <img src={orangeMark} alt="" />
-              Audio guide
+              {t("DDilp1")}
             </p>
             <p>
               <img src={orangeMark} alt="" />
-              Food and drinks
+              {t("DDilp2")}
             </p>
             <b>
               <img src={grayMark} alt="" />
-              Lunch
+              {t("DDilp3")}
             </b>
             <b>
               <img src={grayMark} alt="" />
-              Private tour
+              {t("DDilp4")}
             </b>
             <b>
               <img src={grayMark} alt="" />
-              Special activities
+              {t("DDilp5")}
             </b>
           </div>
           <div className={css.righti}>
             <p>
               <img src={orangeMark} alt="" />
-              Audio guide
+              {t("DDilp6")}
             </p>
             <p>
               <img src={orangeMark} alt="" />
-              Food and drinks
+              {t("DDilp7")}
             </p>
             <b>
               <img src={grayMark} alt="" />
-              Lunch
+              {t("DDilp8")}
             </b>
             <b>
               <img src={grayMark} alt="" />
-              Private tour
+              {t("DDilp9")}
             </b>
             <b>
               <img src={grayMark} alt="" />
-              Special activities
+              {t("DDilp10")}
             </b>
           </div>
         </div>
       </div>
       <div className={css.tourProgramContent}>
-        <h1>Tour Program</h1>
+        <h1>{t("DDtPh1")}</h1>
         <div>
-          <h1>- Day 1</h1>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+          <h1>{t("DDtPh1day1")}</h1>
+          <p>{t("DDtPpDay")}</p>
         </div>
         <div>
-          <h1>- Day 2</h1>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+          <h1>{t("DDtPh1day2")}</h1>
+          <p>{t("DDtPpDay")}</p>
         </div>
         <div>
-          <h1>- Day 3</h1>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
+          <h1>{t("DDtPh1day3")}</h1>
+          <p>{t("DDtPpDay")}</p>
         </div>
       </div>
       <div className={css.sharesContent}>
-        <h1>Share:</h1>
+        <h1>{t("DDsCh1Share")}</h1>
         <div className={css.btn1}>
           <img src={facebookIcon} alt="" />
           Facebook

@@ -2,12 +2,10 @@ import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import logodark from "../../assets/icon/Logodark.png";
 import { useTranslation } from "react-i18next";
-import sun from "../../assets/icon/sun.png";
-import moon from "../../assets/icon/moon.png";
+import sun from "../../assets/free-icon-switch-786484.png";
+import moon from "../../assets/free-icon-switch-786486.png";
 import useTheme from "../../hooks/useTheme";
 import { Link } from "react-router-dom";
-
-
 
 const lngs = {
   en: { nativeName: "Eng" },

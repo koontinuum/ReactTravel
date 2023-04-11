@@ -63,6 +63,11 @@
       height: 36px;
       background: #ffffff;
       border-radius: 8px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
     }
   }
 }
@@ -89,6 +94,11 @@
   color: #ffffff;
   background: #212b36;
   border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .toogleTheme {
@@ -100,6 +110,9 @@
 }
 
 .langButton {
+  button {
+    color: #919eab;
+  }
   width: 50px;
 }
 
@@ -123,9 +136,17 @@
   }
 
   .login,
+
   .joinUs,
   .login1,
   .joinUs1 {
+
+  .login1,
+  .joinUs1 {
+    display: none;
+  }
+  .wrapper .right .joinUs {
+
     display: none;
   }
 }
