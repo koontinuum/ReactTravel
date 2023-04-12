@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import css from "./Footer.module.scss";
 import mail from "../../assets/mail.svg";
 import location from "../../assets/location.svg";
@@ -9,29 +11,31 @@ import IN from "../../assets/in.svg";
 import twitter from "../../assets/twitter.svg";
 import logo from "../../assets/logo.svg";
 import useTheme from "../../hooks/useTheme";
-import cn from "classnames"
-import logodark from '../../assets/icon/Logodark.png'
-import fb from '../../assets/icon/fbDark.png'
-import ins from '../../assets/icon/insDark.png'
-import inDark from '../../assets/icon/inDark.png'
-import twitDark from '../../assets/icon/twitDark.png'
-import messDark from '../../assets/icon/messDark.png'
-import locDark from '../../assets/icon/locDark.png'
-
+import cn from "classnames";
+import logodark from "../../assets/icon/Logodark.png";
+import fb from "../../assets/icon/fbDark.png";
+import ins from "../../assets/icon/insDark.png";
+import inDark from "../../assets/icon/inDark.png";
+import twitDark from "../../assets/icon/twitDark.png";
+import messDark from "../../assets/icon/messDark.png";
+import locDark from "../../assets/icon/locDark.png";
 
 function Footer() {
   const { isDark } = useTheme();
+  const { t } = useTranslation();
+
   return (
     <div className={css.wrapper}>
       <div className={css.newSettler}>
         <div className={css.newSettlerInfo}>
-          <h1>Newsettler</h1>
+          <h1>{t("footerwnnh1")}</h1>
           <p>
-            Sign up now to receive hot special offers <br />
-            and information about the best tours!{" "}
+            {t("footerwnnp1")}
+            <br />
+            {t("footerwnnp2")}
           </p>
           <span className={css.newInp}>
-            <input type="text" placeholder="Enter your email" />
+            <input type="text" placeholder={t("footernewInp")} />
             <button>
               <img src={right} alt="" />
             </button>
@@ -45,10 +49,7 @@ function Footer() {
           <img className={css.logo} src={logo} alt="" />
         )}
         <div className={css.contacts}>
-          <p className={css.contactText}>
-            The starting point for your next project based on easy-to-customize
-            Material-UI © helps you build apps faster and better.
-          </p>
+          <p className={css.contactText}>{t("footercp")}</p>
           <div className={css.how2Find}>
             <div className={css.Email}>
               {isDark ? (
@@ -80,7 +81,7 @@ function Footer() {
             </div>
           </div>
           <div className={css.inputContact}>
-            <input type="text" placeholder="Email adress" />
+            <input type="text" placeholder={t("footeriCi")} />
             <button className={css.inputBtn}>
               <img src={right} alt="" />
             </button>
@@ -104,10 +105,10 @@ function Footer() {
         )}
 
         <div className={css.service}>
-          <p className={css.copyright}>© 2021. All rights reserved</p>
+          <p className={css.copyright}>{t("footersp")}</p>
           <div className={css.feedBack}>
-            <p className={css.copyright}>Help Center</p>
-            <p className={css.copyright}>Terms of Service</p>
+            <p className={css.copyright}>{t("footersp2")}</p>
+            <p className={css.copyright}>{t("footersp3")}</p>
           </div>
         </div>
       </div>

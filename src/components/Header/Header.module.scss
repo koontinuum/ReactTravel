@@ -130,23 +130,65 @@
   height: 20px;
 }
 
+.dropbtn {
+  left: -50px;
+  position: absolute;
+  color: #919eab;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: -17px;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: -50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdowncontent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdowncontent a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #fa541c;
+  background-color: #ddd;
+}
+
 @media (max-width: 576px) {
   .left a {
     display: none;
   }
-
-  .login,
-
-  .joinUs,
-  .login1,
-  .joinUs1 {
-
+  .dropbtn {
+    display: none;
+  }
   .login1,
   .joinUs1 {
     display: none;
   }
-  .wrapper .right .joinUs {
-
+  .wrapper .right .joinUs,
+  .login {
     display: none;
   }
 }

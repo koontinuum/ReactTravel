@@ -25,8 +25,16 @@ function Header() {
             <img className={css.logo} src={logo} alt="" />
           )}
           <Link to="/">{t("headHome")}</Link>
-          <Link to="/Travelpage">{t("headComp")}</Link>
-          <a href="">{t("headPage")}</a>
+          <a href="">{t("headComp")}</a>
+          <div className={css.dropdown}>
+            <button className={css.dropbtn}>{t("headPage")}</button>
+            <div className={css.dropdowncontent}>
+              <Link to="/">{t("headHome")}</Link>
+              <Link to="/Travelpage">{t("pagelistlink")}</Link>
+              <Link to="/detailspage">{t("pagedetailslink")}</Link>
+              <Link to="/aboutpage">{t("pageaboutlink")}</Link>
+            </div>
+          </div>
           <a href="">{t("headDocum")}</a>
         </div>
         <div className={css.right}>
