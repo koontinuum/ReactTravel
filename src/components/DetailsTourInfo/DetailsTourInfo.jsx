@@ -1,5 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+
+import useTheme from "../../hooks/useTheme";
+import cn from "classnames";
+
 import css from "./DetailsTourInfo.module.scss";
 import likeIcon from "../../assets/likeIcon.svg";
 import shareIcon from "../../assets/shareIcon.svg";
@@ -14,6 +18,7 @@ import timesIcon from "../../assets/DetailspageImages/phoneIcon.svg";
 import contactIcon from "../../assets/DetailspageImages/contactIcon.svg";
 
 function DetailsTourInfo() {
+  const { isDark } = useTheme();
   const { t } = useTranslation();
 
   return (
@@ -95,7 +100,11 @@ function DetailsTourInfo() {
             </div>
           </div>
         </div>
-        <div className={css.right}>
+        <div
+          className={cn(css.right, {
+            card_tour: isDark,
+          })}
+        >
           <div className={css.rightCon1}>
             <h1>$199</h1>
             <h2>$119</h2>
