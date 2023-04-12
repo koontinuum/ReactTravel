@@ -12,6 +12,9 @@ import LondonImg from "../../assets/TourContentImages/LondonImage.svg";
 import IndiaImg from "../../assets/TourContentImages/IndiaImage.svg";
 import locationLogo from "../../assets/TourContentImages/locationIcon.svg";
 import searchIcon from "../../assets/searchIcon.svg";
+import loc from "../../assets/icon/inpLoc.png";
+import day from "../../assets/icon/inpDay.png";
+import guests from "../../assets/icon/inpGuests.png";
 
 function TourContent() {
   const { t } = useTranslation();
@@ -105,13 +108,21 @@ function TourContent() {
             </div>
           </div>
         </div>
+
         <div className={css.tourInputs}>
-          <input type="text" placeholder={t("tourInp1")} />
+          <img src={loc} alt="" />
+          <input
+            className={css.inpBorders}
+            type="text"
+            placeholder={t("tourInp1")}
+          />
+          <img src={day} alt="" />
           <input
             className={css.inpBorders}
             type="text"
             placeholder={t("tourInp2")}
           />
+          <img src={guests} alt="" />
           <input type="text" placeholder={t("tourInp3")} />
           <button>
             <img src={searchIcon} alt="" />
