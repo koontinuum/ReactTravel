@@ -10,6 +10,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	min-height: 75vh;
+	
 	img{
 		width: 36px;
 		height: 28px;
@@ -49,6 +50,12 @@ margin-left: 20px;
 		left: -20px;
 	}
 	}
+}
+.card{
+	flex-direction: column;
+		justify-content: space-evenly;
+		min-height: 75vh;
+		display: flex!important;
 }
 
 .wrap_right{
