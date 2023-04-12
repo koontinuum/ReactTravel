@@ -6,9 +6,11 @@ import star from "../../assets/TourContentImages/cardTime.svg";
 import { CardTourLIst } from "../../constants/CardTourLIst";
 import useTheme from "../../hooks/useTheme";
 import cn from 'classnames'
+import { useTranslation } from "react-i18next";
 
 function LandingTours() {
   const { isDark } = useTheme();
+    const { t } = useTranslation();
  const card = CardTourLIst.slice(0, 4)
   const render = card.map((item) => (
     <div
@@ -20,17 +22,15 @@ function LandingTours() {
       <img src={item.img} alt="" />
       <div>
         <img className={css.card_like} src={likeCard} alt="" />
-        <p>{item.loc}</p>
-        <h1>{item.title}</h1>
+        <p>{t(item.loc)}</p>
+        <h1>{t(item.title)}</h1>
         <div>
           <p>
             <img src={time} alt="" />
-            {item.time}
+            {t(item.time)}
           </p>
-
           <span className={css.card_price}>{item.price}</span>
           <p>
-            {" "}
             <img src={star} alt="" /> {item.point}
           </p>
         </div>

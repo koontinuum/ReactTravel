@@ -26,8 +26,8 @@ function Header() {
           )}
           <Link to="/">{t("headHome")}</Link>
           <Link to="/Travelpage">{t("headComp")}</Link>
-          <a href="">{t("headPage")}</a>
-          <a href="">{t("headDocum")}</a>
+          <a href="/">{t("headPage")}</a>
+          <a href="/">{t("headDocum")}</a>
         </div>
         <div className={css.right}>
           <div className={css.leftContent}>
