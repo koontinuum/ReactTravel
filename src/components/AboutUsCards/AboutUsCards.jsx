@@ -6,6 +6,7 @@ import card3 from "../../assets/DifferentImages/card3.svg";
 import card4 from "../../assets/DifferentImages/card4.svg";
 import plus from "../../assets/DifferentImages/The starting point f.svg";
 import minus from "../../assets/DifferentImages/Rectangle 530.svg";
+import plus1 from "../../assets/DifferentImages/plus1.png";
 
 function AboutUsCards() {
   const [show, setShow] = useState(true);
@@ -67,7 +68,7 @@ function AboutUsCards() {
       </div>
       <div className={css.maecenasText}>
         <div className={css.left}>
-          <img src={minus} alt="" onClick={handClick} />
+          <img src={show ? minus : plus1} alt="" onClick={handClick} />
           <h1>
             {!show ? (
               <p></p>
@@ -80,20 +81,15 @@ function AboutUsCards() {
           </h1>
         </div>
         <div className={css.right}>
-          {!show ? (
-            <h1></h1>
-          ) : (
-            <p>
-              <h1>Fusce convallis metus id felis luctus</h1>
-              Fusce convallis metus id felis luctus adipiscing. Etiam imperdiet
-              imperdiet orci. Vestibulum eu odio. Phasellus nec sem in justo
-              pellentesque facilisis. Donec pede justo, fringilla vel, aliquet
-              nec, vulputate eget, arcu. Maecenas nec odio et ante tincidunt
-              tempus. Suspendisse enim turpis, dictum sed, iaculis a,
-              condimentum nec, nisi. Vestibulum eu odio. Curabitur ullamcorper
-              ultricies nisi.
-            </p>
-          )}
+          <h1>Fusce convallis metus id felis luctus</h1>
+          <p>
+            Fusce convallis metus id felis luctus adipiscing. Etiam imperdiet
+            imperdiet orci. Vestibulum eu odio. Phasellus nec sem in justo
+            pellentesque facilisis. Donec pede justo, fringilla vel, aliquet
+            nec, vulputate eget, arcu. Maecenas nec odio et ante tincidunt
+            tempus. Suspendisse enim turpis, dictum sed, iaculis a, condimentum
+            nec, nisi. Vestibulum eu odio. Curabitur ullamcorper ultricies nisi.
+          </p>
         </div>
       </div>
     </div>

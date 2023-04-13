@@ -15,26 +15,32 @@ import searchIcon from "../../assets/searchIcon.svg";
 import loc from "../../assets/icon/inpLoc.png";
 import day from "../../assets/icon/inpDay.png";
 import guests from "../../assets/icon/inpGuests.png";
+import indiamain from "../../assets/indiamain.jpg";
+import londonmain from "../../assets/londonmain.jpg";
+import thailandmain from "../../assets/tourBackgroundImg.svg";
 
 function TourContent() {
   const { t } = useTranslation();
-  // const [tour, setTour] = useState(t("TCnameTour1"));
+  const [backgroundImage, setBackgroundImage] = useState(thailandmain);
   const [tourT, setTourT] = useState(1);
   const tourClick = () => {
-    // setTour(t("TCnameTour2"));
+    setBackgroundImage(londonmain);
     setTourT(2);
   };
   const tourClick1 = () => {
-    // setTour(t("TCnameTour1"));
+    setBackgroundImage(thailandmain);
     setTourT(1);
   };
   const tourClick2 = () => {
-    // setTour(t("TCnameTour3"));
+    setBackgroundImage(indiamain);
     setTourT(3);
   };
 
   return (
-    <div className={css.tourContent}>
+    <div
+      className={css.tourContent}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <Header />
       <div className="container">
         <div className={css.wrapper}>
@@ -108,7 +114,6 @@ function TourContent() {
             </div>
           </div>
         </div>
-
         <div className={css.tourInputs}>
           <img src={loc} alt="" />
           <input
