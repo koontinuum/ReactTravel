@@ -189,3 +189,75 @@
 	padding-bottom: 30px;
 }
 }
+
+.pagination {
+	display: flex;
+	height: 180px;
+	width: 100%;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins';
+	cursor: pointer;
+	list-style: none;
+}
+
+.page_num {
+	width: 30px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	color: #787a7c;
+
+}
+
+.page_num:hover {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: rgb(255, 191, 161);
+}
+
+.pagination .active {
+	border-radius: 50%;
+	color: rgb(241, 126, 73);
+	background-color: rgb(255 191 161 / 53%);
+	width: 30px;
+	height: 30px;
+	line-height: 10px;
+	text-align: center;
+
+	a {
+		color: #FA541C;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.wrapper{
+		flex-direction: column;
+		gap: 20px;
+	}
+	.card{
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.reviews_title{
+		flex-direction: column;
+	}
+.reply_content{
+		.com_bot {
+				margin-left: 62px;
+			}
+		
+			.reply {
+				margin-left: 0;
+			}
+}
+}
