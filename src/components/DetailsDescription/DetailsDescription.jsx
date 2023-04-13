@@ -10,7 +10,6 @@ import twitterIcon from "../../assets/DetailspageImages/twitterIcon.svg";
 import useTheme from "../../hooks/useTheme";
 import cn from "classnames";
 
-
 function DetailsDescription() {
   const { t } = useTranslation();
  const { isDark } = useTheme();
