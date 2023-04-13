@@ -108,13 +108,21 @@
   width: 746px;
   height: 360px;
   margin-top: 40px;
+  h2{
+      font-family: "Barlow";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+            color: #212b36;
+  }
   h1 {
     font-family: "Barlow";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    color: #212b36;
+    color: #FA541C!important;
   }
   div {
     display: flex;

@@ -47,9 +47,18 @@
         width: 225px;
         height: 26px;
       }
-      .first,
-      .third,
+      .first{
+        width: fit-content;
+          display: flex;
+          gap: 5px;
+        }
+      .third{
+        width: fit-content;
+          display: flex;
+          gap: 5px;
+        }
       .second {
+        width: fit-content;
         display: flex;
         gap: 5px;
       }

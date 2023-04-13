@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styles from "./DetailsReviews.module.scss";
+import React, { useEffect, useState } from "react";
+import styles from "./DetailsReviews.module.scss"
 import kevin from "../../assets/DetailspageImages/cardIcon.png";
 import star from "../../assets/icon/star.svg";
 import fb from "../../assets/icon/fb.svg";
@@ -11,11 +11,32 @@ import arrDown from "../../assets/icon/arr_down.svg";
 import { Reviews } from "../../constants/reviews";
 import useTheme from "../../hooks/useTheme";
 import cn from "classnames";
+import ReactPaginate from "react-paginate";
+
 
 const DetailsReviews = () => {
   const { isDark } = useTheme();
   const [active, setActive] = useState(false);
-  console.log(Reviews);
+//  const [arrCard, setArrCard] = useState([]);
+//useEffect(() => {setArrCard(Reviews)}, []);
+
+
+//Paginate
+const [currentItems, setCurrentItems] = useState([]);
+const [pageCount, setPageCount] = useState(0);
+const [itemOffset, setItemOffset] = useState(0);
+const itemsPerPage = 2;
+
+useEffect(() => {
+  const endOffset = itemOffset + itemsPerPage;
+  setCurrentItems(Reviews.slice(itemOffset, endOffset));
+  setPageCount(Math.ceil(Reviews.length / itemsPerPage));
+}, [itemOffset, itemsPerPage]);
+const handlePageClick = (event) => {
+  const newOffset = (event.selected * itemsPerPage) % Reviews.length;
+
+  setItemOffset(newOffset);
+};
   return (
     <div className="container">
       <div className={styles.wrapper}>
@@ -62,13 +83,12 @@ const DetailsReviews = () => {
                   dark_text: isDark,
                 })}
               >
-                {" "}
                 Most recent <img src={arrDown} alt="" />{" "}
               </button>
               <button className={styles.btn_write}> Write a Review</button>
             </div>
           </div>
-          {Reviews.map((item) => (
+          {currentItems.map((item) => (
             <div className={styles.comment} key={item.id}>
               <div className={styles.com_top}>
                 <div>
@@ -92,7 +112,8 @@ const DetailsReviews = () => {
                 </p>
                 <p className={styles.reviews_btn}>
                   Helpful &#183;{" "}
-                  <button  onClick={()=> setActive(!active)}
+                  <button
+                    onClick={() => setActive(!active)}
                     className={cn("Layout", {
                       dark_text: isDark,
                     })}
@@ -101,7 +122,7 @@ const DetailsReviews = () => {
                   </button>
                 </p>
               </div>
-              { active && (
+              {active && (
                 <>
                   <div className={styles.reply_content}>
                     <div className={styles.reply}>
@@ -147,6 +168,20 @@ const DetailsReviews = () => {
               )}
             </div>
           ))}
+          <ReactPaginate
+        breakLabel="..."
+        nextLabel=" >"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={2}
+        pageCount={pageCount}
+        previousLabel="< "
+        renderOnZeroPageCount={null}
+        containerClassName={styles.pagination}
+        pageLinkClassName={styles.page_num}
+        previousLinkClassName={styles.page_num}
+        nextLinkClassName={styles.page_num}
+        activeClassName={styles.active}
+      />
         </main>
       </div>
     </div>
