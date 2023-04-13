@@ -1,0 +1,127 @@
+.teamPlace {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+.teamPlace h1 {
+  width: 465px;
+  height: 64px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #212b36;
+}
+.teamPlace p {
+  width: 480px;
+  height: 56px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #637381;
+  margin-top: 24px;
+}
+.teamsContacts {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 110px;
+}
+.contact {
+  position: relative;
+  width: 436;
+  height: 270px;
+  transition: 1s ease-in-out;
+}
+.contact .block {
+  height: 80px;
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  right: 0;
+  box-shadow: 0px -100px 17px -5px rgba(0, 0, 0, 0.55) inset,
+    0px -70px 25px 0px rgba(0, 0, 0, 1) inset;
+  padding: 30px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0 0 16px 16px;
+}
+.contact:hover .block {
+  opacity: 1;
+}
+.contact img {
+  border-radius: 16px;
+}
+.block img {
+  cursor: pointer;
+  border-radius: 0px 0px 0px 0px;
+}
+.contact h2 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #212b36;
+}
+.contact strong {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #919eab;
+}
+.upContacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bottomContacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.names {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 576px) {
+  .teamPlace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 20px;
+    gap: 64px;
+  }
+  .upContacts,
+  .bottomContacts {
+    align-items: center;
+    flex-direction: column;
+    gap: 170px;
+  }
+  .upContacts {
+    margin-bottom: 60px;
+  }
+  .teamPlace h1 {
+    width: 310px;
+    height: 42px;
+    font-size: 32px;
+  }
+  .teamPlace p {
+    width: 335px;
+    height: 84px;
+  }
+}
