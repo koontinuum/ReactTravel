@@ -47,9 +47,18 @@
         width: 225px;
         height: 26px;
       }
-      .first,
-      .third,
+      .first{
+        width: fit-content;
+          display: flex;
+          gap: 5px;
+        }
+      .third{
+        width: fit-content;
+          display: flex;
+          gap: 5px;
+        }
       .second {
+        width: fit-content;
         display: flex;
         gap: 5px;
       }
@@ -312,6 +321,41 @@
       line-height: 26px;
       color: #ffffff;
       margin-left: 17px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    .left {
+      width: auto;
+      .tourName {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+      }
+      .tourInfo {
+        flex-direction: column;
+        height: 180px;
+      }
+      .TourOverview {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 335px;
+        height: 545px;
+        .contentOverview {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0px;
+          gap: 20px;
+          width: 335px;
+          height: 448px;
+        }
+      }
     }
   }
 }

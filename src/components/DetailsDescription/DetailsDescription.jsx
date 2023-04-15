@@ -7,20 +7,32 @@ import facebookIcon from "../../assets/DetailspageImages/facebookIcon.svg";
 import instagramIcon from "../../assets/DetailspageImages/instagramIcon.svg";
 import linkedinIcon from "../../assets/DetailspageImages/linkedinIcon.svg";
 import twitterIcon from "../../assets/DetailspageImages/twitterIcon.svg";
+import useTheme from "../../hooks/useTheme";
+import cn from "classnames";
 
 function DetailsDescription() {
   const { t } = useTranslation();
-
+ const { isDark } = useTheme();
   return (
     <div className="container">
       <div className={css.descriptionContent}>
         <div>
           <h1>{t("DDddh1")}</h1>
-          <p>{t("DDddp")}</p>
+          <p
+            className={cn("Layout", {
+              dark_text: isDark,
+            })}
+          >
+            {t("DDddp")}
+          </p>
         </div>
         <div>
           <h1>{t("DDddh11")}</h1>
-          <ul>
+          <ul
+            className={cn("Layout", {
+              dark_text: isDark,
+            })}
+          >
             <li>{t("DDddli1")}</li>
             <li>{t("DDddli2")}</li>
             <li>{t("DDddli3")}</li>
@@ -78,18 +90,42 @@ function DetailsDescription() {
         </div>
       </div>
       <div className={css.tourProgramContent}>
-        <h1>{t("DDtPh1")}</h1>
+        <h2
+          className={cn("Layout", {
+            dark_text: isDark,
+          })}
+        >
+          {t("DDtPh1")}
+        </h2>
         <div>
           <h1>{t("DDtPh1day1")}</h1>
-          <p>{t("DDtPpDay")}</p>
+          <p
+            className={cn("Layout", {
+              dark_text: isDark,
+            })}
+          >
+            {t("DDtPpDay")}
+          </p>
         </div>
         <div>
           <h1>{t("DDtPh1day2")}</h1>
-          <p>{t("DDtPpDay")}</p>
+          <p
+            className={cn("Layout", {
+              dark_text: isDark,
+            })}
+          >
+            {t("DDtPpDay")}
+          </p>
         </div>
         <div>
           <h1>{t("DDtPh1day3")}</h1>
-          <p>{t("DDtPpDay")}</p>
+          <p
+            className={cn("Layout", {
+              dark_text: isDark,
+            })}
+          >
+            {t("DDtPpDay")}
+          </p>
         </div>
       </div>
       <div className={css.sharesContent}>

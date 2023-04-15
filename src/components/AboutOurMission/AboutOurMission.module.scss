@@ -1,0 +1,123 @@
+.wrapper {
+  width: 100%;
+  margin-top: 80px;
+  h1 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #212b36;
+    margin-bottom: 24px;
+  }
+  p {
+    width: 466px;
+    height: 56px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #637381;
+    margin-bottom: 40px;
+  }
+}
+.contents {
+  width: 100%;
+  display: flex;
+  .left {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  .right {
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    .rightCard1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 32px;
+      gap: 24px;
+      width: 266px;
+      height: 354px;
+      background: #ffffff;
+      border-radius: 16px;
+      h1 {
+        width: 59px;
+        height: 80px;
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 80px;
+        text-align: center;
+        color: #919eab;
+        opacity: 0.24;
+      }
+      h2 {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #212b36;
+      }
+      p {
+        width: 202px;
+        height: 84px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #637381;
+      }
+    }
+    .rightCards {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+}
+.rightCard1:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: rotate(1.1);
+  box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+}
+@media (max-width: 576px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 20px;
+    gap: 64px;
+    p {
+      width: 335px;
+      height: 56px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+  .contents {
+    flex-direction: column;
+    .left {
+      width: 100%;
+      img {
+        width: 295px;
+        height: 295px;
+      }
+    }
+    .right {
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

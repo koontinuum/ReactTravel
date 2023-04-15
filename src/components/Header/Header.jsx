@@ -2,8 +2,8 @@ import css from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import logodark from "../../assets/icon/Logodark.png";
 import { useTranslation } from "react-i18next";
-import sun from "../../assets/icon/sun.png";
-import moon from "../../assets/icon/moon.png";
+import sun from "../../assets/free-icon-switch-786484.png";
+import moon from "../../assets/free-icon-switch-786486.png";
 import useTheme from "../../hooks/useTheme";
 import { Link } from "react-router-dom";
 
@@ -26,7 +26,15 @@ function Header() {
           )}
           <Link to="/">{t("headHome")}</Link>
           <a href="">{t("headComp")}</a>
-          <a href="">{t("headPage")}</a>
+          <div className={css.dropdown}>
+            <button className={css.dropbtn}>{t("headPage")}</button>
+            <div className={css.dropdowncontent}>
+              <Link to="/">{t("headHome")}</Link>
+              <Link to="/Travelpage">{t("pagelistlink")}</Link>
+              <Link to="/detailspage">{t("pagedetailslink")}</Link>
+              <Link to="/aboutpage">{t("pageaboutlink")}</Link>
+            </div>
+          </div>
           <a href="">{t("headDocum")}</a>
         </div>
         <div className={css.right}>

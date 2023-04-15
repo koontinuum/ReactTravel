@@ -108,13 +108,21 @@
   width: 746px;
   height: 360px;
   margin-top: 40px;
+  h2{
+      font-family: "Barlow";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+            color: #212b36;
+  }
   h1 {
     font-family: "Barlow";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    color: #212b36;
+    color: #FA541C!important;
   }
   div {
     display: flex;
@@ -199,5 +207,67 @@
   .btn4 {
     color: #00aaec;
     border: 1px solid #00aaec;
+  }
+}
+@media (max-width: 576px) {
+  .descriptionContent {
+    height: 570px;
+    div {
+      gap: 16px;
+      width: 335px;
+      height: 186px;
+      p {
+        width: 335px;
+        height: 140px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+      }
+      li {
+        width: 335px;
+      }
+    }
+  }
+  .includesContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 335px;
+    height: 450px;
+    div {
+      gap: 16px;
+      flex-direction: column;
+    }
+  }
+  .tourProgramContent {
+    width: 335px;
+    height: 600px;
+    div {
+      width: 335px;
+      height: 174px;
+      p {
+        width: 335px;
+        height: 140px;
+      }
+    }
+  }
+  .sharesContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 297px;
+    height: 68px;
+  }
+  .descriptionContent {
+    div {
+      ul {
+        width: auto;
+      }
+    }
   }
 }

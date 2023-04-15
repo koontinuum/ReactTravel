@@ -2,15 +2,18 @@
 	width: 100%;
 }
 
-.contnent{
+.content {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 25px;
+	justify-content: center;
+	margin: 50px 0;
 }
+
 .card {
 	display: flex;
 	width: 300px;
-		height: 460px;
+	height: 460px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -32,23 +35,25 @@
 		justify-content: space-between;
 		flex: 1 1 auto;
 		padding: 10px;
+
 		h1 {
-				font-family: 'Barlow';
-				font-style: normal;
-				font-weight: 600;
-				font-size: 18px;
-				line-height: 28px;
-				margin-bottom: 40px;
-			}
-		div{
+			font-family: 'Barlow';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 40px;
+		}
+
+		div {
 			display: flex;
-				flex-direction: row;
-				align-items: flex-end;
-				margin-bottom: 10px;
+			flex-direction: row;
+			align-items: flex-end;
+			margin-bottom: 10px;
 		}
 	}
 
-	
+
 
 	p {
 		img {
@@ -89,70 +94,145 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	width: 90%;
+	margin: 0 auto;
 	padding: 32px;
 	gap: 20px;
-	background: rgba(255, 255, 255, 0.04);
+	background: #F9FAFB;
 	border-radius: 16px;
-
 	.inpBorders {
-		border-left: 1px solid rgba(145, 158, 171, 0.24);
 		border-right: 1px solid rgba(145, 158, 171, 0.24);
-		border-radius: 0px;
 		padding-left: 23px;
 	}
 
 	button {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		padding: 6px 12px;
 		gap: 8px;
 		width: 48px;
 		height: 48px;
 		background: #22b8cf;
-		border: 1px solid rgba(34, 184, 207, 0.48);
 		border-radius: 8px;
-		margin-left: 200px;
+		margin-left: 12%;
+		img{
+			width: 30px;	
+			height: 30px;
+		}
 	}
 }
 
-//.tourInputs input {
-//	display: flex;
-//	flex-direction: row;
-//	align-items: center;
-//	padding: 10px 0px;
-//	gap: 8px;
-//	width: 312.67px;
-//	height: 48px;
-//	border-radius: 8px;
-//	background: transparent;
-//	outline: none;
-//	border: none;
-//	font-family: "Poppins";
-//	font-style: normal;
-//	font-weight: 600;
-//	font-size: 16px;
-//	line-height: 28px;
-//	color: #637381;
-//}
+.tourInputs input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 0px;
+	gap: 8px;
+	height: 48px;
+	width: 16em;
+	outline: none;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 28px;
+	color: #637381;
+}
 
 .mainTourText:hover {
 	transition: 0.5s;
 	transform: scale(1.2);
 }
 
-.inpp{
-	position: relative;
-&:before{
-	content: url('../../assets/icon/inpLoc.png');
+.inp_icon {
 	display: flex;
-	//background-image: url('../../assets//icon/inpLoc.png') ;
-	background-position: center	center;
-	background-size: cover;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	border: solid 10px red;
+	gap: 10px;
+
+	img {
+		width: 30px;
+		height: 30px;
+		margin-top: 12px;
+	}
+}
+
+.inp_loc{
+		border-right: 1px solid rgba(145, 158, 171, 0.24);
+			padding-left: 23px;
+}
+
+.pagination {
+	display: flex;
+	height: 180px;
+	width: 100%;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins';
+	cursor: pointer;
+	list-style: none;
+}
+
+.page_num {
+	width: 30px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	color: #787a7c;
+
+}
+
+.page_num:hover {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: rgb(255, 191, 161);
+}
+
+.pagination .active {
+	border-radius: 50%;
+	color: rgb(241, 126, 73);
+	background-color: rgb(255 191 161 / 53%);
+	width: 30px;
+	height: 30px;
+	line-height: 10px;
+	text-align: center;
+
+	a {
+		color: #FA541C;
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	.tourInputs{
+		button{
+			margin: 0;
+		}
+	}
+}
+@media screen and (max-width: 1080px) {
+.tourInputs{
+	flex-direction: column;
+	button{
+		width: 300px;
+	}
+		.inpBorders {
+			border-right: none;
+			padding-left: 0;
+		}
+}
+.inp_loc{
+	border: none;
+}
+}
+
+@media screen and (max-width: 400px) {
+.tourInputs{
+	button{
+width: 90%;
+	}
 }
 }

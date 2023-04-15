@@ -102,6 +102,36 @@
   border: none;
   color: #ffffff;
 }
+
+.discount {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+.signUpBtn {
+  width: 102px;
+  height: 56px;
+  background: #fa541c;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  color: #ffffff;
+}
+.zone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 144px 32px;
+
+  @media only screen and (min-width: 300px) and (max-width: 590px) {
+    padding: 30px;
+  }
+}
+.logo {
+  @media only screen and (min-width: 300px) and (max-width: 590px) {
+    width: auto;
+  }
+}
+
 .zone {
   display: flex;
   flex-direction: column;

@@ -21,18 +21,46 @@
     gap: 8px;
     width: 100%;
     .mainCon {
+      width: 1340px;
       .mainConImg {
-        width: 1340px;
+        width: 100%;
         cursor: pointer;
       }
     }
     .contents {
+      width: 100%;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 8px;
-      img {
-        width: 330px;
-        cursor: pointer;
+      div {
+        display: flex;
+        gap: 8px;
+        img {
+          width: 330px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    .imagesContent {
+      flex-direction: column;
+      .mainCon {
+        width: 335px;
+        img {
+          height: 335px;
+          width: 100%;
+        }
+      }
+      .contents {
+        display: block;
+        div {
+          width: 335px;
+          height: 163.5px;
+          margin-top: 8px;
+        }
       }
     }
   }
