@@ -204,10 +204,9 @@ span {
 }
 .contacts {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 24px 0px;
-  gap: 322px;
+  width: 100%;
+  justify-content: space-between;
 }
 .how2Find {
   display: flex;

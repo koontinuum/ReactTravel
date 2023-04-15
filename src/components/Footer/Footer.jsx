@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-
 import css from "./Footer.module.scss";
 import mail from "../../assets/mail.svg";
 import location from "../../assets/location.svg";

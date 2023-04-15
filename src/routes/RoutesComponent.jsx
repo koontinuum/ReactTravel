@@ -4,6 +4,7 @@ import LandingPage from "../pages/LandingPage/LandingPage";
 import DetailsPage from "../pages/DetailsPage/DetailsPage";
 import TravelPage from "../pages/TravelPage/TravelPage";
 import AboutPage from "../pages/AboutPage/AboutPage";
+import TravelBlogPage from "../pages/TravelBlogPage/TravelBlogPage";
 
 function RoutesComponent() {
   return (
@@ -13,6 +14,7 @@ function RoutesComponent() {
         <Route path="/detailspage" element={<DetailsPage />} />
         <Route path="/Travelpage" element={<TravelPage />} />
         <Route path="/aboutpage" element={<AboutPage />} />
+        <Route path="/travelblogpage" element={<TravelBlogPage />} />
       </Routes>
     </>
   );
