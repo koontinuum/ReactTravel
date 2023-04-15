@@ -34,6 +34,7 @@ function Header() {
               <Link to="/detailspage">{t("pagedetailslink")}</Link>
               <Link to="/aboutpage">{t("pageaboutlink")}</Link>
 
+
               <Link to="/blogpage">{t("blog")}</Link>
 
               <Link to="/travelblogpage">{t("travelblogpagelink")}</Link>

@@ -1,0 +1,116 @@
+.wrapper{
+    .titleText{
+        padding: 60px 144px;
+        .mainText{
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 80px;
+            width: 521px;
+        }
+        p{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        flex-direction: row;
+        justify-content: center;
+        .bottomInfo{
+            padding:  10px;
+            .extraInfo{
+                display: flex;
+                gap: 15px;
+                flex-direction: column;
+                .topBottomInfo{
+                    .firstPart{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        h1{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 26px
+                        }
+                    }
+                }
+                .midBottomInfo{
+                    .secondPart{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        h1{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 26px
+                        }
+                    }
+                }
+                .lowerBottomInfo{
+                    .thirdPart{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        h1{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 26px
+                        }
+                    }
+                }
+            }
+        }
+        .mainCityName{
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            margin: 20px 0px;
+        }
+        .firstCard{
+
+        }
+        .secondCard{
+           
+        }
+        .thirdCard{
+
+        }
+    }
+}
+.add{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    width: 314px;
+}
+.num{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+.mail{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
