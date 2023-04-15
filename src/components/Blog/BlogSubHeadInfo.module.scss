@@ -1,0 +1,206 @@
+.wrapper {
+	display: flex;
+	padding-bottom: 60px;
+}
+
+
+
+.left {
+	width: 50%;
+}
+
+.left_card {
+	width: 96%;
+	height: 100%;
+	background-image: url('../../assets/blog/blogHead.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 16px;
+	padding: 44px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 25px;
+		h1 {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+					"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Barlow",
+					"Poppins" "Helvetica Neue", sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 24px;
+				color: white;
+			}
+		
+			p {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 28px;
+			}
+}
+
+.right {
+	width: 50%;
+	width: 50%;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.right_top {
+	display: flex;
+	gap: 20px;
+
+	.top_l {
+		width: 50%;
+		height: 300px;
+		background-image: url('../../assets/blog/blogHead1.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 16px;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		gap: 20px;
+			h1 {
+					font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+						"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Barlow",
+						"Poppins" "Helvetica Neue", sans-serif;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 24px;
+					color: white;
+				}
+			
+				p {
+					font-family: 'Poppins';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 28px;
+				}
+	}
+
+	.top_r {
+		width: 50%;
+		height: 300px;
+		background-image: url('../../assets/blog/blogHead2.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 16px;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		gap: 20px;
+
+		h1 {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+				"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Barlow",
+				"Poppins" "Helvetica Neue", sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px;
+			color: white
+		}
+		p{
+			font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 28px;
+				color: white;
+		}
+	}
+}
+
+.right_bot {
+	width: 100%;
+	height: 347px;
+	background-image: url('../../assets/blog/blogHead3.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 16px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 20px;
+		h1 {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+					"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Barlow",
+					"Poppins" "Helvetica Neue", sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 24px;
+				color: white;
+			}
+		
+			p {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 28px;
+			}
+}
+
+@media screen and (max-width: 1000px) {
+	.wrapper{
+		flex-direction: column;
+	
+	}
+	.left{
+		width: 100%;
+			margin-bottom: 30px;
+		.left_card{
+			width: 100%;
+		}
+	}
+	.right{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.right_top{
+		flex-direction: column;
+		.top_l {
+				width: 100%;
+				height: 335px;
+				h1{
+					font-size: 18px;
+				}
+			}
+		
+			.top_r {
+				width: 100%;
+				height: 335px;
+				h1 {
+						font-size: 18px;
+					}
+			}
+	}
+	.right_bot{
+		height: 335px;
+		h1 {
+				font-size: 18px;
+			}
+	}
+	.left_card{
+		padding: 15px;
+		height: 335px;
+		h1 {
+				font-size: 18px;
+			}
+			p{
+				display: none;
+			}
+	}
+}

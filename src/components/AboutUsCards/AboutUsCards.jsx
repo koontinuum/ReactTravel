@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import css from "./AboutUsCards.module.scss";
 import card1 from "../../assets/DifferentImages/card1.svg";
 import card2 from "../../assets/DifferentImages/card2.svg";
@@ -9,6 +10,7 @@ import minus from "../../assets/DifferentImages/Rectangle 530.svg";
 import plus1 from "../../assets/DifferentImages/plus1.png";
 
 function AboutUsCards() {
+  const { t } = useTranslation();
   const [show, setShow] = useState(true);
   function handClick() {
     setShow(!show);
@@ -16,11 +18,8 @@ function AboutUsCards() {
   return (
     <div className="container">
       <div className={css.text}>
-        <h1>About Us</h1>
-        <p>
-          Master Digital Marketing Strategy, Social Media Marketing, SEO,
-          YouTube, Email, Facebook Marketing, Analytics & More!
-        </p>
+        <h1>{t("AUCth1")}</h1>
+        <p>{t("AUCtp")}</p>
       </div>
       <div className={css.containerCards}>
         <div className={css.box}>
@@ -42,54 +41,38 @@ function AboutUsCards() {
             <h1>130</h1>
             <img src={plus} alt="" />
           </div>
-          <p>Air tickets sold</p>
+          <p>{t("AUCtIbp1")}</p>
         </div>
         <div className={css.block2}>
           <div>
             <h1>196</h1>
             <img src={plus} alt="" />
           </div>
-          <p>Tours booked</p>
+          <p>{t("AUCtIbp2")}</p>
         </div>
         <div className={css.block3}>
           <div>
             <h1>10.68k</h1>
             <img src={plus} alt="" />
           </div>
-          <p>Site visitors</p>
+          <p>{t("AUCtIbp3")}</p>
         </div>
         <div className={css.block4}>
           <div>
             <h1>877</h1>
             <img src={plus} alt="" />
           </div>
-          <p>Verified hotels</p>
+          <p>{t("AUCtIbp4")}</p>
         </div>
       </div>
       <div className={css.maecenasText}>
         <div className={css.left}>
           <img src={show ? minus : plus1} alt="" onClick={handClick} />
-          <h1>
-            {!show ? (
-              <p></p>
-            ) : (
-              <p>
-                Maecenas malesuada. Cras ultricies mi eu turpis hendrerit
-                fringilla.
-              </p>
-            )}
-          </h1>
+          <h1>{!show ? <p></p> : <p>{t("AUCmlh1p")}</p>}</h1>
         </div>
         <div className={css.right}>
-          <h1>Fusce convallis metus id felis luctus</h1>
-          <p>
-            Fusce convallis metus id felis luctus adipiscing. Etiam imperdiet
-            imperdiet orci. Vestibulum eu odio. Phasellus nec sem in justo
-            pellentesque facilisis. Donec pede justo, fringilla vel, aliquet
-            nec, vulputate eget, arcu. Maecenas nec odio et ante tincidunt
-            tempus. Suspendisse enim turpis, dictum sed, iaculis a, condimentum
-            nec, nisi. Vestibulum eu odio. Curabitur ullamcorper ultricies nisi.
-          </p>
+          <h1>{t("AUCmrh1")}</h1>
+          <p>{t("AUCmrp")}</p>
         </div>
       </div>
     </div>

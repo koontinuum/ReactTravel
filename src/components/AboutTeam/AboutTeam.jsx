@@ -1,4 +1,5 @@
 import css from "./AboutTeam.module.scss";
+import { useTranslation } from "react-i18next";
 import pena1 from "../../assets/Team/test5.svg";
 import pena2 from "../../assets/Team/pena.svg";
 import pena3 from "../../assets/Team/test3.svg";
@@ -13,14 +14,12 @@ import inicon from "../../assets/Team/linkedinicon.svg";
 import twiticon from "../../assets/Team/twittericon.svg";
 
 function MarketingTeam() {
+  const { t } = useTranslation();
   return (
     <div className="container">
       <div className={css.teamPlace}>
-        <h1>Our Team</h1>
-        <p>
-          Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet
-          sapien, quis venenatis ante odio sit amet eros.
-        </p>
+        <h1>{t("ATth1")}</h1>
+        <p>{t("ATtp")}</p>
         <div className={css.teamsContacts}>
           <div className={css.upContacts}>
             <div className={css.contact}>
