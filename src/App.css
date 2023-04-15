@@ -143,3 +143,6 @@ color: var(--text-grey);
 .dark_text_ul li span {
   color: var(--accent-light)!important;
 }
+.datenum{
+  background-color: var(--bg-card);
+}

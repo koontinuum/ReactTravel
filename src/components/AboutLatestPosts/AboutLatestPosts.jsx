@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import css from "./AboutLatestPosts.module.scss";
 import card1 from "../../assets/CardTourImg/card6.png";
 import avatar1 from "../../assets/CardTourImg/avatar1.svg";
@@ -10,47 +11,48 @@ import avatar3 from "../../assets/CardTourImg/avatar3.svg";
 import avatar4 from "../../assets/CardTourImg/avatar4.svg";
 
 function AboutLatestPosts() {
+  const { t } = useTranslation();
   return (
     <div className={css.mainContents}>
       <div className={css.top}>
-        <h1>Latest Posts</h1>
-        <button>View All →</button>
+        <h1>{t("ALPMth1")}</h1>
+        <button>{t("ALPMtbtn")} →</button>
       </div>
       <div className={css.bottom}>
         <div className={css.card}>
           <img src={card1} alt="" />
-          <p>24 May 2019 · 8 min read</p>
-          <h1>The More Important the Work, the More Important the Rest</h1>
+          <p>{t("ALPbcp")}</p>
+          <h1>{t("ALPbch1")}</h1>
           <b>
             <img src={avatar1} alt="" />
-            Suraj Gregory
+            {t("ALPcardAuthor1")}
           </b>
         </div>
         <div className={css.card}>
           <img src={card2} alt="" />
-          <p>24 May 2019 · 8 min read</p>
-          <h1>The More Important the Work, the More Important the Rest</h1>
+          <p>{t("ALPbcp")}</p>
+          <h1>{t("ALPbch1")}</h1>
           <b>
             <img src={avatar2} alt="" />
-            Kamile Burke
+            {t("ALPcardAuthor2")}
           </b>
         </div>
         <div className={css.card}>
           <img src={card3} alt="" />
-          <p>24 May 2019 · 8 min read</p>
-          <h1>The More Important the Work, the More Important the Rest</h1>
+          <p>{t("ALPbcp")}</p>
+          <h1>{t("ALPbch1")}</h1>
           <b>
             <img src={avatar3} alt="" />
-            Raihan Nieves
+            {t("ALPcardAuthor3")}
           </b>
         </div>
         <div className={css.card}>
           <img src={card4} alt="" />
-          <p>24 May 2019 · 8 min read</p>
-          <h1>The More Important the Work, the More Important the Rest</h1>
+          <p>{t("ALPbcp")}</p>
+          <h1>{t("ALPbch1")}</h1>
           <b>
             <img src={avatar4} alt="" />
-            Cruz Truong
+            {t("ALPcardAuthor4")}
           </b>
         </div>
       </div>

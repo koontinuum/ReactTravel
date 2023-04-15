@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-
 import css from "./Footer.module.scss";
 import mail from "../../assets/mail.svg";
 import location from "../../assets/location.svg";
@@ -26,6 +25,7 @@ function Footer() {
 
   return (
     <div className={css.wrapper}>
+      <hr />
       <div className={css.newSettler}>
         <div className={css.newSettlerInfo}>
           <h1>{t("footerwnnh1")}</h1>
