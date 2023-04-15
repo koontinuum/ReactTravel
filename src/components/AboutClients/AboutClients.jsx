@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import css from "./AboutClients.module.scss";
 import brand7 from "../../assets/BrandsLogos/1.svg";
 import brand8 from "../../assets/BrandsLogos/2.svg";
@@ -14,17 +15,14 @@ import brand9 from "../../assets/BrandsLogos/11.svg";
 import brand12 from "../../assets/BrandsLogos/12.svg";
 
 function AboutClients() {
+  const { t } = useTranslation();
   return (
     <div className="container">
       <div className={css.top}>
-        <h1>Our Clients</h1>
+        <h1>{t("ACth1")}</h1>
         <div>
-          <h1>Enhance Your Life By Having A Sense Of Purpose</h1>
-          <p>
-            Around the world, food-borne illnesses have become increasingly
-            common. In the United States alone, millions of people get a
-            food-related illness each year.
-          </p>
+          <h1>{t("ACtdh1")}</h1>
+          <p>{t("ACtdp")}</p>
         </div>
       </div>
       <div className={css.bottom}>
