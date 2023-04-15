@@ -25,6 +25,7 @@ function Footer() {
 
   return (
     <div className={css.wrapper}>
+      <hr />
       <div className={css.newSettler}>
         <div className={css.newSettlerInfo}>
           <h1>{t("footerwnnh1")}</h1>

@@ -8,6 +8,7 @@ import LandingTours from "../../components/LandingTours/LandingTours";
 import LandingCities from "../../components/LandingCities/LandingCities";
 import LandingPost from "../../components/LandingPost/LandingPost";
 import LandingCustomer from "../../components/LandingCustomer/LandingCustomer";
+import Newsletter from "../../components/Newsletter/Newsletter";
 
 function LandingPage() {
   return (
@@ -21,6 +22,7 @@ function LandingPage() {
       <LandingCities />
       <LandingPost />
       <LandingCustomer/>
+      <Newsletter />
       <Footer />
     </div>
   );
