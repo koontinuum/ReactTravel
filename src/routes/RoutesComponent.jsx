@@ -6,6 +6,7 @@ import CheckoutPage from "../pages/CheckoutPage/CheckoutPage";
 import CheckoutCompletePage from "../pages/CheckoutCompletePage/CheckoutCompletePage";
 import TravelPage from "../pages/TravelPage/TravelPage";
 import AboutPage from "../pages/AboutPage/AboutPage";
+import TravelContactPage from "../pages/TravelContactPage/TravelContactPage";
 
 function RoutesComponent() {
   return (
@@ -17,6 +18,7 @@ function RoutesComponent() {
         <Route path="/checkoutCompletePage" element={<CheckoutCompletePage />}/>
         <Route path="/Travelpage" element={<TravelPage />} />
         <Route path="/aboutpage" element={<AboutPage />} />
+        <Route path="/contactPage" element={<TravelContactPage />} />
       </Routes>
     </>
   );
