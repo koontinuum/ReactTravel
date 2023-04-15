@@ -23,21 +23,7 @@ function Footer() {
   const { isDark } = useTheme();
   return (
     <div className={css.wrapper}>
-      <div className={css.newSettler}>
-        <div className={css.newSettlerInfo}>
-          <h1>Newsettler</h1>
-          <p>
-            Sign up now to receive hot special offers <br />
-            and information about the best tours!{" "}
-          </p>
-          <span className={css.newInp}>
-            <input type="text" placeholder="Enter your email" />
-            <button>
-              <img src={right} alt="" />
-            </button>
-          </span>
-        </div>
-      </div>
+      <hr />
       <div className={css.zone}>
         {isDark ? (
           <img className={css.logo} src={logodark} alt="" />
