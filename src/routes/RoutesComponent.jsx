@@ -11,7 +11,6 @@ import BlogPage from "../pages/BlogPage/BlogPage";
 
 import TravelBlogPage from "../pages/TravelBlogPage/TravelBlogPage";
 
-
 function RoutesComponent() {
   return (
     <>
@@ -19,12 +18,13 @@ function RoutesComponent() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/detailspage" element={<DetailsPage />} />
         <Route path="/checkoutPage" element={<CheckoutPage />} />
-        <Route path="/checkoutCompletePage" element={<CheckoutCompletePage />}/>
+        <Route
+          path="/checkoutCompletePage"
+          element={<CheckoutCompletePage />}
+        />
         <Route path="/Travelpage" element={<TravelPage />} />
         <Route path="/aboutpage" element={<AboutPage />} />
-
         <Route path="/blogpage" element={<BlogPage />} />
-
         <Route path="/travelblogpage" element={<TravelBlogPage />} />
       </Routes>
     </>
