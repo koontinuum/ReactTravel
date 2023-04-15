@@ -183,9 +183,10 @@
 }
 .contacts {
   display: flex;
+ width: 100%;
+justify-content: space-between;
   padding: 24px 0px;
-  justify-content: space-between;
-  width: 100%;
+
 }
 .how2Find {
   display: flex;
