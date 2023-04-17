@@ -1,50 +1,75 @@
-.mainWeb{
+.mainWeb {
     display: flex;
     flex-direction: row;
     padding: 30px 120px 30px;
     justify-content: space-between;
-    .mainImg{
+    @media only screen and (min-width:380px) and (max-width:900px){
+        padding: 64px 20px 80px;
+    }
+    .mainImg {
         height: 714.67px;
         border-radius: 16px;
+        @media only screen and (min-width:380px) and (max-width:900px){
+            display: none;
+        }
     }
-    .right{
+
+    .right {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        .title{
+
+        .title {
             font-family: 'Barlow';
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
             line-height: 64px;
+            @media only screen and (min-width:380px) and (max-width:900px){
+                font-family: 'Barlow';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 42px;
+            }
         }
-        .topRight{
+
+        .topRight {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            .textInfo{
+            margin: 30px 0px;
+            @media only screen and (min-width:380px) and (max-width:900px){
+                flex-direction: column;
+                gap: 20px;
+            }
+            .textInfo {
                 display: flex;
                 gap: 10px;
                 flex-direction: column;
-                .textTitle{
+
+                .textTitle {
                     font-family: 'Barlow';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 30px;
                 }
-                .review{
+
+                .review {
                     display: flex;
                     gap: 5px;
                     align-items: center;
-                    h1{
+
+                    h1 {
                         font-family: 'Barlow';
                         font-style: normal;
                         font-weight: 600;
                         font-size: 18px;
                         line-height: 28px;
                     }
-                    p{
+
+                    p {
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 400;
@@ -52,20 +77,23 @@
                         line-height: 26px;
                     }
                 }
-                
+
             }
-            .profile{
+
+            .profile {
                 align-items: center;
                 display: flex;
                 gap: 10px;
-                p{
+
+                p {
                     font-family: 'Poppins';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 12px;
                     line-height: 20px;
                 }
-                h1{
+
+                h1 {
                     font-family: 'Poppins';
                     font-style: normal;
                     font-weight: 600;
@@ -75,92 +103,175 @@
             }
         }
     }
-    .middleRight{
-        .infos{
+
+    .middleRight {
+        .infos {
             display: flex;
             gap: 30px;
             flex-direction: column;
             border: 1px dashed rgba(145, 158, 171, 0.24);
             border-radius: 16px;
             padding: 40px;
-            
-            p{
+            @media only screen and (min-width:380px) and (max-width:900px){
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px;
+                gap: 24px;
+                width: 350px;
+            }
+            p {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 26px;
             }
-            hr{
+
+            hr {
                 border: 1px dashed rgba(145, 158, 171, 0.24);
+                width: 100%;
             }
         }
-        .midTitle{
+
+        .midTitle {
             font-family: 'Barlow';
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
             line-height: 30px;
         }
-        .departureInfo{
+
+        .departureInfo {
             display: flex;
             justify-content: space-between;
             width: 536px;
-            span{
+            @media only screen and (min-width:380px) and (max-width:900px){
+                width: 255px;
+            }
+            span {
                 gap: 10px;
                 display: flex;
                 align-items: center;
             }
         }
-        .numOfGuest{
+
+        .numOfGuest {
             display: flex;
             justify-content: space-between;
             width: 536px;
-            span{
+            @media only screen and (min-width:380px) and (max-width:900px){
+                width: 255px;
+            }
+            span {
                 gap: 10px;
                 display: flex;
                 align-items: center;
             }
         }
-        .bookCode{
+
+        .bookCode {
             display: flex;
             justify-content: space-between;
             width: 536px;
-            span{
+            @media only screen and (min-width:380px) and (max-width:900px){
+                width: 255px;
+            }
+            span {
                 gap: 10px;
                 display: flex;
                 align-items: center;
             }
         }
-        .bookDay{
+
+        .bookDay {
             display: flex;
             justify-content: space-between;
             width: 536px;
-            span{
+            @media only screen and (min-width:380px) and (max-width:900px){
+                width: 255px;
+            }
+            span {
                 gap: 10px;
                 display: flex;
                 align-items: center;
             }
         }
-        .total{
+
+        .total {
             display: flex;
             justify-content: space-between;
             width: 536px;
-            span{
+            @media only screen and (min-width:380px) and (max-width:900px){
+                width: 255px;
+            }
+            span {
                 gap: 10px;
                 display: flex;
                 align-items: center;
             }
         }
-        .paymentMethod{
+
+        .paymentMethod {
             display: flex;
             justify-content: space-between;
             width: 536px;
-            span{
+            @media only screen and (min-width:380px) and (max-width:900px){
+                width: 255px;
+            }
+            span {
                 gap: 10px;
                 display: flex;
                 align-items: center;
             }
         }
     }
+}
+.bottomRight{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    @media only screen and (min-width:380px) and (max-width:900px){
+        flex-direction: column;
+        align-items: center;
+    }
+    .backBtn{
+        padding: 11px 22px;
+        gap: 8px;
+        width: 163px;
+        height: 48px;
+        border: 1px solid rgba(145, 158, 171, 0.32);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (min-width:380px) and (max-width:900px){
+            width: 100%;
+        }
+    }
+    .downloadBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #ffff;
+        align-items: center;
+        padding: 11px 22px;
+        gap: 8px;
+        width: 212px;
+        height: 48px;
+        background: #FA541C;
+        border-radius: 8px;
+        @media only screen and (min-width:380px) and (max-width:900px){
+            width: 100%;
+        }
+    }
+}
+.textRight {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
 }

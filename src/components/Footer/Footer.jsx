@@ -28,18 +28,18 @@ function Footer() {
       <hr />
       <div className={css.newSettler}>
         <div className={css.newSettlerInfo}>
-          <h1>{t("footerwnnh1")}</h1>
+          {/* <h1>{t("footerwnnh1")}</h1>
           <p>
             {t("footerwnnp1")}
             <br />
             {t("footerwnnp2")}
-          </p>
-          <span className={css.newInp}>
+          </p> */}
+          {/* <span className={css.newInp}>
             <input type="text" placeholder={t("footernewInp")} />
             <button>
               <img src={right} alt="" />
             </button>
-          </span>
+          </span> */}
         </div>
       </div>
       <div className={css.zone}>
