@@ -189,8 +189,18 @@
     align-items: flex-start;
     padding: 20px;
     gap: 40px;
+    width: auto;
     height: 561px;
     margin-left: -20px;
+    .left {
+      width: auto;
+      h1 {
+        width: auto;
+        p {
+          width: auto;
+        }
+      }
+    }
     .right {
       display: flex;
       flex-direction: column;

@@ -185,8 +185,8 @@
   "paymentMethod": "Payment method",
   "backHome": "Back Home",
   "downloadInvoice": "Download Invoice",
-  "pagelistlink": "Travel - List",
-  "pagedetailslink": "Travel - Details",
+  "pagelistlink": "List of tours",
+  "pagedetailslink": "Travel Information",
   "footerwnnh1": "Newsletter",
   "footerwnnp2": "and information about the best tours! ",
   "footerwnnp1": "Sign up now to receive hot special offers",
@@ -196,7 +196,7 @@
   "footersp": "© 2021. All rights reserved",
   "footersp2": "Help Center",
   "footersp3": "Terms of Service",
-  "pageaboutlink": "Travel - About",
+  "pageaboutlink": "Trip around the world",
   "youMust": "You Might Like",
   "checkoutPage": "Checkout Page",
   "worldWide": "We Work Worldwide.",
@@ -220,7 +220,8 @@
   "subject": "Subject",
   "message": "Message",
   "sendMessage": "Send Message",
-  "blog": "Travel-Blog",
+  "blog": "Travel Blog",
+
   "bgc1": "The 7 Most Successful Event Companies In Region",
   "bgc2": "Think Your Event Is Safe? 7 Ways You Can Lose It Today",
   "bgc3": "Knowing These 7 Secrets Will Make Your Event Look Amazing",
@@ -276,7 +277,8 @@
   "ALPcardAuthor2": "Kamile Burke",
   "ALPcardAuthor3": "Raihan Nieves",
   "ALPcardAuthor4": "Cruz Truong",
-  "travelblogpagelink": "Travel Blog Page",
+  "travelblogpagelink": "Investment in travel",
+
   "ViewAllTours": "View All Tours",
   "FeaturedTours": "Featured Tours",
   "TBMwtb": "8 minute read",
@@ -327,5 +329,9 @@
   "TBSTtssdiv8": "Community",
   "TBSTtssdiv9": "Tutorials",
   "TBSTadivh4": "Advertisement",
-  "TBSTadivp": "Duis leo. Donec orci lectus, aliquam ut, faucibus non"
+  "TBSTadivp": "Duis leo. Donec orci lectus, aliquam ut, faucibus non",
+  "pagelandinglink": "About tours",
+  "pagecheckoutlink": "Check-in for flights",
+  "pagecompletedlink": "Completed",
+  "pagecontactslink": "Contacts"
 }
