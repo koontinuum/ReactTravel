@@ -8,9 +8,12 @@ import { useTranslation } from 'react-i18next'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import useTheme from '../../hooks/useTheme'
+import cn from 'classnames'
 
 const LandingCustomer = () => {
    const arrowRef = useRef(null);
+    const { isDark } = useTheme();
   const { t} = useTranslation();
      const settings = {
        dots: false,
@@ -28,17 +31,29 @@ const LandingCustomer = () => {
             <h1>{t("custTitle")}</h1>
             <img src={img1} alt="" />
             <p>{t("custText")}</p>
-            <h3>{t("custName")}</h3>
+            <h3
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
+              {t("custName")}
+            </h3>
           </div>
 
           <div className={styles.card}>
             <h1>{t("custTitle")}</h1>
             <img src={img1} alt="" />
             <p>{t("custText")}</p>
-            <h3>{t("custName")}</h3>
+            <h3
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
+              {t("custName")}
+            </h3>
           </div>
         </Slider>
-        <div>
+        <div className={styles.btns}>
           <button onClick={() => arrowRef.current.slickPrev()}>
             <img src={left} alt="" />
           </button>

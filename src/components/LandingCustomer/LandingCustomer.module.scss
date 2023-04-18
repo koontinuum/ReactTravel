@@ -73,19 +73,20 @@ margin-left: 20px;
 	
 		justify-content: center;
 		.wrap_left{
+			display: block;
 			align-items: center;
-				width: 70%;
+				width: 100%;
 			h1{
 				text-align: center;
 			}
 		}
 	}
+	.btns{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 750px) {
-	.wrapper{
-		padding: 0;
-	}
 .wrap_left{
 	width: 100%;
 	h1 {
@@ -103,3 +104,23 @@ margin-left: 20px;
 	
 }
 }
+@media screen and (max-width: 500px) {
+	.wrapper{
+		padding: 50px 30px;
+	}
+	.card{
+		img{
+			margin: 0 auto;
+		}
+		h3{
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.card{
+		width: 80%;
+	}
+}
+

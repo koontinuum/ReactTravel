@@ -38,16 +38,12 @@ function LandingTours() {
     </div>
   ));
   return (
-    <div >
+    <div>
       <div className={css.wrapper}>
-        <h1>Featured Tours</h1>
-        <p>
-          Our Featured Tours can help you find the trip that's perfect for you!
-        </p>
-       <div className={css.cardContent}>
-{render}
-       </div>
-        <button className={css.toursBtn}>View All Tours</button>
+        <h1>{t("FeaturedTours")}</h1>
+        <p>{t("cityTourInfo")}</p>
+        <div className={css.cardContent}>{render}</div>
+        <button  className={css.toursBtn}>{t("ViewAllTours")}</button>
       </div>
     </div>
   );
