@@ -1,4 +1,7 @@
 {
+  "header": {
+    "title": "Hello"
+  },
   "headHome": "Home",
   "headComp": "Components",
   "landDestTitle": "Our Favorite Destinations",
@@ -218,6 +221,7 @@
   "message": "Message",
   "sendMessage": "Send Message",
   "blog": "Travel Blog",
+
   "bgc1": "The 7 Most Successful Event Companies In Region",
   "bgc2": "Think Your Event Is Safe? 7 Ways You Can Lose It Today",
   "bgc3": "Knowing These 7 Secrets Will Make Your Event Look Amazing",
@@ -274,6 +278,7 @@
   "ALPcardAuthor3": "Raihan Nieves",
   "ALPcardAuthor4": "Cruz Truong",
   "travelblogpagelink": "Investment in travel",
+
   "ViewAllTours": "View All Tours",
   "FeaturedTours": "Featured Tours",
   "TBMwtb": "8 minute read",

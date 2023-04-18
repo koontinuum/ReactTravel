@@ -107,7 +107,8 @@ function CheckoutPage() {
                             </div>
                             <div className={css.inputing}>
                             
-                        <input className={css.thirdInp} type="text"  placeholder={t("cardNum")} />
+                        <input className={css.thirdInp} type="text" id='cardNum'  placeholder={t("cardNum")} />
+                        <label htmlFor="cardNum"></label>
                         <input className={css.fourthInp} type="text" placeholder={t("cardHolder")} />
                         <span className={css.SecondTwoInp}>
                             <input className={css.mainInps} type="text" placeholder={t("expDate")} />
@@ -180,9 +181,11 @@ function CheckoutPage() {
                             <h1 className={css.word}>{t('total')}</h1>
                             <h1 className={css.cost}>$357</h1>
                         </div>
-                        <button className={css.btn}>
-                            <Link to='/checkoutCompletePage'>{t('btnBooking')}</Link>
+                        <Link to='/checkoutCompletePage'><button className={css.btn}>
+                            {t('btnBooking')}
+                        
                             </button>
+                        </Link>
                     </div>
                 </div>
             </div>

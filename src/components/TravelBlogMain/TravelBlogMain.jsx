@@ -6,8 +6,11 @@ import soc1 from "../../assets/TravelBlogDetailsPageImages/facebookIcon.svg";
 import soc2 from "../../assets/TravelBlogDetailsPageImages/instagramIcon.svg";
 import soc3 from "../../assets/TravelBlogDetailsPageImages/linkedInIcon.svg";
 import soc4 from "../../assets/TravelBlogDetailsPageImages/twitterIcon.svg";
+import useTheme from "../../hooks/useTheme";
+import cn from "classnames";
 
 function TravelBlogMain() {
+  const { isDark } = useTheme();
   const { t } = useTranslation();
   return (
     <>
@@ -25,10 +28,36 @@ function TravelBlogMain() {
         </div>
       </div>
       <div className={css.bottomTextContent}>
-        <Link to="/">{t("headHome")}</Link>
-        <p>❯</p>
-        <Link to="/blogpage">{t("blog")}</Link>
-        <p>❯</p>
+        <Link
+          className={cn({
+            grey_text: isDark,
+          })}
+          to="/"
+        >
+          {t("headHome")}
+        </Link>
+        <p
+          className={cn({
+            grey_text: isDark,
+          })}
+        >
+          ❯
+        </p>
+        <Link
+          className={cn({
+            grey_text: isDark,
+          })}
+          to="/blogpage"
+        >
+          {t("blog")}
+        </Link>
+        <p
+          className={cn({
+            grey_text: isDark,
+          })}
+        >
+          ❯
+        </p>
         <b>{t("TBMwbb")}</b>
       </div>
     </>

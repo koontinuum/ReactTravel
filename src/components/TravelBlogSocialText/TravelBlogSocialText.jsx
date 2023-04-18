@@ -15,41 +15,123 @@ import block2 from "../../assets/SlidersList/block2.svg";
 import block3 from "../../assets/SlidersList/block3.svg";
 import block4 from "../../assets/SlidersList/block4.svg";
 import { useTranslation } from "react-i18next";
+import useTheme from "../../hooks/useTheme";
+import cn from "classnames";
 
 function TravelBlogSocialText() {
+  const { isDark } = useTheme();
   const { t } = useTranslation();
   return (
     <div className={css.wrapper}>
       <div className={css.left}>
-        <p>{t("TBStext1")}</p>
+        <p
+          className={cn({
+            dark_text: isDark,
+          })}
+        >
+          {t("TBStext1")}
+        </p>
         <div className={css.pContent}>
-          <h1>P</h1>
-          <p>{t("TBStext2")}</p>
+          <h1
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            P
+          </h1>
+          <p
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {" "}
+            {t("TBStext2")}
+          </p>
         </div>
         <div className={css.secondp}>
-          <p>{t("TBStext3")}</p>
-          <p>{t("TBStext4")}</p>
+          <p
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("TBStext3")}
+          </p>
+          <p
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("TBStext4")}
+          </p>
         </div>
         <img src={mainImg1} alt="" />
         <div className={css.secondTexts}>
           <div>
-            <h1>{t("TBStext5")}</h1>
-            <p>{t("TBStext6")}</p>
+            <h1
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
+              {t("TBStext5")}
+            </h1>
+            <p
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
+              {t("TBStext6")}
+            </p>
           </div>
           <div>
-            <h1>{t("TBStext7")}</h1>
-            <p>{t("TBStext8")}</p>
+            <h1
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
+              {t("TBStext7")}
+            </h1>
+            <p
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
+              {t("TBStext8")}
+            </p>
           </div>
         </div>
         <div className={css.secondTextss}>
           <img src={Vector} alt="" />
-          <p>{t("TBStext9")}</p>
+          <p
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("TBStext9")}
+          </p>
         </div>
         <img src={mainImg2} alt="" />
         <div className={css.secondTextsss}>
-          <p>{t("TBStext9")}</p>
-          <p>{t("TBStext10")}</p>
-          <p>{t("TBStext11")}</p>
+          <p
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("TBStext9")}
+          </p>
+          <p
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("TBStext10")}
+          </p>
+          <p
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("TBStext11")}
+          </p>
         </div>
         <div className={css.tags}>
           {t("TBSTtbtn1")} <button>{t("TBSTtbtn2")}</button>
@@ -103,8 +185,19 @@ function TravelBlogSocialText() {
       <div className={css.rightCourtney}>
         <div className={css.top}>
           <img src={avatar} alt="" />
-          <h1>
-            {t("TBSTcourtney")} <b>{t("TBSTcourtneyb")}</b>
+          <h1
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("TBSTcourtney")}{" "}
+            <b
+              className={cn({
+                grey_text: isDark,
+              })}
+            >
+              {t("TBSTcourtneyb")}
+            </b>
           </h1>
         </div>
         <div className={css.bottom}>
@@ -118,9 +211,19 @@ function TravelBlogSocialText() {
             <img src={search} alt="" />
             <input type="text" placeholder={t("TBSTlsi")} />
           </div>
-          <div className={css.categories}>
-            <h4>{t("TBSTch4")}</h4>
-            <ul>
+          <div className={css.side_head}>
+            <h4
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
+              {t("TBSTch4")}
+            </h4>
+            <ul
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
               <li>{t("TBSTcli1")}</li>
               <li>{t("TBSTcli2")}</li>
               <li>{t("TBSTcli3")}</li>
@@ -129,6 +232,7 @@ function TravelBlogSocialText() {
             </ul>
           </div>
           <div className={css.recent}>
+            <h2 className={css.recent_title}>Recent Posts</h2>
             <div className={css.posts}>
               <div className={css.postsImg}>
                 <img src={block1} alt="" />
