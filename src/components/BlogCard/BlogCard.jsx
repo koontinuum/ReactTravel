@@ -95,13 +95,14 @@ const BlogCard = () => {
               dark_text: isDark,
             })}
           >
-            <li>Marketing</li>
-            <li>Community</li>
-            <li>Tutrials</li>
-            <li>Business</li>
-            <li>Management</li>
+            <li>{t("TBSTcli1")}</li>
+            <li>{t("TBSTcli2")}</li>
+            <li>{t("TBSTcli3")}</li>
+            <li>{t("TBSTcli4")}</li>
+            <li>{t("TBSTcli5")}</li>
           </ul>
         </div>
+
         <div className={styles.side_recent}>
           <h2>Recent Posts</h2>
           <div className={styles.side_card}>

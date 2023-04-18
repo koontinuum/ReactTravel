@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useTheme from "../../hooks/useTheme";
@@ -7,18 +7,140 @@ import logo from "../../assets/logo.svg";
 import logodark from "../../assets/icon/Logodark.png";
 import sun from "../../assets/free-icon-switch-786484.png";
 import moon from "../../assets/free-icon-switch-786486.png";
+import burgerDark from "../../assets/icon/burger-menu-svgrepo-com.svg";
+import burger from '../../assets/icon/burgerwhite.svg'
+import cn from "classnames";
+
+
 
 const lngs = {
   en: { nativeName: "Eng" },
   ru: { nativeName: "Rus" },
 };
 
+
+
 function Header() {
+
   const { t, i18n } = useTranslation();
   const { isDark, setIsDark } = useTheme();
+
+
+   const [isOpen, setIsOpen] = useState(false);
+   const [isMounted, setIsMounted] = useState(false);
+
+     useEffect(() => {
+       setIsMounted(true);
+     }, []);
+
+   const modalRef = useRef(null);
+   useEffect(() => {
+     function handleClickOutside(event) {
+       if (modalRef.current && !modalRef.current.contains(event.target)) {
+         setIsOpen(false);
+       }
+     }
+
+     if (isOpen) {
+       document.addEventListener("mousedown", handleClickOutside);
+     } else {
+       document.removeEventListener("mousedown", handleClickOutside);
+     }
+
+     return () => {
+       document.removeEventListener("mousedown", handleClickOutside);
+     };
+   }, [isOpen]);
+   if (!isMounted) {
+     return null;
+   }
   return (
     <div className="container">
       <div className={css.wrapper}>
+        {/*burger menu*/}
+
+        {isOpen && (
+          <div className={css.modal}>
+            <div
+              className={cn(css.modal_content, {
+                card_tour: isDark,
+              })}
+              ref={modalRef}
+            >
+              <div className={css.modal_header}>
+                <button
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  X
+                </button>
+              </div>
+              <div className={css.modal_body}>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/"
+                >
+                  {t("headHome")}
+                </Link>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/Travelpage"
+                >
+                  {t("pagelistlink")}
+                </Link>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/detailspage"
+                >
+                  {t("pagedetailslink")}
+                </Link>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/aboutpage"
+                >
+                  {t("pageaboutlink")}
+                </Link>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/blogpage"
+                >
+                  {t("blog")}
+                </Link>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/travelblogpage"
+                >
+                  {t("travelblogpagelink")}
+                </Link>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/checkoutPage"
+                >
+                  {t("travelblogpagelink")}
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/*burger menu end*/}
+
         <div className={css.left}>
           {isDark ? (
             <img className={css.logo} src={logodark} alt="" />
@@ -61,6 +183,13 @@ function Header() {
               ))}
             </div>
           </div>
+          <button className={css.btn_burger} onClick={() => setIsOpen(true)}>
+            {isDark ? (
+              <img className={css.logo} src={burger} alt="" />
+            ) : (
+              <img className={css.logo} src={burgerDark} alt="" />
+            )}
+          </button>
           {isDark ? (
             <button className={css.login}>{t("headLogBtn")}</button>
           ) : (
