@@ -8,6 +8,7 @@
     background-size: cover;
     box-shadow: -1px -375px 49px 0px rgba(19, 20, 20, 0.9) inset,
       -1px -215px 8px 0px rgba(41, 43, 45, 0.9) inset;
+      position: relative;
   }
 
   .wrap_right {
@@ -33,7 +34,9 @@
     color: #ca3909 !important;
   }
 }
-
+.slick-slider{
+  width: 100%;
+  }
 .dots {
   background-color: #fa541c;
 
@@ -53,7 +56,7 @@
   justify-content: space-around;
   margin-left: 20%;
   margin-top: 170px;
-
+padding-bottom: 130px;
   p {
     font-family: "Poppins";
     font-style: normal;
@@ -112,7 +115,11 @@
     margin-right: 100px;
   }
 }
-
+.btn{
+      position: absolute;
+          left: 43%;
+          top: 71%;
+}
 .item {
   border-bottom: 1px dashed rgba(145, 158, 171, 0.24);
   width: 70%;
@@ -151,18 +158,19 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .card {
+   .wrapper {
+    flex-direction: column;
+
+    .wrap_left {
+      width: 100%;
+    } 
+    .card {
     margin-left: 10%;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .wrapper {
-    flex-direction: column;
 
-    .wrap_left {
-      width: 100%;
-    }
   }
 
   .card {
@@ -186,14 +194,27 @@
 }
 
 @media screen and (max-width: 550px) {
-  .card {
-    width: 350px !important;
-    margin-left: 5%;
-    margin-top: 130px;
+  .wrap_left{
+    height: 100%;
+    padding-bottom: 100px;
+    .card {
+        margin-left: 16%;
+        margin-top: 130px;
+      }
   }
+  :global {
+    .slick-slider {
+        width: 100%!important;
+      }
+  }
+ 
 
   .item {
     height: 300px;
+  }
+  .btn{
+        top: 77%;
+          left: 38%;
   }
 }
 

@@ -56,7 +56,7 @@ const handlePageClick = (event) => {
 
           <span className={css.card_price}>{t(item.price)}</span>
           <p>
-            {" "}
+      
             <img src={star} alt="" /> {item.point}
           </p>
         </div>

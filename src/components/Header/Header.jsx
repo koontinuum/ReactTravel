@@ -30,13 +30,15 @@ function Header() {
           <div className={css.dropdown}>
             <button className={css.dropbtn}>{t("headPage")}</button>
             <div className={css.dropdowncontent}>
-              <Link to="/">{t("headHome")}</Link>
+              <Link to="/">{t("pagelandinglink")}</Link>
               <Link to="/Travelpage">{t("pagelistlink")}</Link>
               <Link to="/detailspage">{t("pagedetailslink")}</Link>
-              <Link to="/aboutpage">{t("pageaboutlink")}</Link>
+              <Link to="/checkoutPage">{t("pagecheckoutlink")}</Link>
+              <Link to="/checkoutCompletePage">{t("pagecompletedlink")}</Link>
               <Link to="/blogpage">{t("blog")}</Link>
               <Link to="/travelblogpage">{t("travelblogpagelink")}</Link>
-              <Link to="/checkoutPage">{t("travelblogpagelink")}</Link>
+              <Link to="/aboutpage">{t("pageaboutlink")}</Link>
+              <Link to="/contactPage">{t("pagecontactslink")}</Link>
             </div>
           </div>
           <a href="">{t("headDocum")}</a>
