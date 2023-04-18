@@ -80,7 +80,7 @@ function TravelContactPage() {
                         <div className={css.bottomInfo}>
                             <h1 className={css.mainCityName}>{t("city2")}</h1>
                             <div className={css.extraInfo}>
-                                <div className={css.topBottomInfo}>
+                                <div  className={css.topBottomInfo}>
                                     <div className={css.firstPart}>
                                     {isDark ? (
             <img className={css.logo} src={locationL} alt="" />
@@ -162,12 +162,14 @@ function TravelContactPage() {
                 <div className={css.line}>
                     <img src={leftImg} alt="" />
                     <div className={css.right}>
-                        <h1>{t("dropALine")}</h1>
+                        <h1>{t("dropaLine")}</h1>
                         <p>{t("timeTaken")}</p>
+                        <div className={css.inps}>
                         <input type="text" placeholder={t("fullName")}/>
                         <input type="text" placeholder={t("Email")}/>
                         <input type="text" placeholder={t("subject")}/>
-                        <input type="text" placeholder={t("message")}/>
+                        <input className={css.bigInp} type="text" placeholder={t("message")}/>
+                        </div>
                         <button>{t("sendMessage")}</button>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ import download from '../../assets/checkoutCompleteImg/download.svg'
 import leftArr from '../../assets/checkoutCompleteImg/leftArrow.svg'
 import paper from '../../assets/checkoutCompleteImg/paper.svg'
 import leftArrLight from '../../assets/checkoutCompleteImg/leftArrLight.svg'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -107,7 +107,9 @@ function CheckoutCompletePage() {
                             ) : (
                                 <img className={css.logo} src={leftArr} alt="" />
                             )}
-                            <h1>{t("backHome")}</h1>
+                            <h1>
+                                <Link to='/checkoutPage'>{t("backHome")}</Link>
+                            </h1>
                         </button>
                         <button className={css.downloadBtn}>
                             <img src={download} alt="" />
