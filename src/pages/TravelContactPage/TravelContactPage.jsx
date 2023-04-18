@@ -70,7 +70,7 @@ function TravelContactPage() {
             <img className={css.logo} src={mail} alt="" />
           )}                                        <h1>{t("emailWord")}</h1>
                                     </div>
-                                    <h1 className={css.mail}>{t("gmailCon1")}</h1>
+                                    <h1 className={css.mail}>jessica.hanson@example.com</h1>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ function TravelContactPage() {
           )}
                                         <h1>{t("emailWord")}</h1>
                                     </div>
-                                    <h1 className={css.mail}>{t("gmailCon2")}</h1>
+                                    <h1 className={css.mail}>michelle.rivera@example.com</h1>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +153,7 @@ function TravelContactPage() {
           )}
                                         <h1>{t("emailWord")}</h1>
                                     </div>
-                                    <h1 className={css.mail}>{t("gmailCon3")}</h1>
+                                    <h1 className={css.mail}>curtis.weaver@example.com</h1>
                                 </div>
                             </div>
                         </div>
