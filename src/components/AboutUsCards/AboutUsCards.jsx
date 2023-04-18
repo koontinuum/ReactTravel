@@ -8,8 +8,11 @@ import card4 from "../../assets/DifferentImages/card4.svg";
 import plus from "../../assets/DifferentImages/The starting point f.svg";
 import minus from "../../assets/DifferentImages/Rectangle 530.svg";
 import plus1 from "../../assets/DifferentImages/plus1.png";
+import useTheme from "../../hooks/useTheme";
+import cn from "classnames";
 
 function AboutUsCards() {
+  const {isDark} = useTheme()
   const { t } = useTranslation();
   const [show, setShow] = useState(true);
   function handClick() {
@@ -68,10 +71,28 @@ function AboutUsCards() {
       <div className={css.maecenasText}>
         <div className={css.left}>
           <img src={show ? minus : plus1} alt="" onClick={handClick} />
-          <h1>{!show ? <p></p> : <p>{t("AUCmlh1p")}</p>}</h1>
+          <h1>
+            {!show ? (
+              <p></p>
+            ) : (
+              <p
+                className={cn({
+                  dark_text: isDark,
+                })}
+              >
+                {t("AUCmlh1p")}
+              </p>
+            )}
+          </h1>
         </div>
         <div className={css.right}>
-          <h1>{t("AUCmrh1")}</h1>
+          <h1
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("AUCmrh1")}
+          </h1>
           <p>{t("AUCmrp")}</p>
         </div>
       </div>
