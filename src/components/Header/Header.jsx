@@ -36,7 +36,7 @@ function Header() {
               <Link to="/aboutpage">{t("pageaboutlink")}</Link>
               <Link to="/blogpage">{t("blog")}</Link>
               <Link to="/travelblogpage">{t("travelblogpagelink")}</Link>
-              <Link to="/checkoutCompletePage">{t("travelblogpagelink")}</Link>
+              <Link to="/checkoutPage">{t("travelblogpagelink")}</Link>
             </div>
           </div>
           <a href="">{t("headDocum")}</a>
