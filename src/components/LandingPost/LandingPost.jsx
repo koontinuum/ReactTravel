@@ -5,9 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import btn from '../../assets/icon/postBtn.png'
 import { useTranslation } from 'react-i18next';
+import { useRef } from 'react';
 
 
 const LandingPost = () => {
+   const arrowRef = useRef(null);
    const { t} = useTranslation();
    const settings = {
      dots: true,
@@ -20,40 +22,31 @@ const LandingPost = () => {
   return (
     <div className={styles.wrapper}>
       <main className={styles.wrap_left}>
-        <Slider {...settings}>
+        <Slider ref={arrowRef} {...settings}>
           <div className={styles.card}>
             <p>19 {t("May")} 2021</p>
             <h1>{t("postTitle")}</h1>
             <h6>{t("postInfo")}</h6>
-            <button>
-              <img src={btn} alt="" />
-            </button>
           </div>
           <div className={styles.card}>
             <p>19 {t("May")} 2021</p>
             <h1>{t("postTitle")}</h1>
             <h6>{t("postInfo")}</h6>
-            <button>
-              <img src={btn} alt="" />
-            </button>
           </div>
           <div className={styles.card}>
             <p>19 {t("May")} 2021</p>
             <h1>{t("postTitle")}</h1>
             <h6>{t("postInfo")}</h6>
-            <button>
-              <img src={btn} alt="" />
-            </button>
           </div>
           <div className={styles.card}>
             <p>19 {t("May")} 2021</p>
             <h1>{t("postTitle")}</h1>
             <h6>{t("postInfo")}</h6>
-            <button>
-              <img src={btn} alt="" />
-            </button>
           </div>
         </Slider>
+        <button className={styles.btn} onClick={() => arrowRef.current.slickNext()}>
+          <img src={btn} alt="" />
+        </button>
       </main>
       <main className={styles.wrap_right}>
         <h1>{t("posth1")}</h1>

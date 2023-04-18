@@ -35,26 +35,26 @@ export const cityTourCard = [
 		palce: "cityToursPlace"
 	},
 	{
-		id: 1,
-		img: tour1,
+		id: 5,
+		img: tour5,
 		city: "cityToursUga",
 		palce: "cityToursNeth"
 	},
 	{
-		id: 1,
-		img: tour1,
+		id: 6,
+		img: tour6,
 		city: "cityToursEri",
 		palce: "cityToursPlace"
 	},
 	{
-		id: 1,
-		img: tour1,
+		id: 7,
+		img: tour7,
 		city: "cityToursGam",
 		palce: "cityToursPlace"
 	},
 	{
-		id: 1,
-		img: tour1,
+		id: 8,
+		img: tour8,
 		city: "cityToursLeb",
 		palce: "cityToursPlace"
 	},

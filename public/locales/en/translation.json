@@ -184,7 +184,7 @@
   "totalWord":"Total",
   "paymentMethod":"Payment method",
   "backHome":"Back Home" ,
-  "downloadInvoice":"Download Invoice" 
+  "downloadInvoice":"Download Invoice",
   "pagelistlink": "Travel - List",
   "pagedetailslink": "Travel - Details",
   "footerwnnh1": "Newsletter",
@@ -223,8 +223,7 @@
 "blogul6": "Management",
 "blogul7": "Business",
 "blogul8": "Community",
-"blogul9": "Tutorials"
-}
+"blogul9": "Tutorials",
   "AUCth1": "About Us",
   "AUCtp": "Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics & More!",
   "AUCtIbp1": "Air tickets sold",
@@ -255,6 +254,8 @@
   "ALPcardAuthor2": "Kamile Burke",
   "ALPcardAuthor3": "Raihan Nieves",
   "ALPcardAuthor4": "Cruz Truong",
-  "travelblogpagelink": "Travel Blog Page"
+  "travelblogpagelink": "Travel Blog Page",
+  "ViewAllTours": "View All Tours",
+  "FeaturedTours": "Featured Tours"
 }
 
