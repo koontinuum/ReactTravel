@@ -6,11 +6,11 @@ import CheckoutPage from "../pages/CheckoutPage/CheckoutPage";
 import CheckoutCompletePage from "../pages/CheckoutCompletePage/CheckoutCompletePage";
 import TravelPage from "../pages/TravelPage/TravelPage";
 import AboutPage from "../pages/AboutPage/AboutPage";
+import TravelContactPage from "../pages/TravelContactPage/TravelContactPage";
 
 import BlogPage from "../pages/BlogPage/BlogPage";
 
 import TravelBlogPage from "../pages/TravelBlogPage/TravelBlogPage";
-
 
 function RoutesComponent() {
   return (
@@ -19,12 +19,14 @@ function RoutesComponent() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/detailspage" element={<DetailsPage />} />
         <Route path="/checkoutPage" element={<CheckoutPage />} />
-        <Route path="/checkoutCompletePage" element={<CheckoutCompletePage />}/>
+        <Route
+          path="/checkoutCompletePage"
+          element={<CheckoutCompletePage />}
+        />
         <Route path="/Travelpage" element={<TravelPage />} />
         <Route path="/aboutpage" element={<AboutPage />} />
-
+        <Route path="/contactPage" element={<TravelContactPage />} />
         <Route path="/blogpage" element={<BlogPage />} />
-
         <Route path="/travelblogpage" element={<TravelBlogPage />} />
       </Routes>
     </>

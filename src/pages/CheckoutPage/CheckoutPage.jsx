@@ -14,6 +14,7 @@ import profile from '../../assets/checkoutImg/profilePic.svg'
 import calendar from '../../assets/checkoutImg/calendar.svg'
 import people from '../../assets/checkoutImg/people.svg'
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import useTheme from "../../hooks/useTheme";
 import ToggleSwitch from '../../switch/ToggleSwitch'
 import { useState } from 'react'
@@ -106,7 +107,7 @@ function CheckoutPage() {
                             </div>
                             <div className={css.inputing}>
                             
-                        <input className={css.thirdInp} type="text" placeholder={t("cardNum")} />
+                        <input className={css.thirdInp} type="text"  placeholder={t("cardNum")} />
                         <input className={css.fourthInp} type="text" placeholder={t("cardHolder")} />
                         <span className={css.SecondTwoInp}>
                             <input className={css.mainInps} type="text" placeholder={t("expDate")} />
@@ -179,7 +180,9 @@ function CheckoutPage() {
                             <h1 className={css.word}>{t('total')}</h1>
                             <h1 className={css.cost}>$357</h1>
                         </div>
-                        <button className={css.btn}>{t('btnBooking')}</button>
+                        <button className={css.btn}>
+                            <Link to='/checkoutCompletePage'>{t('btnBooking')}</Link>
+                            </button>
                     </div>
                 </div>
             </div>

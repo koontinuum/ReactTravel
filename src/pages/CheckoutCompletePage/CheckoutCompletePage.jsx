@@ -14,7 +14,8 @@ import cube from '../../assets/checkoutCompleteImg/cube.svg'
 import download from '../../assets/checkoutCompleteImg/download.svg'
 import leftArr from '../../assets/checkoutCompleteImg/leftArrow.svg'
 import paper from '../../assets/checkoutCompleteImg/paper.svg'
-
+import leftArrLight from '../../assets/checkoutCompleteImg/leftArrLight.svg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -26,91 +27,97 @@ function CheckoutCompletePage() {
     const { t, i18n } = useTranslation();
     const { isDark, setIsDark } = useTheme();
     return (
-    
+
         <div className={css.wrapper}>
             <Header />
-          <div className={css.mainWeb}>
-            <img className={css.mainImg} src={postImg} alt="" />
-            <div className={css.right}>
-                <h1 className={css.title}>{t("completed")}</h1>
-                <div className={css.topRight}>
-                    <div className={css.textInfo}>
-                        <h1 className={css.textTitle}>{t("warsaw")}</h1>
-                        <div className={css.review}>
-                            <img src={star} alt="" />
-                            <h1>4.6</h1>
-                            <p>{t("review")}</p>
+            <div className={css.mainWeb}>
+                <img className={css.mainImg} src={postImg} alt="" />
+                <div className={css.right}>
+                    <h1 className={css.title}>{t("completed")}</h1>
+                    <div className={css.topRight}>
+                        <div className={css.textInfo}>
+                            <h1 className={css.textTitle}>{t("warsaw")}</h1>
+                            <div className={css.review}>
+                                <img src={star} alt="" />
+                                <h1>4.6</h1>
+                                <p>{t("review")}</p>
+                            </div>
+                        </div>
+                        <div className={css.profile}>
+                            <img src={profile} alt="" />
+                            <div>
+                                <p>{t("tourGuide")}</p>
+                                <h1>{t("userName")}</h1>
+                            </div>
                         </div>
                     </div>
-                    <div className={css.profile}>
-                        <img src={profile} alt="" />
-                        <div>
-                            <p>{t("tourGuide")}</p>
-                            <h1>{t("userName")}</h1>
+                    <div className={css.middleRight}>
+                        <div className={css.infos}>
+                            <h1 className={css.midTitle}>{t("bookDetail")}</h1>
+
+                            <div className={css.departureInfo}>
+                                <span>
+                                    <img src={calendar} alt="" />
+                                    <p>{t("departureDay")}</p>
+                                </span>
+                                <h1 className={css.textRight}> {t("departureDate")}</h1>
+                            </div>
+                            <div className={css.numOfGuest}>
+                                <span>
+                                    <img src={people} alt="" />
+                                    <p>{t("guestWord")}</p>
+                                </span>
+                                <h1 className={css.textRight}>{t("guestNum")}</h1>
+                            </div>
+                            <hr />
+                            <div className={css.bookCode}>
+                                <span>
+                                    <img src={cube} alt="" />
+                                    <p>{t("bookCode")}</p>
+                                </span>
+                                <h1 className={css.textRight}>KU_H8SDM</h1>
+                            </div>
+                            <div className={css.bookDay}>
+                                <span>
+                                    <img src={calendar} alt="" />
+                                    <p>{t("bookingDay")}</p>
+                                </span>
+                                <h1 className={css.textRight}>{t("bookingDate")}</h1>
+                            </div>
+                            <div className={css.total}>
+                                <span>
+                                    <img src={paper} alt="" />
+                                    <p>{t("totalWord")}</p>
+                                </span>
+                                <h1 className={css.textRight}>$357</h1>
+                            </div>
+                            <div className={css.paymentMethod}>
+                                <span>
+                                    <img src={card} alt="" />
+                                    <p>{t("paymentMethod")}</p>
+                                </span>
+                                <h1 className={css.textRight}>Paypal</h1>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={css.middleRight}>
-                <div className={css.infos}>
-                    <h1 className={css.midTitle}>{t("bookDetail")}</h1>
-                    
-                    <div className={css.departureInfo}>
-                        <span>
-                            <img src={calendar} alt="" />
-                            <p>{t("departureDay")}</p>
-                        </span>
-                        <h1> {t("departureDate")}</h1>
+                    <div className={css.bottomRight}>
+                        <button className={css.backBtn}>
+                            {isDark ? (
+                                <img className={css.logo} src={leftArrLight} alt="" />
+                            ) : (
+                                <img className={css.logo} src={leftArr} alt="" />
+                            )}
+                            <h1>
+                                <Link to='/checkoutPage'>{t("backHome")}</Link>
+                            </h1>
+                        </button>
+                        <button className={css.downloadBtn}>
+                            <img src={download} alt="" />
+                            <h1>{t("downloadInvoice")}</h1>
+                        </button>
                     </div>
-                    <div className={css.numOfGuest}>
-                        <span>
-                            <img src={people} alt="" />
-                            <p>{t("guestWord")}</p>
-                        </span>
-                        <h1>{t("guestNum")}</h1>
-                    </div>
-                    <hr />
-                    <div className={css.bookCode}>
-                        <span>
-                            <img src={cube} alt="" />
-                            <p>{t("bookCode")}</p>
-                        </span>
-                        <h1>KU_H8SDM</h1>
-                    </div>
-                    <div className={css.bookDay}>
-                        <span>
-                            <img src={calendar} alt="" />
-                            <p>{t("bookingDay")}</p>
-                        </span>
-                        <h1>{t("bookingDate")}</h1>
-                    </div>
-                    <div className={css.total}>
-                        <span>
-                            <img src={paper} alt="" />
-                            <p>{t("totalWord")}</p>
-                        </span>
-                        <h1>$357</h1>
-                    </div>
-                    <div className={css.paymentMethod}>
-                        <span>
-                            <img src={card} alt="" />
-                            <p>{t("paymentMethod")}</p>
-                        </span>
-                        <h1>Paypal</h1>
-                    </div>
-                </div>
-              </div>  
-                <div className={css.bottomRight}>
-                    <button>
-                        <img src={leftArr} alt="" />
-                        {t("backHome")}
-                    </button>
-                    <button>
-                        <img src={download} alt="" />
-                        {t("downloadInvoice")}
-                    </button>
                 </div>
             </div>
-          </div>
             <Footer />
         </div>
     )

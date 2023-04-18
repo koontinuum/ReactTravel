@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import css from "./TravelBlogMain.module.scss";
 import soc1 from "../../assets/TravelBlogDetailsPageImages/facebookIcon.svg";
 import soc2 from "../../assets/TravelBlogDetailsPageImages/instagramIcon.svg";
@@ -6,13 +8,14 @@ import soc3 from "../../assets/TravelBlogDetailsPageImages/linkedInIcon.svg";
 import soc4 from "../../assets/TravelBlogDetailsPageImages/twitterIcon.svg";
 
 function TravelBlogMain() {
+  const { t } = useTranslation();
   return (
     <>
       <div className={css.wrapperMain}>
         <div className={css.textContent}>
-          <b>8 minute read</b>
-          <h1>The Complete Digital Marketing Course - 12 Courses In 1</h1>
-          <p>16 Mar 2020 12:35 PM</p>
+          <b>{t("TBMwtb")}</b>
+          <h1>{t("TBMwth1")}</h1>
+          <p>{t("TBMwtp")}</p>
           <div>
             <img src={soc1} alt="" />
             <img src={soc2} alt="" />
@@ -22,11 +25,11 @@ function TravelBlogMain() {
         </div>
       </div>
       <div className={css.bottomTextContent}>
-        <a href="">Home</a>
+        <Link to="/">{t("headHome")}</Link>
         <p>❯</p>
-        <a href="">Blog</a>
+        <Link to="/blogpage">{t("blog")}</Link>
         <p>❯</p>
-        <b>The Complete Digital Marketing Course - 12 Courses in 1</b>
+        <b>{t("TBMwbb")}</b>
       </div>
     </>
   );
