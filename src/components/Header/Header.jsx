@@ -8,52 +8,46 @@ import logodark from "../../assets/icon/Logodark.png";
 import sun from "../../assets/free-icon-switch-786484.png";
 import moon from "../../assets/free-icon-switch-786486.png";
 import burgerDark from "../../assets/icon/burger-menu-svgrepo-com.svg";
-import burger from '../../assets/icon/burgerwhite.svg'
+import burger from "../../assets/icon/burgerwhite.svg";
 import cn from "classnames";
-
-
 
 const lngs = {
   en: { nativeName: "Eng" },
   ru: { nativeName: "Rus" },
 };
 
-
-
 function Header() {
-
   const { t, i18n } = useTranslation();
   const { isDark, setIsDark } = useTheme();
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-   const [isOpen, setIsOpen] = useState(false);
-   const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-     useEffect(() => {
-       setIsMounted(true);
-     }, []);
+  const modalRef = useRef(null);
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
 
-   const modalRef = useRef(null);
-   useEffect(() => {
-     function handleClickOutside(event) {
-       if (modalRef.current && !modalRef.current.contains(event.target)) {
-         setIsOpen(false);
-       }
-     }
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
 
-     if (isOpen) {
-       document.addEventListener("mousedown", handleClickOutside);
-     } else {
-       document.removeEventListener("mousedown", handleClickOutside);
-     }
-
-     return () => {
-       document.removeEventListener("mousedown", handleClickOutside);
-     };
-   }, [isOpen]);
-   if (!isMounted) {
-     return null;
-   }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+  if (!isMounted) {
+    return null;
+  }
   return (
     <div className="container">
       <div className={css.wrapper}>

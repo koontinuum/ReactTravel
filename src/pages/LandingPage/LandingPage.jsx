@@ -20,7 +20,7 @@ function LandingPage() {
       <LandingTours />
       <LandingCities />
       <LandingPost />
-      <LandingCustomer/>
+      <LandingCustomer />
       <Newsletter />
       <Footer />
     </div>
