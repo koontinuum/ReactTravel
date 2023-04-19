@@ -333,5 +333,9 @@
   "pagelandinglink": "About tours",
   "pagecheckoutlink": "Check-in for flights",
   "pagecompletedlink": "Completed",
-  "pagecontactslink": "Contacts"
+  "pagecontactslink": "Contacts",
+  "newsLetter":{
+    "title": "Newsletter",
+    "subtitle": "Sign up now to receive hot special offers and information about the best tours!"
+  }
 }

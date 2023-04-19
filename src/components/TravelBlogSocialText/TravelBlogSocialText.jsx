@@ -44,7 +44,6 @@ function TravelBlogSocialText() {
               dark_text: isDark,
             })}
           >
-            {" "}
             {t("TBStext2")}
           </p>
         </div>
@@ -134,14 +133,28 @@ function TravelBlogSocialText() {
           </p>
         </div>
         <div className={css.tags}>
-          {t("TBSTtbtn1")} <button>{t("TBSTtbtn2")}</button>
+          <span
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {t("TBSTtbtn1")}
+          </span>
+          <button>{t("TBSTtbtn2")}</button>
           <button>{t("TBSTtbtn3")}</button>
           <button>{t("TBSTtbtn4")}</button>
           <button>{t("TBSTtbtn5")}</button>
           <button>{t("TBSTtbtn6")}</button>
         </div>
         <div className={css.shares}>
-          {t("TBSTshares")}
+          <span
+            className={cn({
+              dark_text: isDark,
+            })}
+          >
+            {" "}
+            {t("TBSTshares")}
+          </span>
           <button className={css.firstShare}>
             <img src={soc1} alt="" />
             Facebook
@@ -165,7 +178,11 @@ function TravelBlogSocialText() {
           </div>
           <div className={css.right}>
             <div className={css.top}>
-              <p>
+              <p
+                className={cn({
+                  dark_text: isDark,
+                })}
+              >
                 {t("TBSTcourtney")} <b>{t("TBSTcourtneyb")}</b>
               </p>
               <div className={css.socials}>
@@ -238,7 +255,13 @@ function TravelBlogSocialText() {
                 <img src={block1} alt="" />
               </div>
               <div className={css.postsDesc}>
-                <h5>{t("TBSTph5")}</h5>
+                <h5
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                >
+                  {t("TBSTph5")}
+                </h5>
                 <p>
                   {t("TBSTpp1")} <img src={ellips16} alt="" /> {t("TBSTpp2")}
                 </p>
@@ -250,7 +273,13 @@ function TravelBlogSocialText() {
                 <img src={block2} alt="" />
               </div>
               <div className={css.postsDesc}>
-                <h5>{t("TBSTph5")}</h5>
+                <h5
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                >
+                  {t("TBSTph5")}
+                </h5>
                 <p>
                   {t("TBSTpp1")} <img src={ellips16} alt="" /> {t("TBSTpp2")}
                 </p>
@@ -262,7 +291,13 @@ function TravelBlogSocialText() {
                 <img src={block3} alt="" />
               </div>
               <div className={css.postsDesc}>
-                <h5>{t("TBSTph5")}</h5>
+                <h5
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                >
+                  {t("TBSTph5")}
+                </h5>
                 <p>
                   {t("TBSTpp1")} <img src={ellips16} alt="" /> {t("TBSTpp2")}
                 </p>
@@ -274,7 +309,13 @@ function TravelBlogSocialText() {
                 <img src={block4} alt="" />
               </div>
               <div className={css.postsDesc}>
-                <h5>{t("TBSTph5")}</h5>
+                <h5
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                >
+                  {t("TBSTph5")}
+                </h5>
                 <p>
                   {t("TBSTpp1")} <img src={ellips16} alt="" /> {t("TBSTpp2")}
                 </p>
@@ -282,7 +323,13 @@ function TravelBlogSocialText() {
             </div>
           </div>
           <div className={css.tagss}>
-            <h4>{t("TBSTtssh4")}</h4>
+            <h4
+              className={cn({
+                dark_text: isDark,
+              })}
+            >
+              {t("TBSTtssh4")}
+            </h4>
             <div className={css.popular}>
               <div>{t("TBSTtssdiv1")}</div>
               <div>{t("TBSTtssdiv2")}</div>
