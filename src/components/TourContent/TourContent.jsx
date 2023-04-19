@@ -18,8 +18,11 @@ import guests from "../../assets/icon/inpGuests.png";
 import indiamain from "../../assets/indiamain.jpg";
 import londonmain from "../../assets/londonmain.jpg";
 import thailandmain from "../../assets/tourBackgroundImg.svg";
+import useTheme from "../../hooks/useTheme";
+import cn from "classnames";
 
 function TourContent() {
+    const { isDark } = useTheme();
   const { t } = useTranslation();
   const [backgroundImage, setBackgroundImage] = useState(thailandmain);
   const [tourT, setTourT] = useState(1);
@@ -134,14 +137,32 @@ function TourContent() {
           </button>
         </div>
       </div>
-      <div className={css.tourInputsPhone}>
-        <input type="text" placeholder={t("tourInp1")} />
+      <div
+        className={cn(css.tourInputsPhone, {
+          card_tour: isDark,
+        })}
+      >
         <input
-          className={css.inpBorders}
+          className={cn({
+            dark_inp: isDark,
+          })}
+          type="text"
+          placeholder={t("tourInp1")}
+        />
+        <input
+          className={cn(css.inpBorders,{
+            dark_inp: isDark,
+          })}
           type="text"
           placeholder={t("tourInp2")}
         />
-        <input type="text" placeholder={t("tourInp3")} />
+        <input
+          className={cn({
+            dark_inp: isDark,
+          })}
+          type="text"
+          placeholder={t("tourInp3")}
+        />
         <button>
           <img src={searchIcon} alt="" />
         </button>
