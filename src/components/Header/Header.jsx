@@ -84,7 +84,7 @@ function Header() {
                   })}
                   to="/"
                 >
-                  {t("headHome")}
+                  {t("pagelandinglink")}
                 </Link>
                 <Link
                   className={cn({
@@ -106,9 +106,17 @@ function Header() {
                   className={cn({
                     dark_text: isDark,
                   })}
-                  to="/aboutpage"
+                  to="/checkoutPage"
                 >
-                  {t("pageaboutlink")}
+                  {t("pagecheckoutlink")}
+                </Link>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/checkoutCompletePage"
+                >
+                  {t("pagecompletedlink")}
                 </Link>
                 <Link
                   className={cn({
@@ -130,15 +138,22 @@ function Header() {
                   className={cn({
                     dark_text: isDark,
                   })}
-                  to="/checkoutPage"
+                  to="/aboutpage"
                 >
-                  {t("travelblogpagelink")}
+                  {t("pageaboutlink")}
+                </Link>
+                <Link
+                  className={cn({
+                    dark_text: isDark,
+                  })}
+                  to="/contactPage"
+                >
+                  {t("pagecontactslink")}
                 </Link>
               </div>
             </div>
           </div>
         )}
-
         {/*burger menu end*/}
 
         <div className={css.left}>

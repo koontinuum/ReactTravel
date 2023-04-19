@@ -16,7 +16,7 @@
 	border-radius: 16px;
 
 	h1 {
-		font-family: 'Barlow';
+		font-family: 'Montserrat', sans-serif;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 24px;
@@ -26,7 +26,7 @@
 	}
 
 	p {
-		font-family: 'Poppins';
+		font-family: 'Raleway', sans-serif;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 14px;
@@ -35,34 +35,34 @@
 		//color: #637381;
 	}
 
-		.btn_cont{
-			font-family: sans-serif;
-				font-style: normal;
-				font-weight: 600;
-				font-size: 13px;
-				line-height: 26px;
+	.btn_cont {
+		font-family: sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 26px;
 		display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			padding: 11px 22px;
-		
-			width: 193px;
-			height: 48px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 11px 22px;
 
-			border: 1px solid rgba(145, 158, 171, 0.32);
-			border-radius: 8px;
-				color: #212B36;
-		}
+		width: 193px;
+		height: 48px;
+
+		border: 1px solid rgba(145, 158, 171, 0.32);
+		border-radius: 8px;
+		color: #212B36;
+	}
 }
 
 .reviews_title {
-		display: flex;
-			justify-content: space-between;
-			align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 	h1 {
-		font-family: 'Barlow';
+		font-family: 'Montserrat', sans-serif;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 24px;
@@ -76,7 +76,7 @@
 	height: 48px;
 	background: rgba(145, 158, 171, 0.08);
 	border-radius: 8px;
-	font-family: 'Poppins';
+	font-family: 'Raleway', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -107,11 +107,15 @@
 		width: 40px;
 		height: 40px;
 	}
+
 }
 
 .item_card {
 	display: flex;
 	gap: 7px;
+	span{
+		font-family: 'Raleway', sans-serif;
+	}
 }
 
 #avatar {
@@ -145,23 +149,33 @@
 			flex-direction: column;
 			gap: 6px;
 			justify-content: center;
+			h1 {
+					font-family: 'Raleway', sans-serif;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 26px;
+				}
 		}
 	}
 
 	.com_bot {
-			margin-top: 10px;
-				gap: 15px;
-				margin-left: 62px;
-				display: flex;
-				flex-direction: column;
-				border-bottom: solid 1px rgb(185, 185, 185);
-				padding-bottom: 20px;
+		margin-top: 10px;
+		gap: 15px;
+		margin-left: 62px;
+		display: flex;
+		flex-direction: column;
+		border-bottom: solid 1px rgb(185, 185, 185);
+		padding-bottom: 20px;
+		p{
+			font-family: 'Montserrat', sans-serif;
+		}
 	}
 }
 
 .reviews_btn {
 	word-spacing: 20px;
-	font-family: 'Poppins';
+	font-family: 'Raleway', sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 13px;
@@ -170,24 +184,33 @@
 }
 
 
-.icon_info1{
+.icon_info1 {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	justify-content: center;
+		h1 {
+				font-family: 'Raleway', sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 26px;
+			}
+}
+
+.reply_content {
+	.reply {
 		display: flex;
-			flex-direction: column;
-			gap: 6px;
-			justify-content: center;
-}
-.reply_content{
-	.reply{
-		display: flex;
-			gap: 15px;
-			margin-left: 64px;
-			margin-top: 20px;
-			margin-bottom: 20px;
-}
-.com_bot{
-	margin-left: 126px;
-	padding-bottom: 30px;
-}
+		gap: 15px;
+		margin-left: 64px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.com_bot {
+		margin-left: 126px;
+		padding-bottom: 30px;
+	}
 }
 
 .pagination {
@@ -197,7 +220,7 @@
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Poppins';
+	font-family: 'Raleway', sans-serif;
 	cursor: pointer;
 	list-style: none;
 }
@@ -238,26 +261,28 @@
 }
 
 @media screen and (max-width: 1000px) {
-	.wrapper{
+	.wrapper {
 		flex-direction: column;
 		gap: 20px;
 	}
-	.card{
+
+	.card {
 		margin: 0 auto;
 	}
 }
 
 @media screen and (max-width: 560px) {
-	.reviews_title{
+	.reviews_title {
 		flex-direction: column;
 	}
-.reply_content{
+
+	.reply_content {
 		.com_bot {
-				margin-left: 62px;
-			}
-		
-			.reply {
-				margin-left: 0;
-			}
-}
+			margin-left: 62px;
+		}
+
+		.reply {
+			margin-left: 0;
+		}
+	}
 }
