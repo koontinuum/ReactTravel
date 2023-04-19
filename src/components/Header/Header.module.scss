@@ -181,20 +181,20 @@
 
 //burger
 /* Modal container */
-.btn_burger{
+.btn_burger {
   display: none;
 }
 .modal {
   position: absolute;
-        top: -185px;
-          left: 85px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  top: -120px;
+  left: 51px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.modal_header{
+.modal_header {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -217,12 +217,10 @@
   cursor: pointer;
 }
 
-
-
 .modal_body {
-      display: flex;
-        flex-direction: column;
-        gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .modal_body a {
@@ -239,7 +237,7 @@
 //burger end
 
 @media (max-width: 576px) {
-  .btn_burger{
+  .btn_burger {
     display: block;
   }
   .left a {
