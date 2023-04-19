@@ -10,28 +10,29 @@
     align-items: flex-start;
     padding-left: 10%;
 
+    h1 {
+      font-family: "Montserrat", sans-serif;
 
-		h1 {
-			font-family: "Barlow";
-			font-style: normal;
-			font-weight: 700;
-			font-size: 48px;
-			line-height: 64px;
-			width: 55%;
-		}
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      width: 55%;
+    }
 
-		p {
-			width: 55%;
-			font-family: "Poppins";
-			font-style: normal;
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 28px;
-			
-		}
+    p {
+      width: 55%;
+      font-family: "Raleway", sans-serif;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
 
     h2 {
-      font-family: "Barlow";
+      font-family: "Montserrat", sans-serif;
+
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
@@ -42,7 +43,8 @@
 
     p {
       width: 55%;
-      font-family: "Poppins";
+      font-family: "Raleway", sans-serif;
+
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -50,10 +52,10 @@
       color: #637381;
     }
 
-
     ul {
       padding-left: 32px;
-      font-family: "Poppins";
+      font-family: "Roboto", sans-serif;
+
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -100,7 +102,8 @@
   }
 
   h4 {
-    font-family: "Barlow";
+    font-family: "Montserrat", sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -114,7 +117,8 @@
     width: 56px;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins";
+    font-family: "Raleway", sans-serif;
+
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -122,7 +126,7 @@
     color: #ffffff;
     opacity: 0.48;
     column-gap: 15px;
-        z-index: 10;
+    z-index: 10;
   }
 }
 
@@ -146,13 +150,14 @@
   }
 
   h4 {
-    font-family: "Barlow";
+    font-family: "Montserrat", sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     color: #ffffff;
-        z-index: 10;
+    z-index: 10;
   }
 
   div {
@@ -160,7 +165,8 @@
     width: 56px;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins";
+    font-family: "Raleway", sans-serif;
+
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -168,7 +174,7 @@
     color: #ffffff;
     opacity: 0.48;
     column-gap: 15px;
-        z-index: 10;
+    z-index: 10;
   }
 }
 
@@ -191,13 +197,14 @@
   }
 
   h4 {
-    font-family: "Barlow";
+    font-family: "Montserrat", sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     //color: #ffffff;
-        z-index: 10;
+    z-index: 10;
   }
 
   div {
@@ -205,7 +212,8 @@
     width: 56px;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins";
+    font-family: "Raleway", sans-serif;
+
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -213,7 +221,7 @@
     color: #ffffff;
     opacity: 0.48;
     column-gap: 15px;
-        z-index: 10;
+    z-index: 10;
   }
 }
 
@@ -247,7 +255,7 @@
     width: 100%;
     justify-content: space-between;
 
-    p{
+    p {
       width: 90%;
       margin-top: 50px;
       margin-bottom: 50px;
@@ -264,7 +272,7 @@
     .card3 {
       width: 335px;
       height: 335px;
-      margin-left: 60px;
+      margin-left: 50px;
 
       > img {
         width: 335px;

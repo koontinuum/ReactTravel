@@ -15,23 +15,25 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
-      font-family: "Barlow";
+      font-family: "Montserrat", sans-serif;
+
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
       line-height: 64px;
-     
+
       p {
-        font-family: "Poppins";
+        font-family: "Raleway", sans-serif;
+
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-      
       }
     }
     button {
-      font-family: "Poppins";
+      font-family: "Raleway", sans-serif;
+
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
@@ -41,39 +43,39 @@
   }
   .cards {
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-   justify-content: center;
-      .card {
-            display: flex;
-              flex-direction: row;
-              align-items: center;
-              padding: 18px;
-              gap: 22px;
-              width: 260px;
-              height: 120px;
-              border: 1px solid rgba(145, 158, 171, 0.24);
-              border-radius: 16px;
-        h1 {
-          display: flex;
-          flex-direction: column;
-          gap: 4px;
-          font-family: "Barlow";
+    justify-content: center;
+    .card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 18px;
+      gap: 22px;
+      width: 260px;
+      height: 120px;
+      border: 1px solid rgba(145, 158, 171, 0.24);
+      border-radius: 16px;
+      h1 {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+
+        p {
+          font-family: "Roboto", sans-serif;
+
           font-style: normal;
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 28px;
-        
-          p {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 24px;
-            
-          }
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 24px;
+        }
       }
     }
   }
@@ -91,7 +93,7 @@
       flex-direction: column;
     }
   }
-  .text{
+  .text {
     text-align: center;
   }
 }
