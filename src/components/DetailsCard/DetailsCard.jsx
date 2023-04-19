@@ -42,10 +42,10 @@ function DetailsCard() {
       <div className={css.wrapper}>
         <div className={css.wrap_title}>
           <h1>{t("youMust")}</h1>
-          <button>View All →</button>
+          <button>{t("cityTourBtn")} →</button>
         </div>
         <div className={css.cardContent}>{render}</div>
-        <button className={css.btn_bot}>View All →</button>
+        <button className={css.btn_bot}>{t("cityTourBtn")}→</button>
       </div>
     </div>
   );

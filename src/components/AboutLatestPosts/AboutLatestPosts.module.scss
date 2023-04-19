@@ -14,15 +14,15 @@
     justify-content: space-between;
     h1 {
       height: 64px;
-      font-family: "Barlow";
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 48px;
       line-height: 64px;
       color: #212b36;
     }
     button {
-      font-family: "Poppins";
+      font-family: 'Raleway', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
@@ -48,14 +48,14 @@
       padding: 0px;
       gap: 20px;
       width: 270px;
-      height: 426px;
+      height: 450px;
       background: #ffffff;
       border-radius: 16px;
       img {
         border-radius: 16px;
       }
       p {
-        font-family: "Poppins";
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -63,7 +63,7 @@
         color: #919eab;
       }
       h1 {
-        font-family: "Barlow";
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
@@ -74,7 +74,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        font-family: "Poppins";
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;

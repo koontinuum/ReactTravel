@@ -148,7 +148,6 @@ function Header() {
             </div>
           </div>
         )}
-
         {/*burger menu end*/}
 
         <div className={css.left}>
