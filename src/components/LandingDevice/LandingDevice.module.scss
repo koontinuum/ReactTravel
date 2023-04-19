@@ -11,18 +11,20 @@
     gap: 24px;
     height: 208px;
     h1 {
-      width: 480px;
-      height: 128px;
-      font-family: "Barlow";
+      width: 500px;
+      height: 170px;
+      font-family: "Montserrat", sans-serif;
+
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
       line-height: 64px;
     }
     p {
-      width: 480px;
+      width: 425px;
       height: 56px;
-      font-family: "Poppins";
+      font-family: "Raleway", sans-serif;
+
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -54,7 +56,8 @@
       margin: 40px 0 0 140px;
       cursor: pointer;
       b {
-        font-family: "Poppins";
+        font-family: "Raleway", sans-serif;
+
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
@@ -65,7 +68,8 @@
       h1 {
         width: 280px;
         height: 162px;
-        font-family: "Barlow";
+        font-family: "Montserrat", sans-serif;
+
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -77,9 +81,9 @@
         align-items: center;
         padding: 0px;
         gap: 8px;
-        width: 137px;
         height: 28px;
-        font-family: "Poppins";
+        font-family: "Raleway", sans-serif;
+
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -106,14 +110,16 @@
       width: 368px;
       height: 160px;
       h1 {
-        font-family: "Barlow";
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
       }
       p {
-        font-family: "Poppins";
+        font-family: "Raleway", sans-serif;
+
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -129,7 +135,8 @@
 }
 @media (max-width: 576px) {
   .wrapper .textContent h1 {
-    font-family: "Barlow";
+    font-family: "Montserrat", sans-serif;
+
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -141,7 +148,8 @@
   .wrapper .textContent p {
     width: 335px;
     height: 84px;
-    font-family: "Poppins";
+    font-family: "Raleway", sans-serif;
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
