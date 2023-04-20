@@ -5,11 +5,11 @@ import ireland from "../../assets/landDestinations/ireland.png";
 import hung from "../../assets/landDestinations/hung.png";
 import loc from "../../assets/landDestinations/loc.svg";
 import { useTranslation } from "react-i18next";
-import cn from 'classnames'
+import cn from "classnames";
 import useTheme from "../../hooks/useTheme";
 
 const LandDestinations = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const { isDark } = useTheme();
   return (
     <section className={css.wrapper}>
@@ -44,7 +44,7 @@ const LandDestinations = () => {
       <main className={css.wrap_card}>
         <div className={css.card}>
           <img src={hung} alt="" />
-          <h4>{t("hongkong")}</h4>
+          <h4>{t("Hongkong")}</h4>
           <div>
             <img src={loc} alt="" />
             <span>{t("landDestAsia")}</span>
@@ -71,7 +71,7 @@ const LandDestinations = () => {
           <h4>{t("vietnam")}</h4>
           <div>
             <img src={loc} alt="" />
-            <span  >{t("landDestAsia")}</span>
+            <span>{t("landDestAsia")}</span>
           </div>
         </div>
       </main>

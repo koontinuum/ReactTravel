@@ -22,7 +22,7 @@ import useTheme from "../../hooks/useTheme";
 import cn from "classnames";
 
 function TourContent() {
-    const { isDark } = useTheme();
+  const { isDark } = useTheme();
   const { t } = useTranslation();
   const [backgroundImage, setBackgroundImage] = useState(thailandmain);
   const [tourT, setTourT] = useState(1);
@@ -150,7 +150,7 @@ function TourContent() {
           placeholder={t("tourInp1")}
         />
         <input
-          className={cn(css.inpBorders,{
+          className={cn(css.inpBorders, {
             dark_inp: isDark,
           })}
           type="text"
