@@ -7,9 +7,7 @@ import CheckoutCompletePage from "../pages/CheckoutCompletePage/CheckoutComplete
 import TravelPage from "../pages/TravelPage/TravelPage";
 import AboutPage from "../pages/AboutPage/AboutPage";
 import TravelContactPage from "../pages/TravelContactPage/TravelContactPage";
-
 import BlogPage from "../pages/BlogPage/BlogPage";
-
 import TravelBlogPage from "../pages/TravelBlogPage/TravelBlogPage";
 
 function RoutesComponent() {
