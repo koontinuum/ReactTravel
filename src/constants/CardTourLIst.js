@@ -35,7 +35,7 @@ export const CardTourLIst = [
 	},
 	{
 		id: 3,
-		img: card2,
+		img: card3,
 		loc: "tlLoc",
 		title: "tlTitle11",
 		price: "$299",
@@ -66,7 +66,7 @@ export const CardTourLIst = [
 	},
 	{
 		id: 6,
-		img: card5,
+		img: card6,
 		loc: "tlLoc",
 		title: "tlTitle6",
 		price: "$299",

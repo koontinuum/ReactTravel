@@ -10,6 +10,7 @@ import moon from "../../assets/free-icon-switch-786486.png";
 import burgerDark from "../../assets/icon/burger-menu-svgrepo-com.svg";
 import burger from "../../assets/icon/burgerwhite.svg";
 import cn from "classnames";
+import ModalLogin from "../ModalLogin/ModalLogin";
 
 const lngs = {
   en: { nativeName: "Eng" },
@@ -19,6 +20,7 @@ const lngs = {
 function Header() {
   const { t, i18n } = useTranslation();
   const { isDark, setIsDark } = useTheme();
+const [openLog, setOpenLog] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -160,7 +162,11 @@ function Header() {
           <a href="">{t("headComp")}</a>
           <div className={css.dropdown}>
             <button className={css.dropbtn}>{t("headPage")}</button>
-            <div className={css.dropdowncontent}>
+            <div
+              className={cn(css.dropdowncontent,{
+                card_tour: isDark,
+              })}
+            >
               <Link to="/">{t("pagelandinglink")}</Link>
               <Link to="/Travelpage">{t("pagelistlink")}</Link>
               <Link to="/detailspage">{t("pagedetailslink")}</Link>
@@ -202,9 +208,13 @@ function Header() {
             )}
           </button>
           {isDark ? (
-            <button className={css.login}>{t("headLogBtn")}</button>
+            <button onClick={() => setOpenLog(!openLog)} className={css.login}>
+              {t("headLogBtn")}
+            </button>
           ) : (
-            <button className={css.login1}>{t("headLogBtn")}</button>
+            <button onClick={() => setOpenLog(!openLog)} className={css.login1}>
+              {t("headLogBtn")}
+            </button>
           )}
           {isDark ? (
             <button className={css.joinUs}>{t("headJoinBtn")}</button>
@@ -213,6 +223,7 @@ function Header() {
           )}
         </div>
       </div>
+      {openLog && <ModalLogin setOpenLog={setOpenLog} openLog={openLog} />}
     </div>
   );
 }

@@ -337,5 +337,13 @@
   "newsLetter":{
     "title": "Newsletter",
     "subtitle": "Sign up now to receive hot special offers and information about the best tours!"
+  },
+  "modalLogin": {
+    "title": "Wellcome",
+    "loginTit" : "Your Login",
+    "placholText": "Email address",
+    "pass": "Password",
+    "or" : "OR",
+    "login": "Login"
   }
 }
