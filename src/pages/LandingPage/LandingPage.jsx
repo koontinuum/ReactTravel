@@ -10,6 +10,7 @@ import LandingPost from "../../components/LandingPost/LandingPost";
 import LandingCustomer from "../../components/LandingCustomer/LandingCustomer";
 import Newsletter from "../../components/Newsletter/Newsletter";
 
+
 function LandingPage() {
   return (
     <div>

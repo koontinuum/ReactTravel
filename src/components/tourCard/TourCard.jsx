@@ -15,6 +15,8 @@ import day from '../../assets/icon/inpDay.png'
 import guests from '../../assets/icon/inpGuests.png'
 
 const TourCard = () => {
+
+
 //Paginate
 const [currentItems, setCurrentItems] = useState([]);
 const [pageCount, setPageCount] = useState(0);
@@ -36,17 +38,37 @@ const handlePageClick = (event) => {
 
    const { t } = useTranslation();
  const { isDark } = useTheme();
+//like
+ const [favorites, setFavorites] = useState([]);
+
+  const handleFavorite = (id) => {
+    if (favorites.includes(id)) {
+      setFavorites(favorites.filter((fav) => fav !== id));
+    } else {
+      setFavorites([...favorites, id]);
+    }
+  };
+
+console.log(favorites)
   const render = currentItems.map((item) => (
     <div
       className={cn(css.card, {
         card_tour: isDark,
       })}
       key={item.id}
+      
     >
       <img src={item.img} alt="" />
       <div>
-        <img className={css.card_like} src={liked} alt="" />
-        <p>{t(item.loc)}</p>
+        <img       
+           className={cn(css.card_like, {
+        card_active: favorites.includes(item.id),
+      })}
+          onClick={() => handleFavorite(item.id)}
+          src={liked}
+          alt=""
+        />
+        <p>{t(item.loc)}    </p>
         <h1>{t(item.title)}</h1>
         <div>
           <p>
@@ -56,7 +78,6 @@ const handlePageClick = (event) => {
 
           <span className={css.card_price}>{t(item.price)}</span>
           <p>
-      
             <img src={star} alt="" /> {item.point}
           </p>
         </div>

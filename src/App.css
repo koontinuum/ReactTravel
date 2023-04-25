@@ -150,3 +150,8 @@ color: var(--text-grey);
 .grey_text{
   color: #c6c8c9!important;
 }
+
+.card_active{
+  background-color: red;
+  border-radius: 100%!important;
+}
